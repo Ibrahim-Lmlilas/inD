@@ -1,0 +1,1322 @@
+{
+  "@@locale": "fr",
+  
+  "appName": "SRR FRR",
+  "welcomeToSrrfrr": "Bienvenue sur SRR FRR",
+  "yourRideYourWay": "Votre trajet, à votre façon",
+  "phoneNumber": "Numéro de téléphone",
+  "enterYourPhoneNumber": "Entrez votre numéro de téléphone",
+  "password": "Mot de passe",
+  "enterYourPassword": "Entrez votre mot de passe",
+  "forgotPassword": "Mot de passe oublié?",
+  "login": "Se connecter",
+  "connecting": "Connexion...",
+  "createAccount": "Créer un compte",
+  "termsConditionsNotice": "En continuant, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité",
+  
+  "loginFailedMessage": "Échec de la connexion. Veuillez vérifier vos informations et réessayer.",
+  "errorOccurred": "Une erreur est survenue. Veuillez réessayer.",
+  
+  "resetPassword": "Réinitialiser le mot de passe",
+  "enterPhoneToReceiveOtp": "Entrez votre numéro de téléphone pour recevoir un code de vérification par WhatsApp",
+  "sendCode": "Envoyer le code",
+  "backToLogin": "Retour à la connexion",
+  
+  "enterCodeAndNewPassword": "Entrez le code envoyé au {phoneNumber} et votre nouveau mot de passe",
+  "@enterCodeAndNewPassword": {
+    "placeholders": {
+      "phoneNumber": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "verificationCode": "Code de vérification",
+  "newPassword": "Nouveau mot de passe",
+  "confirmPassword": "Confirmer le mot de passe",
+  "passwordRequirements": "Exigences du mot de passe",
+  "atLeast8Characters": "Au moins 8 caractères",
+  "oneUppercaseLetter": "Une lettre majuscule",
+  "oneLowercaseLetter": "Une lettre minuscule",
+  "oneNumber": "Un chiffre",
+  "oneSpecialCharacter": "Un caractère spécial (!@#$%^&*)",
+  
+  "resendCodeIn": "Renvoyer le code dans {seconds}s",
+  "@resendCodeIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "resendCode": "Renvoyer le code",
+  "passwordReset": "Mot de passe réinitialisé !",
+  "passwordResetSuccess": "Votre mot de passe a été réinitialisé avec succès.\nVous pouvez maintenant vous connecter avec votre nouveau mot de passe.",
+  "dontForgetNewPassword": "N'oubliez pas votre nouveau mot de passe",
+  
+  "otpSentViaWhatsApp": "Code envoyé via WhatsApp",
+  "incorrectCode": "Code incorrect",
+  
+  "createYourAccount": "Créez votre compte",
+  "fillYourInformation": "Remplissez vos informations pour commencer",
+  "firstName": "Prénom",
+  "enterYourFirstName": "Entrez votre prénom",
+  "lastName": "Nom de famille",
+  "enterYourLastName": "Entrez votre nom",
+  "gender": "Genre",
+  "selectYourGender": "Sélectionnez votre genre",
+  "male": "Homme",
+  "female": "Femme",
+  "email": "Email (optionnel)",
+  "emailPlaceholder": "exemple@email.com",
+  "minimumPassword": "Minimum 8 caractères",
+  "retypePassword": "Retapez votre mot de passe",
+  "iAcceptThe": "J'accepte les ",
+  "termsOfUse": "conditions d'utilisation",
+  "touchToAddPhoto": "Toucher pour ajouter une photo",
+  "touchToChangePhoto": "Toucher pour changer",
+  "chooseYourInterface": "Choisissez votre interface",
+  "srrfrrRegular": "SRR FRR",
+  "standardInterface": "Interface standard",
+  "srrfrrLadies": "SRR FRR Ladies",
+  "femaleDriversOnly": "Conductrices femmes uniquement",
+  
+  "stepOf": "Étape {current} sur {total}",
+  "@stepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "pleaseAcceptTerms": "Vous devez accepter les conditions d'utilisation",
+  "pleaseChooseInterface": "Veuillez choisir votre interface",
+  "pleaseFillAllFields": "Veuillez remplir tous les champs correctement",
+  
+  "verifyYourNumber": "Vérifiez votre numéro",
+  
+  "enterCodeSentTo": "Saisissez le code à 6 chiffres envoyé au {phoneNumber}",
+  "@enterCodeSentTo": {
+    "placeholders": {
+      "phoneNumber": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "verifyCode": "Vérifier le code",
+  "whatsapp": "WhatsApp",
+  "codeSentSuccessfully": "Code de vérification envoyé avec succès",
+  "aNewCodeHasBeenSent": "Un nouveau code a été envoyé",
+  
+  "registrationSuccess": "Inscription réussie !",
+  
+  "welcome": "Bienvenue {name} !",
+  "@welcome": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "yourAccountIsReady": "Votre compte est prêt",
+  "startTraveling": "Commencer à voyager",
+  "verifiedDrivers": "Conducteurs vérifiés",
+  "secureEnvironment": "Environnement sécurisé",
+  "prioritySupport": "Support prioritaire",
+  "wideChoiceOfRides": "Large choix de trajets",
+  "securePayments": "Paiements sécurisés",
+  "verifiedFemaleDrivers": "Conductrices vérifiées",
+  
+  "changePassword": "Modifier le mot de passe",
+  "secureYourAccount": "Sécurisez votre compte avec un mot de passe fort",
+  "currentPassword": "Mot de passe actuel",
+  "save": "Enregistrer",
+  
+  "currentPasswordRequired": "Mot de passe actuel requis",
+  "newPasswordRequired": "Nouveau mot de passe requis",
+  "confirmationRequired": "Confirmation requise",
+  "passwordsDontMatch": "Les mots de passe ne correspondent pas",
+  "newPasswordMustBeDifferent": "Le nouveau mot de passe doit être différent",
+  "passwordChangedSuccessfully": "Mot de passe modifié avec succès",
+  "errorChangingPassword": "Erreur lors de la modification",
+  
+  "back": "Retour",
+  "close": "Fermer",
+  "clear": "Effacer",
+  
+  "registrationProgress": "Progression de l'inscription: étape {current} sur {total}",
+  "@registrationProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "settings": "Paramètres",
+  "appearanceAndInterface": "Apparence et Interface",
+  "apply": "Appliquer",
+  "languageChangeInfo": "L'application se mettra à jour immédiatement pour refléter la nouvelle langue",
+  "language": "Langue",
+  "french": "Français",
+  "english": "English",
+  "arabic": "العربية",
+  "theme": "Thème",
+  "light": "Clair",
+  "dark": "Sombre",
+  "system": "Système",
+  "interfaceType": "Type d'interface",
+  "regularInterface": "Interface SrrFrr Régulière",
+  "ladiesInterface": "Interface SrrFrr Ladies",
+  "notifications": "Notifications",
+  "enableNotifications": "Activer les notifications",
+  "receiveAllNotifications": "Recevoir toutes les notifications",
+  "sound": "Son",
+  "notificationSounds": "Sons des notifications",
+  "vibration": "Vibration",
+  "notificationVibration": "Vibration des notifications",
+  "dataAndPrivacy": "Données et confidentialité",
+  "privacyPolicy": "Politique de confidentialité",
+  "termsAndConditions": "Conditions d'utilisation",
+  "deleteMyAccount": "Supprimer mon compte",
+  "notificationsSaved": "Paramètres de notifications enregistrés",
+  "savingError": "Erreur lors de l'enregistrement",
+  "notificationsDisabled": "Notifications désactivées",
+  "notificationsEnabled": "Notifications activées",
+  "permissionRequired": "Permission requise",
+  "notificationPermissionExplanation": "SrrFrr a besoin de la permission de notification pour vous envoyer des mises à jour importantes sur vos trajets, le statut du conducteur et les messages.",
+  "mustEnableInSettings": "Vous devez autoriser les notifications dans les paramètres système",
+  "cancel": "Annuler",
+  "openSettings": "Ouvrir les paramètres",
+  "comingSoon": "Bientôt disponible",
+  
+  "featureComingSoon": "{feature} - Bientôt disponible",
+  "@featureComingSoon": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "deleteAccount": "Supprimer le compte",
+  "actionIsIrreversible": "Cette action est irréversible",
+  "accountDeletionWarning": "Votre compte sera définitivement supprimé après une période de grâce de 30 jours. Toutes vos données personnelles seront anonymisées.",
+  "enterPassword": "Entrez votre mot de passe",
+  "reasonOptional": "Raison (optionnel)",
+  "whyDeleteAccount": "Pourquoi supprimez-vous votre compte ?",
+  "passwordRequired": "Le mot de passe est requis",
+  "iUnderstandIrreversible": "Je comprends que cette action est irréversible",
+  "delete": "Supprimer",
+  "deleting": "Suppression en cours...",
+  "accountDeletedSuccessfully": "Compte supprimé avec succès.",
+  "accountDeletionFailed": "Échec de la suppression du compte",
+  "errorOccurredPleaseTryAgain": "Une erreur est survenue. Veuillez réessayer.",
+  "changeLanguage": "Changer la langue",
+  "selectLanguage": "Sélectionnez votre langue préférée",
+  
+  "languageChanged": "Langue changée en {language}",
+  "@languageChanged": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "systemLanguage": "Langue système",
+  
+  "account": "Compte",
+  "myProfile": "Mon profil",
+  "personalInformation": "Informations personnelles",
+  "activity": "Activité",
+  "yourAlertsAndMessages": "Vos alertes et messages",
+  "history": "Historique",
+  "completedRides": "Courses effectuées",
+  "loyaltyProgram": "Programme de fidélité",
+  "pointsAndRewards": "Points et récompenses",
+  "appPreferences": "Préférences de l'app",
+  "help": "Aide",
+  "supportAndFaq": "Support et FAQ",
+  "about": "À propos",
+  "versionAndInformation": "Version et informations",
+  "driverMode": "Mode Conducteur",
+  "switching": "Changement...",
+  
+  "departure": "Départ",
+  "yourCurrentPosition": "Votre position actuelle",
+  "arrival": "Arrivée",
+  "whereAreYouGoing": "Où allez-vous?",
+  "continueButton": "Continuer",
+  "selectDepartureAndDestination": "Veuillez sélectionner le départ et la destination",
+  "sendingRequest": "Envoi de la demande...",
+  "locating": "Localisation en cours...",
+  "locationError": "Erreur de localisation",
+  
+  "pickupLocation": "Lieu de départ",
+  "destination": "Destination",
+  "searchPlace": "Rechercher un lieu",
+  "selectOnMap": "Sélectionner sur la carte",
+  "searchAddress": "Recherchez une adresse",
+  "orSelectOnMap": "ou sélectionnez sur la carte",
+  "loading": "Chargement...",
+  "selectPickupLocation": "Sélectionner le lieu de départ",
+  "selectDestinationLocation": "Sélectionner le lieu de destination",
+  "tapMapOrMoveMarker": "Touchez la carte ou déplacez le marqueur",
+  "zoomForPrecision": "Zoomez pour plus de précision",
+  "retrievingAddress": "Récupération de l'adresse...",
+  "confirm": "Confirmer",
+  
+  "rideDetails": "Détails du trajet",
+  "rideType": "Type de trajet",
+  "autoDetected": "Auto-détecté",
+  "cityToCity": "Ville à ville",
+  "inCity": "En ville",
+  
+  "intercityTripDetected": "Trajet inter-villes détecté: {pickupCity} → {destinationCity}",
+  "@intercityTripDetected": {
+    "placeholders": {
+      "pickupCity": {
+        "type": "String"
+      },
+      "destinationCity": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "numberOfSeats": "Nombre de places",
+  
+  "seatsSelected": "{count} passager{plural} sélectionné{plural}",
+  "@seatsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plural": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "proposePrice": "Proposer un prix",
+  
+  "minimumPrice": "Prix minimum: {price} DH",
+  "@minimumPrice": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "confirmRide": "Confirmer le trajet",
+  
+  "paymentMethod": "Mode de paiement",
+  "cash": "Espèces",
+  "cashPayment": "Paiement en liquide au chauffeur",
+  "freeRide": "Course Offerte",
+  "freeRideWithPoints": "Course gratuite avec vos points",
+  
+  "insufficientPoints": "Insuffisant: {required}pts requis, vous avez {available}pts",
+  "@insufficientPoints": {
+    "placeholders": {
+      "required": {
+        "type": "int"
+      },
+      "available": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "youHavePoints": "Vous avez {points}pts (1pt = 1DH)",
+  "@youHavePoints": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "freeRideTitle": "Course gratuite",
+  "availablePoints": "Points disponibles",
+  "afterThisRide": "Après cette course",
+  
+  "pointsWillBeDeducted": "{points} points seront déduits (1pt = 1DH)",
+  "@pointsWillBeDeducted": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "driverOffers": "Offres des conducteurs",
+  
+  "driversAvailable": "{count} conducteur{plural} disponible{plural}",
+  "@driversAvailable": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plural": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "adjustYourOffer": "Ajustez votre offre",
+  "applyPrice": "Appliquer le prix",
+  "waitingForDriverOffers": "En attente des offres des conducteurs...",
+  
+  "canAdjustPriceIn": "Vous pouvez ajuster le prix dans {seconds}s si aucune offre",
+  "@canAdjustPriceIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "canAdjustPriceNow": "Vous pouvez maintenant ajuster votre prix",
+  "searchingDrivers": "Recherche de conducteurs",
+  "nearbyDriversWillAppear": "Les conducteurs à proximité apparaîtront ici",
+  "offersExpireAfter60s": "Les offres expirent après 60 secondes",
+  "cancelRequest": "Annuler la demande",
+  "rides": "rides",
+  "counterOffer": "Contre-offre",
+  "initialPrice": "Prix initial",
+  "driverCounterOffer": "Contre-offre du conducteur",
+  "decline": "Refuser",
+  "accept": "Accepter",
+  "confirmingRide": "Confirmation de la course...",
+  "rideConfirmationTimeout": "Le délai de confirmation de la course est expiré. Veuillez réessayer.",
+  "errorAcceptingDriver": "Erreur lors de l'acceptation du conducteur",
+  "driverDeclined": "Conducteur refusé",
+  "offerExpired": "Offer expired",
+  "requestCancelled": "La demande de course a été annulée.",
+  "errorCancellingRequest": "Erreur lors de l'annulation de la demande",
+  
+  "newOfferSent": "Nouvelle offre envoyée : {price} DH",
+  "@newOfferSent": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "errorSendingOffer": "Erreur lors de l'envoi de l'offre",
+  "noOffersAdjustPrice": "No offers yet. Try adjusting your price!",
+  
+  "useLastOtpSent": "Veuillez utiliser le code OTP envoyé précédemment",
+  
+  "waitBeforeResending": "Veuillez attendre {seconds} secondes avant de demander un nouveau code",
+  "@waitBeforeResending": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "pleaseWaitBeforeResending": "Veuillez attendre avant de demander un nouveau code",
+  "tooManyAttempts": "Trop de tentatives. Veuillez réessayer plus tard",
+  "invalidPhoneNumber": "Format de numéro de téléphone invalide",
+  "networkError": "Erreur réseau. Veuillez vérifier votre connexion",
+  "failedToSendOtp": "Échec de l'envoi du code de vérification",
+  "otpSendIssue": "Un problème est survenu lors de l'envoi du code. Vous pouvez réessayer de l'envoyer",
+  
+  "editProfile": "Modifier le profil",
+  "updatePersonalInfo": "Mettez à jour vos informations personnelles",
+  "viewPersonalInfo": "Vos informations personnelles",
+  "firstNameHint": "Ex: Mohamed",
+  "lastNameHint": "Ex: Alami",
+  "firstNameRequired": "Prénom requis",
+  "lastNameRequired": "Nom requis",
+  
+  "nameTooShort": "{field} trop court (minimum 2 caractères)",
+  "@nameTooShort": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "nameTooLong": "{field} trop long (maximum 50 caractères)",
+  "@nameTooLong": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "invalidCharacters": "Caractères invalides",
+  "noChangesDetected": "Aucune modification détectée",
+  "infoForReservations": "Ces informations seront utilisées pour vos réservations et vérifications",
+  
+  "changeProfilePhoto": "Changer la photo de profil",
+  "takePhoto": "Prendre une photo",
+  "chooseFromGallery": "Choisir depuis la galerie",
+  "cameraAccessNeeded": "L'accès à la caméra est nécessaire pour changer votre photo de profil. Veuillez autoriser l'accès dans les paramètres.",
+  "galleryAccessNeeded": "L'accès à la galerie est nécessaire pour changer votre photo de profil. Veuillez autoriser l'accès dans les paramètres.",
+  "errorSelectingImage": "Erreur lors de la sélection de l'image",
+  "profilePhotoUpdated": "Photo de profil mise à jour avec succès",
+  "profilePhotoUpdateFailed": "Échec de la mise à jour de la photo",
+  "errorUpdatingPhoto": "Erreur lors de la mise à jour de la photo",
+  
+  "editPassword": "Modifier le mot de passe",
+  "passwordRequirementsMustContain": "Le mot de passe doit contenir:",
+  
+  "editPhone": "Modifier le numéro",
+  "editPhoneNumber": "Modifier le numéro de téléphone",
+  "enterNewPhoneAndPassword": "Entrez votre nouveau numéro et votre mot de passe actuel",
+  "newPhoneNumber": "Nouveau numéro",
+  "phoneNumberRequired": "Numéro de téléphone requis",
+  "invalidPhoneFormat": "Format invalide (ex: 0612345678)",
+  "verificationCodeWillBeSent": "Un code de vérification sera envoyé à ce numéro",
+  
+  "enterCodeSentToPhone": "Entrez le code envoyé au {phone}",
+  "@enterCodeSentToPhone": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "otpCode": "Code OTP",
+  
+  "codeExpiresIn": "Code expire dans {time}",
+  "@codeExpiresIn": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "verify": "Vérifier",
+  "phoneNumberChanged": "Numéro modifié avec succès",
+  "invalidOtpCode": "Code OTP invalide",
+  "otpSent": "Code OTP envoyé",
+  "phoneNumberSameAsCurrent": "Le nouveau numéro est identique au numéro actuel",
+  
+  "standardInterfaceDescription": "Interface complète avec tous les conducteurs disponibles",
+  "ladiesInterfaceDescription": "Interface dédiée avec conductrices uniquement pour plus de confort",
+  "aboutLadiesInterface": "À propos de l'interface Femmes",
+  "ladiesInterfaceInfo": "Cette option vous permet de voyager uniquement avec des conductrices certifiées. Vous pouvez changer d'interface à tout moment.",
+  "interfaceUpdated": "Interface mise à jour avec succès",
+  "errorUpdatingInterface": "Erreur lors de la mise à jour",
+  "ladiesInterfaceBadge": "Interface Femmes",
+  "driverModeBadge": "Mode Conducteur",
+  
+  "logout": "Se déconnecter",
+  "confirmLogout": "Confirmer la déconnexion",
+  "enterPasswordToConfirm": "Veuillez entrer votre mot de passe pour confirmer la déconnexion:",
+  "loggingOut": "Déconnexion...",
+  "logoutError": "Erreur de déconnexion",
+  
+  "editProfileInfo": "Modifier le profil",
+  "firstNameLastName": "Prénom, nom",
+  "accountSecurity": "Sécurité du compte",
+  "changePhoneNumber": "Modifier le numéro",
+  "user": "Utilisateur",
+  "camera": "appareil photo",
+  "gallery": "galerie",
+  "continue_": "Continuer",
+  "secureAccountWithStrongPassword": "Sécurisez votre compte avec un mot de passe fort",
+  "passwordMinLength": "Au moins 8 caractères",
+  "passwordNeedsUppercase": "Au moins une lettre majuscule",
+  "passwordNeedsLowercase": "Au moins une lettre minuscule",
+  "passwordNeedsNumber": "Au moins un chiffre",
+  "passwordNeedsSpecialChar": "Au moins un caractère spécial",
+  "passwordChangedSuccess": "Mot de passe modifié avec succès",
+  "passwordChangeFailed": "Erreur lors du changement de mot de passe",
+  "confirmPasswordRequired": "Confirmation du mot de passe requise",
+  "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+  "passwordReqMinChars": "Au moins 8 caractères",
+  "passwordReqUppercase": "Une lettre majuscule",
+  "passwordReqLowercase": "Une lettre minuscule",
+  "passwordReqNumber": "Un chiffre",
+  "passwordReqSpecialChar": "Un caractère spécial (!@#$%^&*)",
+  "otpCodeRequired": "Code OTP requis",
+  "otpCodeMustBe6Digits": "Le code doit contenir 6 chiffres",
+  "errorRequestingOtp": "Erreur lors de la demande d'OTP",
+  "profileUpdateFailed": "Erreur lors de la mise à jour du profil",
+  
+  "locatingYourPosition": "Localisation en cours...",
+  "continueToOptions": "Continuer",
+  "errorLocationService": "Erreur de service de localisation",
+  "pleaseSelectBothLocations": "Veuillez sélectionner le départ et la destination",
+  "unableToCalculateDistance": "Impossible de calculer la distance du trajet",
+  "chooseRideType": "Choisissez un type de trajet",
+  
+  "minimumPriceIs": "Prix minimum: {price} DH",
+  "@minimumPriceIs": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "insufficientPointsForFreeRide": "Points insuffisants: {requiredPoints}pts requis, vous avez {available}pts",
+  "@insufficientPointsForFreeRide": {
+    "placeholders": {
+      "requiredPoints": {
+        "type": "int"
+      },
+      "available": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "connectingToServer": "Connexion au serveur...",
+  "unableToConnectToServer": "Impossible de se connecter au serveur",
+  
+  "selectingLocationFor": "Sélection de la localisation pour le {target}",
+  "@selectingLocationFor": {
+    "placeholders": {
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "tapOrDragMarker": "Touchez la carte ou déplacez le marqueur",
+  "confirmLocation": "Confirmer la localisation",
+  "selectingPickup": "départ",
+  "selectingDestination": "destination",
+  
+  "vehicleType": "Type de véhicule",
+  "carLabel": "Voiture",
+  "carSubtitle": "Véhicule standard",
+  "motorcycleLabel": "Moto",
+  "motorcycleSubtitle": "Deux roues motorisé",
+  "truckLabel": "Camion",
+  "truckSubtitle": "Véhicule utilitaire",
+    "newApplication": "Nouvelle demande",
+  "driverRegistration": "Inscription Conducteur",
+  "cinInformationTitle": "Informations CIN",
+  "cinInformationSubtitle": "Veuillez fournir vos documents d'identité",
+  "cinRectoPhoto": "Photo CIN Recto",
+  "cinVersoPhoto": "Photo CIN Verso",
+  "selfieWithCIN": "Selfie avec CIN",
+  "cinCode": "Code CIN",
+  "cinCodeHint": "Ex: AB123456",
+  "expirationDate": "Date d'expiration",
+  "selectDate": "Sélectionnez une date",
+  "vehicleInformationTitle": "Informations Véhicule",
+  "vehicleInformationSubtitle": "Détails de votre véhicule",
+  "vehiclePhoto": "Photo du véhicule",
+  "vehicleRegistrationRecto": "Carte grise Recto",
+  "vehicleRegistrationVerso": "Carte grise Verso",
+  "registrationNumber": "Numéro d'immatriculation",
+  "registrationNumberHint": "Ex: 12345-A-67",
+  "brand": "Marque",
+  "brandHint": "Ex: Toyota",
+  "model": "Modèle",
+  "modelHint": "Ex: Corolla",
+  "color": "Couleur",
+  "colorHint": "Ex: Blanc",
+  "productionYear": "Année de production",
+  "productionYearHint": "Ex: 2020",
+  "reviewTitle": "Vérification",
+  "reviewSubtitle": "Veuillez vérifier vos informations avant de soumettre",
+  "cinInformationSection": "Informations CIN",
+  "vehicleInformationSection": "Informations Véhicule",
+  "uploaded": "✓ Uploadé",
+  "vehicleTypeLabel": "Type",
+  "registrationNumberLabel": "Immatriculation",
+  "brandLabel": "Marque",
+  "modelLabel": "Modèle",
+  "colorLabel": "Couleur",
+  "yearLabel": "Année",
+  "vehiclePhotoLabel": "Photo véhicule",
+  "vehicleRegistrationRectoLabel": "Carte grise Recto",
+  "vehicleRegistrationVersoLabel": "Carte grise Verso",
+  "verificationNotice": "Votre demande sera vérifiée dans les 24-48 heures",
+  "photoAdded": "Photo ajoutée",
+  "tapToTakePhoto": "Appuyez pour prendre une photo",
+  "cinCodeLabel": "Code CIN",
+  "expirationDateLabel": "Date d'expiration",
+  "cinRectoLabel": "CIN Recto",
+  "cinVersoLabel": "CIN Verso",
+  "selfieLabel": "Selfie",
+  "submitApplication": "Soumettre la demande",
+  "submittedSuccessfully": "Demande soumise avec succès",
+  "submissionError": "Erreur lors de la soumission",
+    "rideHistory": "Historique des Trajets",
+  "filters": "Filtres",
+  "totalRides": "Trajets",
+  "totalAmount": "Total dépensé",
+  "ridesLoaded": "{loaded} sur {total} trajets chargés",
+  "@ridesLoaded": {
+    "placeholders": {
+      "loaded": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statusAll": "All",
+  "statusCompleted": "Completed",
+  "statusCancelled": "Cancelled",
+  "statusAccepted": "Accepted",
+  "statusStarted": "Started",
+  "paymentAll": "All",
+  "paymentCash": "Cash",
+  "paymentWallet": "Wallet",
+  "paymentCreditCard": "CreditCard",
+  "paymentLoyaltyPoints": "LoyaltyPoints",
+  "paymentFreeRide": "FreeRide",
+  "vehicleAll": "All",
+  "vehicleCar": "Voiture",
+  "vehicleMotorcycle": "Moto",
+  "vehicleTruck": "Camion",
+  "sortPriceHighToLow": "Price (high to low)",
+  "sortPriceLowToHigh": "Price (low to high)",
+  "sortDistance": "Distance",
+  "viewDetails": "Voir les détails",
+  "hideDetails": "Masquer les détails",
+  "rateDriver": "Évaluer le chauffeur",
+  "contactSupport": "Contacter le support",
+  "thankYouForRating": "Merci pour votre évaluation!",
+  "complaintSent": "Réclamation envoyée avec succès",
+  "loadingError": "Erreur de chargement",
+  "connectionError": "Erreur de connexion",
+  "tryAgain": "Réessayer",
+  "noRidesTitle": "Aucun trajet trouvé",
+  "noRidesDescription": "Ajustez vos filtres ou revenez plus tard",
+  "clearAllFilters": "Effacer tous les filtres",
+  "applyFilters": "Appliquer les filtres",
+  "searchDriver": "Rechercher un chauffeur...",
+  "selectDateRange": "Sélectionner une période",
+  "priceRange": "Prix",
+  "minPrice": "Min",
+  "maxPrice": "Max",
+  "status": "Statut",
+  "payment": "Paiement",
+  "vehicle": "Véhicule",
+  "driver": "Chauffeur",
+  "date": "Date",
+  "price": "Prix",
+  "distance": "Distance",
+  "duration": "Durée",
+  "fare": "Tarif",
+  "passengers": "Passagers",
+  "driverRating": "Note du chauffeur",
+  "yourRating": "Votre note",
+  "notRated": "Non évalué",
+  "rated": "Évalué",
+  "completed": "Terminé",
+  "cancelled": "Annulé",
+  "accepted": "Accepté",
+  "started": "En cours",
+  "wallet": "Portefeuille",
+  "creditCard": "Carte bancaire",
+  "loyaltyPoints": "Points fidélité",
+  "car": "Voiture",
+  "motorcycle": "Moto",
+  "truck": "Camion",
+    "totalRidesLabel": "Trajets",
+  "totalEarned": "Total Gagné",
+  "totalSpent": "Total Dépensé",
+  "filtersTitle": "Filtres",
+  "statusLabel": "Statut",
+  "paymentLabel": "Paiement",
+  "vehicleLabel": "Véhicule",
+  "sortByLabel": "Trier par",
+  "statusInProgress": "InProgress",
+  "paymentCard": "Card",
+  "vehicleStandard": "Standard",
+  "vehiclePremium": "Premium",
+  "vehicleLadiesOnly": "Ladies-only",
+  "sortDateNewestFirst": "Date (newest first)",
+  "sortDateOldestFirst": "Date (oldest first)",
+  "viewTripLocation": "Localisation du trajet",
+  "passengerLabel": "Passager",
+  "driverLabel": "Chauffeur",
+  "ratingLabel": "Note",
+  "phoneLabel": "Téléphone",
+  "fareDetails": "Détail du tarif",
+  "totalLabel": "Total",
+  "rateThisTrip": "Noter ce trajet",
+  "rateButton": "Noter",
+  "complaintButton": "Réclamation",
+  "statusCompletedBadge": "Terminé",
+  "statusCancelledBadge": "Annulé",
+  "statusInProgressBadge": "En cours",
+  "noTripsFound": "Aucun trajet trouvé",
+  "tripsWillAppearHere": "Vos trajets apparaîtront ici",
+  "passengerDefault": "Passager",
+  "driverDefault": "Chauffeur",
+  "filtersAndSort": "Filtres et tri",
+  "activeFilters": "{count} filtre(s) actif(s)",
+  "@activeFilters": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noActiveFilters": "Aucun filtre actif",
+  "driverNameHint": "Nom du chauffeur",
+  "dateRange": "Période",
+  "allPriceRanges": "Toutes les gammes",
+  "addPriceFilter": "Ajouter filtre prix",
+  "statusFilter": "Statut",
+  "allStatus": "Tous",
+  "completedStatus": "Terminé",
+  "cancelledStatus": "Annulé",
+  "paymentFilter": "Paiement",
+  "allPayment": "Tous",
+  "walletPayment": "Portefeuille",
+  "creditCardPayment": "Carte bancaire",
+  "loyaltyPointsPayment": "Points fidélité",
+  "freeRidePayment": "Trajet gratuit",
+  "vehicleFilter": "Véhicule",
+  "allVehicles": "Tous",
+  "carVehicle": "Voiture",
+  "motorcycleVehicle": "Moto",
+  "truckVehicle": "Camion",
+  "sortBy": "Trier par",
+  "resetAllFilters": "Réinitialiser tous les filtres",
+  "selectPeriod": "Sélectionner la période",
+  "startDate": "Début",
+  "endDate": "Fin",
+  "points": "points",
+  "progressToNextLevel": "Progression vers {nextLevel}",
+  "@progressToNextLevel": {
+    "placeholders": {
+      "nextLevel": {
+        "type": "String"
+      }
+    }
+  },
+  "needPointsToUnlock": "Encore {pointsNeeded} points pour débloquer les avantages {nextLevel}",
+  "@needPointsToUnlock": {
+    "placeholders": {
+      "pointsNeeded": {
+        "type": "int"
+      },
+      "nextLevel": {
+        "type": "String"
+      }
+    }
+  },
+  "earnPoints": "Gagner des points",
+  "earnPointsByRide": "Points pour chaque trajet",
+  "earnPointsByReferral": "Points de parrainage",
+  "earnPointsByRating": "Points pour avis",
+  "referAFriend": "Parrainer un ami",
+  "shareAndEarnPoints": "Partagez et gagnez des points",
+  "noTransactions": "Aucune transaction",
+  "allTransactionsLoaded": "Toutes les transactions chargées",
+  "rideCompleted": "Trajet terminé",
+  "referralBonus": "Bonus parrainage",
+  "ratingBonus": "Bonus évaluation",
+  "pointsUsed": "Points utilisés",
+  "levelBronze": "Bronze",
+  "levelSilver": "Argent",
+  "levelGold": "Or",
+  "levelPlatinum": "Platine",
+  "levelDiamond": "Diamant",
+  "dataRefreshed": "Données actualisées",
+  "errorLoadingData": "Erreur lors du chargement",
+  "errorRefreshingData": "Erreur lors de l'actualisation",
+  "pleaseSelectRating": "Veuillez sélectionner une note",
+  "pleaseSelectOption": "Veuillez sélectionner une option",
+  "ratePassenger": "Noter le passager",
+  "howWasYourExperience": "Comment était votre expérience avec {name}?",
+  "@howWasYourExperience": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "selectCategory": "Sélectionnez une catégorie :",
+  "noOptionsAvailable": "Aucune option disponible",
+  "send": "Envoyer",
+  "pleaseEnterPhoneNumber": "Veuillez entrer un numéro de téléphone",
+  "invitationRegistered": "Invitation enregistrée! Partagez le lien avec votre ami.",
+  "phoneNotEligible": "Ce numéro n'est pas éligible au parrainage",
+  "linkCopied": "Lien copié dans le presse-papiers!",
+  "errorCopyingLink": "Erreur lors de la copie du lien.",
+  "linkSharedSuccess": "Lien partagé avec succès!",
+  "errorSharing": "Erreur lors du partage.",
+  "earnPointsPerFriend": "Gagnez 50 points par ami",
+  "referralInfoMessage": "Entrez le numéro de votre ami pour l'enregistrer, puis partagez le lien avec lui.",
+  "verifying": "Vérification...",
+  "savePhoneNumber": "Enregistrer le numéro",
+  "or": "OU",
+  "referralLink": "Lien de parrainage",
+  "share": "Partager",
+  "copy": "Copier",
+  "referralShareMessage": "🎉 Rejoins-moi sur SRRFRR!\n\nJ'utilise SRRFRR pour mes déplacements et je pense que ça pourrait t'intéresser aussi!\n\n🎁 Télécharge l'app et reçois 50 points de bienvenue!\n🚗 C'est simple, rapide et sécurisé\n\nTélécharge maintenant: {link}\n\nÀ bientôt sur SRRFRR! 🚙",
+  "@referralShareMessage": {
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "referralInvitationSubject": "Invitation SRRFRR",
+  "faq": "FAQ",
+  "contact": "Contact",
+  "searchInFaq": "Rechercher dans les FAQ...",
+  "contactUs": "Contactez-nous",
+  "ourTeamIsHereToHelp": "Notre équipe est là pour vous aider",
+  "hours": "Horaires",
+  "businessHours": "Lun-Ven: 9h-18h",
+  "sendComplaint": "Envoyer une réclamation",
+  "describeYourProblem": "Décrivez votre problème et notre équipe vous répondra rapidement",
+  "noResultsFound": "Aucun résultat trouvé",
+  "tryOtherKeywords": "Essayez avec d'autres mots-clés",
+  "pleaseDescribeProblem": "Veuillez décrire votre problème",
+  "provideMoreDetails": "Veuillez fournir plus de détails (minimum 10 caractères)",
+  "category": "Catégorie",
+  "technicalIssue": "Problème technique",
+  "accountingIssue": "Problème comptable",
+  "safetyIssue": "Problème de sécurité",
+  "drivingIssue": "Problème de conduite",
+  "other": "Autre",
+  "description": "Description",
+  "describeYourProblemInDetail": "Décrivez votre problème en détail. Notre équipe vous répondra dans les plus brefs délais.",
+  "sendReclamation": "Envoyer la réclamation",
+  "trajectoryRef": "Trajet ref #{ref}",
+  "@trajectoryRef": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "describeProblem": "Décrivez votre problème",
+  "minCharacters": "Minimum 10 caractères requis",
+  "exampleReclamation": "Exemple: J'ai eu un problème avec mon dernier trajet où le conducteur a pris un chemin plus long que nécessaire, ce qui a augmenté le coût de la course. Je souhaite que cela soit examiné et que des mesures soient prises pour éviter que cela ne se reproduise.",
+  "sendComplaintButton": "Envoyer la réclamation",
+  "faqAccountTitle": "Compte et Inscription",
+  "faqAccount1Q": "Comment créer un compte?",
+  "faqAccount1A": "Pour créer un compte, téléchargez l'application SRRFRR, entrez votre numéro de téléphone, vérifiez le code OTP envoyé par SMS, puis complétez votre profil avec vos informations personnelles.",
+  "faqAccount2Q": "Puis-je utiliser le même compte comme passager et conducteur?",
+  "faqAccount2A": "Oui! Vous pouvez basculer entre les modes passager et conducteur dans les paramètres de l'application. Pour devenir conducteur, vous devez soumettre une demande avec vos documents.",
+  "faqAccount3Q": "Comment modifier mon numéro de téléphone?",
+  "faqAccount3A": "Allez dans Paramètres > Profil > Modifier le numéro de téléphone. Vous devrez vérifier le nouveau numéro avec un code OTP.",
+  
+  "faqBookingTitle": "Réservation de trajets",
+  "faqBooking1Q": "Comment réserver un trajet?",
+  "faqBooking1A": "Sur l'écran d'accueil, entrez votre destination, choisissez le type de véhicule, vérifiez le prix estimé, puis appuyez sur 'Confirmer la demande'. Un conducteur acceptera votre demande dans quelques instants.",
+  "faqBooking2Q": "Puis-je annuler un trajet?",
+  "faqBooking2A": "Oui, vous pouvez annuler un trajet avant qu'un conducteur n'accepte sans frais. Après acceptation, des frais d'annulation peuvent s'appliquer.",
+  "faqBooking3Q": "Comment fonctionne le mode 'Ladies-only'?",
+  "faqBooking3A": "Le mode Ladies-only permet aux passagères d'être mises en relation uniquement avec des conductrices. Activez cette option dans vos paramètres de profil.",
+  
+  "faqPaymentTitle": "Paiement",
+  "faqPayment1Q": "Quels modes de paiement sont acceptés?",
+  "faqPayment1A": "Nous acceptons les paiements en espèces et par carte bancaire. Vous pouvez choisir votre mode de paiement préféré lors de la réservation.",
+  "faqPayment2Q": "Comment fonctionnent les points de fidélité?",
+  "faqPayment2A": "Vous gagnez des points à chaque trajet complété, lors du parrainage d'amis, et en utilisant régulièrement l'application. Ces points peuvent être échangés contre des réductions sur vos trajets.",
+  "faqPayment3Q": "Puis-je obtenir un reçu pour mon trajet?",
+  "faqPayment3A": "Oui, tous vos reçus sont disponibles dans l'historique des trajets. Vous pouvez les télécharger ou les recevoir par email.",
+  
+  "faqSafetyTitle": "Sécurité",
+  "faqSafety1Q": "Comment SRRFRR assure-t-il ma sécurité?",
+  "faqSafety1A": "Tous les conducteurs sont vérifiés avec leurs documents officiels. Vous pouvez partager votre trajet en temps réel avec vos proches et signaler tout problème via l'application.",
+  "faqSafety2Q": "Que faire en cas de problème pendant un trajet?",
+  "faqSafety2A": "Utilisez le bouton 'Urgence' dans l'application pour contacter immédiatement notre équipe de sécurité. Vous pouvez également appeler directement les autorités si nécessaire.",
+  "faqSafety3Q": "Mes données personnelles sont-elles protégées?",
+  "faqSafety3A": "Oui, nous utilisons un cryptage de niveau bancaire pour protéger toutes vos données personnelles et financières. Nous ne partageons jamais vos informations avec des tiers.",
+  
+  "faqDriverTitle": "Devenir conducteur",
+  "faqDriver1Q": "Quelles sont les conditions pour devenir conducteur?",
+  "faqDriver1A": "Vous devez avoir un permis de conduire valide, une carte d'identité, un véhicule en bon état avec une carte grise valide, et être âgé d'au moins 21 ans.",
+  "faqDriver2Q": "Combien de temps prend la validation de mon compte conducteur?",
+  "faqDriver2A": "La vérification de vos documents prend généralement 24 à 48 heures. Vous recevrez une notification une fois votre compte validé.",
+  "faqDriver3Q": "Comment sont calculés mes gains?",
+  "faqDriver3A": "Vos gains sont calculés en fonction de la distance parcourue, du temps de trajet, et de la demande actuelle. SRRFRR prend une commission de 15% sur chaque course.",
+  "faqDriver4Q": "Quand puis-je retirer mes gains?",
+  "faqDriver4A": "Vous pouvez retirer vos gains à tout moment via votre portefeuille conducteur. Les retraits sont traités sous 1 à 3 jours ouvrables.",
+  
+  "faqTechTitle": "Problèmes techniques",
+  "faqTech1Q": "L'application ne trouve pas ma position",
+  "faqTech1A": "Vérifiez que vous avez activé la géolocalisation pour l'application dans les paramètres de votre téléphone. Assurez-vous également d'avoir une connexion internet active.",
+  "faqTech2Q": "Je n'arrive pas à recevoir le code OTP",
+  "faqTech2A": "Vérifiez que vous avez entré le bon numéro de téléphone et que vous avez du réseau. Si le problème persiste, utilisez l'option 'Renvoyer le code' après 60 secondes.",
+  "faqTech3Q": "L'application se ferme de manière inattendue",
+  "faqTech3A": "Essayez de mettre à jour l'application vers la dernière version, redémarrez votre téléphone, et assurez-vous d'avoir suffisamment d'espace de stockage disponible.",
+  "walletBalanceTransactions": "Solde et transactions",
+  "manageSubscription": "Gérer mon abonnement",
+  "subscription": "Abonnement",
+  "passengerMode": "Mode Passager",
+  "ladiesInterfaceDriverBadge": "SRR FRR Ladies Conductrice",
+    "verificationStatus": "Statut de vérification",
+  "notRegisteredTitle": "Devenez Conducteur",
+  "notRegisteredDescription": "Transformez vos trajets en revenus et rejoignez notre communauté de conducteurs",
+  "startRegistration": "Commencer l'inscription",
+  "pendingVerificationTitle": "En cours de vérification",
+  "pendingVerificationDescription": "Notre équipe examine votre demande.\nVous recevrez une notification dès validation",
+  "verificationTimeframe": "La vérification prend généralement entre 24 et 48 heures ouvrables",
+  "processingTime": "Délai de traitement",
+  "returnHome": "Retour à l'accueil",
+  "validatedTitle": "Félicitations ! 🎉",
+  "validatedDescription": "Votre compte conducteur\na été validé avec succès",
+  "welcomeDrivers": "Bienvenue parmi les conducteurs",
+  "welcomeDriversDescription": "Vous êtes maintenant un conducteur SRR FRR vérifié et pouvez commencer à accepter des courses",
+  "verifiedStatus": "Statut vérifié",
+  "verifiedBadge": "Badge de conducteur certifié",
+  "flexibleIncome": "Revenus flexibles",
+  "flexibleIncomeDesc": "Gagnez selon votre disponibilité",
+  "insuredProtection": "Protection assurée",
+  "insuredProtectionDesc": "Couverture complète pendant les courses",
+  "startDriving": "Commencer à conduire",
+  "rejectedTitle": "Demande non approuvée",
+  "rejectedDescription": "Votre demande nécessite des ajustements.\nVous pouvez soumettre une nouvelle demande",
+  "rejectionReason": "Raison du refus",
+  "defaultRejectionReason": "Documents incomplets ou invalides. Veuillez vérifier vos informations et soumettre des documents conformes.",
+  "attractiveIncome": "Revenus attractifs",
+  "attractiveIncomeDesc": "Fixez vos tarifs et maximisez vos gains",
+  "totalFreedom": "Liberté totale",
+  "totalFreedomDesc": "Travaillez selon votre emploi du temps",
+  "guaranteedSafety": "Sécurité garantie",
+  "guaranteedSafetyDesc": "Protection complète pour chaque course",
+  "verifyingStatus": "Vérification du statut...",
+  "myVehicle": "Mon Véhicule",
+  "statistics": "Statistiques",
+  "driverWallet": "Portefeuille",
+  "totalRidesDriver": "Total Courses",
+  "averageRating": "Note Moyenne",
+  "quickActions": "Actions Rapides",
+  "earnings": "Revenus",
+  "historyDriver": "Historique",
+  "supportDriver": "Support",
+  "onlineMode": "En Ligne",
+  "offlineMode": "Hors Ligne",
+  "readyToAccept": "Prêt à accepter des courses",
+  "activateToReceive": "Activez pour recevoir des demandes",
+  "goOnline": "Passer En Ligne",
+  "goOffline": "Passer Hors Ligne",
+  "noRequests": "Aucune Demande",
+  "searchingNearby": "Recherche de passagers à proximité...",
+  "notificationsActive": "Notifications actives",
+  "offlineStatus": "Mode Hors Ligne",
+  "goOnlineToReceive": "Passez en ligne pour recevoir des demandes",
+  "activeRequests": "Demandes Actives",
+  "counterOfferTitle": "Envoyer une contre-offre",
+  "passengerOffer": "Offre du passager :",
+  "yourCounterOffer": "Votre contre-offre",
+  "enterYourPrice": "Entrez votre prix",
+  "fairPriceTip": "Conseil : Proposez un prix juste basé sur la distance et le temps",
+  "sendOffer": "Envoyer l'offre",
+  "negotiateButton": "Négocier",
+  "refuseButton": "Refuser",
+  "acceptRide": "Accepter la course",
+  "waitingForResponse": "En Attente de Réponse",
+  "secondsRemaining": "{seconds} secondes restantes",
+  "@secondsRemaining": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "cancelOffer": "Annuler l'Offre",
+  "registration": "Immatriculation",
+  "type": "Type",
+  "year": "Année",
+  "unknownAddress": "Adresse inconnue",
+    "walletTitle": "Mon Portefeuille",
+  "overviewTab": "Vue d'ensemble",
+  "codesTab": "Codes",
+  "historyTab": "Historique",
+  "availableBalance": "Solde Disponible",
+  "rechargeWallet": "Recharger le Portefeuille",
+  "monthDetails": "Détails du Mois",
+  "grossEarnings": "Gains bruts",
+  "commissions": "Commissions",
+  "netEarnings": "Revenus nets",
+  "costPerRide": "Coût par course",
+  "effectiveRate": "Taux effectif",
+  "thisWeek": "Cette Semaine",
+  "recentTransactions": "Transactions Récentes",
+  "retry": "Réessayer",
+  "currencySymbol": "DH",
+  "today": "Aujourd'hui",
+  "yesterday": "Hier",
+  "monday": "Lun",
+  "tuesday": "Mar",
+  "wednesday": "Mer",
+  "thursday": "Jeu",
+  "friday": "Ven",
+  "saturday": "Sam",
+  "sunday": "Dim",
+  "transactionTypeCredit": "Crédit",
+  "transactionTypeDebit": "Débit",
+  "transactionTypeCommission": "Commission", 
+  "transactionTypeSubscription": "Abonnement",
+  "transactionTypeInit": "Initialisation",
+  "justNow": "À l'instant",
+  "minutesAgo": "Il y a {minutes} min",
+  "@minutesAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "hoursAgo": "Il y a {hours}h",
+  "@hoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "daysAgo": "Il y a {days} jours",
+  "@daysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "thisMonth": "Ce mois-ci",
+  "perRide": "Par course",
+  "totalDebits": "Total ébits",
+  "totalCredits": "Total Crédits",
+  "netThisMonth": "Net ce mois-ci",
+  "totalTransactions": "Total des transactions",
+  "generateNewCode": "Générer un Nouveau Code",
+  "activeCodes": "Codes Actifs",
+  "expiredCodes": "Codes Expirés",
+  "noRechargeCodes": "Aucun code de recharge",
+  "generateCodeDescription": "Générez un code pour recharger\nvotre portefeuille",
+  "codeCopied": "Code copié dans le presse-papiers",
+  "deleteCodeTitle": "Supprimer le Code",
+  "deleteCodeConfirmation": "Êtes-vous sûr de vouloir supprimer ce code de recharge ?",
+  "codeDeleted": "Code supprimé",
+  "active": "Actif",
+  "expired": "Expiré",
+  "generateCodeOption": "Générer un Code",
+  "generateCodeSubtitle": "Payez en agence avec un code",
+  "creditCardOption": "Carte Bancaire",
+  "creditCardSubtitle": "Paiement en ligne sécurisé",
+  "amount": "Montant (DH)",
+  "amountHint": "Ex: 500",
+  "generateCodeInfo": "Présentez ce code en agence pour effectuer le paiement",
+  "generate": "Générer",
+  "codeGenerated": "Code Généré",
+  "presentCodeInfo": "Présentez ce code en agence pour\nrecharger votre portefeuille",
+  "copyCode": "Copier le Code",
+  "cardPaymentTitle": "Paiement par Carte",
+  "securePaymentInfo": "Paiement sécurisé • Rechargement immédiat",
+  "redirectingPayment": "Redirection vers le paiement sécurisé...",
+    "subscriptionsTitle": "Abonnements",
+  "plansTab": "Plans",
+  "noActiveSubscription": "Aucun abonnement actif",
+  "choosePlanPrompt": "Choisissez un plan pour débloquer\ntous les avantages",
+  "ridesUsed": "Courses utilisées",
+  "coursesThisMonth": "Courses ce mois",
+  "unlimited": "ILLIMITÉ",
+  "subscriptionExpired": "Abonnement expiré",
+  "expiresInDays": "Expire dans {days} jours",
+  "@expiresInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "renewsInDays": "Renouvellement dans {days} jours",
+  "@renewsInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "cancelSubscription": "Annuler l'abonnement",
+  "cancelSubscriptionDialog": "Annuler l'abonnement?",
+  "cancelSubscriptionWarning": "Votre abonnement {planName} sera annulé immédiatement",
+  "@cancelSubscriptionWarning": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionCancelled": "Abonnement annulé",
+  "choosePlan": "Choisir un plan",
+  "popular": "POPULAIRE",
+  "current": "ACTUEL",
+  "amountPerMonth": "DH/mois",
+  "activeSubscription": "Abonnement Actif",
+  "changeToPlan": "Changer vers ce plan",
+  "chooseThisPlan": "Choisir ce plan",
+  "takeAdvantage": "🎉 Profiter de l'offre",
+  "notAvailable": "Non disponible",
+  "confirmSubscription": "Confirmer l'abonnement",
+  "subscribeToPlan": "Vous allez souscrire à l'abonnement {planName}",
+  "@subscribeToPlan": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "newPlan": "Nouveau plan",
+  "changeSubscription": "Changer d'abonnement",
+  "switchFromTo": "Passer de {fromPlan} à {toPlan}",
+  "@switchFromTo": {
+    "placeholders": {
+      "fromPlan": {
+        "type": "String"
+      },
+      "toPlan": {
+        "type": "String"
+      }
+    }
+  },
+  "changeEffectiveImmediately": "Changement effectif immédiatement",
+  "subscriptionActivated": "Abonnement activé!",
+  "subscriptionChanged": "Abonnement changé!",
+  "noHistory": "Aucun historique",
+  "historyPrompt": "Vos abonnements passés\napparaîtront ici",
+  "itemsOfTotal": "{count} / {total}",
+  "@itemsOfTotal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "period": "Période",
+  "comparison": "Comparaison",
+  "commission": "Commission",
+  "rideLimit": "Limite courses",
+  "support": "Support",
+  "standard": "Standard",
+  "priority": "Prioritaire",
+  "vip247": "VIP 24/7",
+  "basic": "Base",
+  "advanced": "Avancées",
+  "complete": "Complètes",
+  "faqTitle": "Questions fréquentes",
+  "canChangeSubscription": "Puis-je changer d'abonnement?",
+  "changeSubscriptionAnswer": "Oui, vous pouvez changer à tout moment. Les changements prennent effet immédiatement.",
+  "exceedLimitQuestion": "Que se passe-t-il si je dépasse ma limite?",
+  "exceedLimitAnswer": "Pour Basic et Premium, vous ne pourrez plus accepter de courses jusqu'au renouvellement.",
+  "howRenewalWorks": "Comment fonctionne le renouvellement?",
+  "renewalAnswer": "L'abonnement se renouvelle automatiquement chaque mois. Vous pouvez annuler à tout moment.",
+  "canGetRefund": "Puis-je obtenir un remboursement?",
+  "refundAnswer": "Remboursement possible dans les 7 jours si aucune course n'a été effectuée.",
+  "commissionModel": "Modèle Commission",
+  "preferCommission": "Préférez payer à la commission?",
+  "commissionExplanation": "8% par course au lieu d'un abonnement. Idéal pour peu de courses.",
+  "learnMore": "En savoir plus",
+  "commissionModalTitle": "Modèle Commission",
+  "commissionPerRide": "Payez 8% de commission par course",
+  "commissionFeature1": "8% de commission par course",
+  "commissionFeature2": "Aucun frais mensuel",
+  "commissionFeature3": "Courses illimitées",
+  "commissionExample": "Ex: Course 100 DH → 8 DH commission",
+  "activate": "Activer",
+  "daysForMonth": "{days} jours pour 1 mois",
+  "@daysForMonth": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "specialOffer": "Offre exceptionnelle pour votre\npremier abonnement!",
+  "errorLoadingPlans": "Erreur lors du chargement des plans",
+  "errorSubscription": "Erreur lors de l'activation",
+  "errorCancellation": "Erreur lors de l'annulation",
+  "errorChanging": "Erreur lors du changement d'abonnement",
+  "errorLoadingHistory": "Erreur lors du chargement de l'historique",
+  "rideLimitBasic": "60 courses/mois",
+  "rideLimitPremium": "150 courses/mois",
+  "rideLimitPro": "Courses illimitées",
+  "notificationsTitle": "Notifications",
+  "notificationsMarkAllRead": "Tout marquer comme lu",
+  "notificationsMarkedAsRead": "Toutes les notifications marquées comme lues",
+  "notificationsMarkError": "Erreur lors du marquage des notifications",
+  "notificationsNoNotifications": "Aucune notification",
+  "notificationsNoNotificationsMessage": "Vous n'avez pas encore reçu\nde notifications",
+  "notificationsLoading": "Chargement des notifications...",
+  "notificationsLoadingMore": "Chargement...",
+  "notificationsPaginationInfo": "{current} sur {total} notifications",
+  "@notificationsPaginationInfo": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "arrivedAtPickup": "Je suis arrivé",
+  "startingRide": "Démarrer la course",
+  "finishRide": "Terminer la course",
+  "coming": "J'arrive!",
+  "time": "Temps",
+  "etaMinutes": "{minutes} min",
+  "@etaMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "rideInitilisation": "Initialisation de la course...",
+  "sendEvaluation": "Envoyer l'évaluation",
+  "rateUser": "Noter {user}",
+  "@rateUser": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "thankYouForYourFeedback": "Merci pour votre évaluation!",
+  "cancelRide": "Annuler la course",
+  "navigate": "Naviguer",
+  "call": "Appeler",
+  "message": "Message",
+  "confirmationSentToPassenger": "Confirmation envoyée au passager",
+  "rideStarted": "Course démarrée - Direction: Destination",
+  "phoneNotAvailable": "Numéro de téléphone non disponible",
+  "cannotOpenPhoneApp": "Impossible d'ouvrir l'application téléphone",
+  "userInfoNotAvailable": "Informations utilisateur non disponibles",
+  "userNotAuthenticated": "Utilisateur non authentifié",
+  "locationNotAvailable": "Localisation pas encore disponible",
+  "cannotOpenNavigation": "Impossible d'ouvrir l'application de navigation",
+  "rideInfoNotAvailable": "Informations de course non disponibles",
+  "rideCancelled": "Course annulée",
+  "cancellationError": "Erreur lors de l'annulation",
+  "ratingError": "Erreur lors de la soumission",
+  "pressAgainToExit": "Appuyez à nouveau pour quitter l'application"
+}

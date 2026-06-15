@@ -1,0 +1,1322 @@
+{
+  "@@locale": "en",
+  
+  "appName": "SRR FRR",
+  "welcomeToSrrfrr": "Welcome to SRR FRR",
+  "yourRideYourWay": "Your ride, your way",
+  "phoneNumber": "Phone Number",
+  "enterYourPhoneNumber": "Enter your phone number",
+  "password": "Password",
+  "enterYourPassword": "Enter your password",
+  "forgotPassword": "Forgot Password?",
+  "login": "Login",
+  "connecting": "Connecting...",
+  "createAccount": "Create Account",
+  "termsConditionsNotice": "By continuing, you accept our Terms of Use and Privacy Policy",
+  
+  "loginFailedMessage": "Login failed. Please check your credentials and try again.",
+  "errorOccurred": "An error occurred. Please try again.",
+  
+  "resetPassword": "Reset Password",
+  "enterPhoneToReceiveOtp": "Enter your phone number to receive a verification code via WhatsApp",
+  "sendCode": "Send Code",
+  "backToLogin": "Back to Login",
+  
+  "enterCodeAndNewPassword": "Enter the code sent to {phoneNumber} and your new password",
+  "@enterCodeAndNewPassword": {
+    "placeholders": {
+      "phoneNumber": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "verificationCode": "Verification Code",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "passwordRequirements": "Password Requirements",
+  "atLeast8Characters": "At least 8 characters",
+  "oneUppercaseLetter": "One uppercase letter",
+  "oneLowercaseLetter": "One lowercase letter",
+  "oneNumber": "One number",
+  "oneSpecialCharacter": "One special character (!@#$%^&*)",
+  
+  "resendCodeIn": "Resend code in {seconds}s",
+  "@resendCodeIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "resendCode": "Resend Code",
+  "passwordReset": "Password Reset!",
+  "passwordResetSuccess": "Your password has been reset successfully.\nYou can now login with your new password.",
+  "dontForgetNewPassword": "Don't forget your new password",
+  
+  "otpSentViaWhatsApp": "Code sent via WhatsApp",
+  "incorrectCode": "Incorrect code",
+  
+  "createYourAccount": "Create Your Account",
+  "fillYourInformation": "Fill in your information to get started",
+  "firstName": "First Name",
+  "enterYourFirstName": "Enter your first name",
+  "lastName": "Last Name",
+  "enterYourLastName": "Enter your last name",
+  "gender": "Gender",
+  "selectYourGender": "Select your gender",
+  "male": "Male",
+  "female": "Female",
+  "email": "Email (optional)",
+  "emailPlaceholder": "example@email.com",
+  "minimumPassword": "Minimum 8 characters",
+  "retypePassword": "Retype your password",
+  "iAcceptThe": "I accept the ",
+  "termsOfUse": "terms of use",
+  "continueButton": "Continue",
+  "touchToAddPhoto": "Tap to add a photo",
+  "touchToChangePhoto": "Tap to change",
+  "chooseYourInterface": "Choose Your Interface",
+  "srrfrrRegular": "SRR FRR",
+  "standardInterface": "Standard interface",
+  "srrfrrLadies": "SRR FRR Ladies",
+  "femaleDriversOnly": "Female drivers only",
+  
+  "stepOf": "Step {current} of {total}",
+  "@stepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "pleaseAcceptTerms": "You must accept the terms of use",
+  "pleaseChooseInterface": "Please choose your interface",
+  "pleaseFillAllFields": "Please fill all fields correctly",
+  
+  "verifyYourNumber": "Verify Your Number",
+  
+  "enterCodeSentTo": "Enter the 6-digit code sent to {phoneNumber}",
+  "@enterCodeSentTo": {
+    "placeholders": {
+      "phoneNumber": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "verifyCode": "Verify Code",
+  "whatsapp": "WhatsApp",
+  "codeSentSuccessfully": "Verification code sent successfully",
+  "aNewCodeHasBeenSent": "A new code has been sent",
+  
+  "registrationSuccess": "Registration Successful!",
+  
+  "welcome": "Welcome {name}!",
+  "@welcome": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "yourAccountIsReady": "Your account is ready",
+  "startTraveling": "Start Traveling",
+  "verifiedDrivers": "Verified drivers",
+  "secureEnvironment": "Secure environment",
+  "prioritySupport": "Priority support",
+  "wideChoiceOfRides": "Wide choice of rides",
+  "securePayments": "Secure payments",
+  "verifiedFemaleDrivers": "Verified female drivers",
+  
+  "changePassword": "Change Password",
+  "secureYourAccount": "Secure your account with a strong password",
+  "currentPassword": "Current Password",
+  "save": "Save",
+  
+  "currentPasswordRequired": "Current password required",
+  "newPasswordRequired": "New password required",
+  "confirmationRequired": "Confirmation required",
+  "passwordsDontMatch": "Passwords don't match",
+  "newPasswordMustBeDifferent": "New password must be different",
+  "passwordChangedSuccessfully": "Password changed successfully",
+  "errorChangingPassword": "Error changing password",
+  
+  "back": "Back",
+  "close": "Close",
+  "clear": "Clear",
+  
+  "registrationProgress": "Registration progress: step {current} of {total}",
+  "@registrationProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "settings": "Settings",
+  "appearanceAndInterface": "Appearance and Interface",
+  "apply": "Apply",
+  "languageChangeInfo": "The app will update immediately to reflect the new language",
+  "language": "Language",
+  "french": "Français",
+  "english": "English",
+  "arabic": "العربية",
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "system": "System",
+  "interfaceType": "Interface Type",
+  "regularInterface": "SrrFrr Regular Interface",
+  "ladiesInterface": "SrrFrr Ladies Interface",
+  "notifications": "Notifications",
+  "enableNotifications": "Enable notifications",
+  "receiveAllNotifications": "Receive all notifications",
+  "sound": "Sound",
+  "notificationSounds": "Notification sounds",
+  "vibration": "Vibration",
+  "notificationVibration": "Notification vibration",
+  "dataAndPrivacy": "Data and Privacy",
+  "privacyPolicy": "Privacy Policy",
+  "termsAndConditions": "Terms and Conditions",
+  "deleteMyAccount": "Delete My Account",
+  "notificationsSaved": "Notification settings saved",
+  "savingError": "Error saving",
+  "notificationsDisabled": "Notifications disabled",
+  "notificationsEnabled": "Notifications enabled",
+  "permissionRequired": "Permission Required",
+  "notificationPermissionExplanation": "SrrFrr needs notification permission to send you important updates about your rides, driver status, and messages.",
+  "mustEnableInSettings": "You must enable notifications in system settings",
+  "cancel": "Cancel",
+  "openSettings": "Open Settings",
+  "comingSoon": "Coming Soon",
+  
+  "featureComingSoon": "{feature} - Coming Soon",
+  "@featureComingSoon": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "deleteAccount": "Delete Account",
+  "actionIsIrreversible": "This action is irreversible",
+  "accountDeletionWarning": "Your account will be permanently deleted after a 30-day grace period. All your personal data will be anonymized.",
+  "enterPassword": "Enter your password",
+  "reasonOptional": "Reason (optional)",
+  "whyDeleteAccount": "Why are you deleting your account?",
+  "passwordRequired": "Password is required",
+  "iUnderstandIrreversible": "I understand that this action is irreversible",
+  "delete": "Delete",
+  "deleting": "Deleting...",
+  "accountDeletedSuccessfully": "Account deleted successfully.",
+  "accountDeletionFailed": "Account deletion failed",
+  "errorOccurredPleaseTryAgain": "An error occurred. Please try again.",
+  "changeLanguage": "Change Language",
+  "selectLanguage": "Select your preferred language",
+  
+  "languageChanged": "Language changed to {language}",
+  "@languageChanged": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "systemLanguage": "System Language",
+  
+  "account": "Account",
+  "myProfile": "My Profile",
+  "personalInformation": "Personal information",
+  "activity": "Activity",
+  "yourAlertsAndMessages": "Your alerts and messages",
+  "history": "History",
+  "completedRides": "Completed rides",
+  "loyaltyProgram": "Loyalty Program",
+  "pointsAndRewards": "Points and rewards",
+  "appPreferences": "App preferences",
+  "help": "Help",
+  "supportAndFaq": "Support and FAQ",
+  "about": "About",
+  "versionAndInformation": "Version and information",
+  "driverMode": "Driver Mode",
+  "switching": "Switching...",
+  
+  "departure": "Departure",
+  "yourCurrentPosition": "Your current position",
+  "arrival": "Arrival",
+  "whereAreYouGoing": "Where are you going?",
+  "selectDepartureAndDestination": "Please select departure and destination",
+  "sendingRequest": "Sending request...",
+  "locating": "Locating...",
+  "locationError": "Location error",
+  
+  "pickupLocation": "Pickup Location",
+  "destination": "Destination",
+  "searchPlace": "Search a place",
+  "selectOnMap": "Select on map",
+  "searchAddress": "Search an address",
+  "orSelectOnMap": "or select on the map",
+  "loading": "Loading...",
+  "selectPickupLocation": "Select pickup location",
+  "selectDestinationLocation": "Select destination location",
+  "tapMapOrMoveMarker": "Tap the map or move the marker",
+  "zoomForPrecision": "Zoom for more precision",
+  "retrievingAddress": "Retrieving address...",
+  "confirm": "Confirm",
+  
+  "rideDetails": "Ride Details",
+  "rideType": "Ride Type",
+  "autoDetected": "Auto-detected",
+  "cityToCity": "City to City",
+  "inCity": "In City",
+  
+  "intercityTripDetected": "Intercity trip detected: {pickupCity} → {destinationCity}",
+  "@intercityTripDetected": {
+    "placeholders": {
+      "pickupCity": {
+        "type": "String"
+      },
+      "destinationCity": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "numberOfSeats": "Number of seats",
+  
+  "seatsSelected": "{count} passenger{plural} selected",
+  "@seatsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plural": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "proposePrice": "Propose a price",
+  
+  "minimumPrice": "Minimum price: {price} DH",
+  "@minimumPrice": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "confirmRide": "Confirm Ride",
+  
+  "paymentMethod": "Payment Method",
+  "cash": "Cash",
+  "cashPayment": "Cash payment to driver",
+  "freeRide": "Free Ride",
+  "freeRideWithPoints": "Free ride with your points",
+  
+  "insufficientPoints": "Insufficient: {required}pts required, you have {available}pts",
+  "@insufficientPoints": {
+    "placeholders": {
+      "required": {
+        "type": "int"
+      },
+      "available": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "youHavePoints": "You have {points}pts (1pt = 1DH)",
+  "@youHavePoints": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "freeRideTitle": "Free ride",
+  "availablePoints": "Available points",
+  "afterThisRide": "After this ride",
+  
+  "pointsWillBeDeducted": "{points} points will be deducted (1pt = 1DH)",
+  "@pointsWillBeDeducted": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "driverOffers": "Driver Offers",
+  
+  "driversAvailable": "{count} driver{plural} available",
+  "@driversAvailable": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plural": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "adjustYourOffer": "Adjust your offer",
+  "applyPrice": "Apply Price",
+  "waitingForDriverOffers": "Waiting for driver offers...",
+  
+  "canAdjustPriceIn": "You can adjust the price in {seconds}s if no offers",
+  "@canAdjustPriceIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "canAdjustPriceNow": "You can now adjust your price",
+  "searchingDrivers": "Searching for drivers",
+  "nearbyDriversWillAppear": "Nearby drivers will appear here",
+  "offersExpireAfter60s": "Offers expire after 60 seconds",
+  "cancelRequest": "Cancel Request",
+  "rides": "rides",
+  "counterOffer": "Counter-offer",
+  "initialPrice": "Initial price",
+  "driverCounterOffer": "Driver counter-offer",
+  "decline": "Decline",
+  "accept": "Accept",
+  "confirmingRide": "Confirming ride...",
+  "rideConfirmationTimeout": "Ride confirmation timeout. Please try again.",
+  "errorAcceptingDriver": "Error accepting driver",
+  "driverDeclined": "Driver declined",
+  "offerExpired": "Offer expired",
+  "requestCancelled": "Ride request has been cancelled.",
+  "errorCancellingRequest": "Error cancelling request",
+  
+  "newOfferSent": "New offer sent: {price} DH",
+  "@newOfferSent": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "errorSendingOffer": "Error sending offer",
+  "noOffersAdjustPrice": "No offers yet. Try adjusting your price!",
+  
+  "useLastOtpSent": "Please use the OTP code that was sent earlier",
+  
+  "waitBeforeResending": "Please wait {seconds} seconds before requesting a new code",
+  "@waitBeforeResending": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "pleaseWaitBeforeResending": "Please wait before requesting a new code",
+  "tooManyAttempts": "Too many attempts. Please try again later",
+  "invalidPhoneNumber": "Invalid phone number format",
+  "networkError": "Network error. Please check your connection",
+  "failedToSendOtp": "Failed to send verification code",
+  "otpSendIssue": "There was an issue sending the code. You can try resending it",
+  
+  "editProfile": "Edit Profile",
+  "updatePersonalInfo": "Update your personal information",
+  "viewPersonalInfo": "Your personal information",
+  "firstNameHint": "Ex: Mohamed",
+  "lastNameHint": "Ex: Alami",
+  "firstNameRequired": "First name required",
+  "lastNameRequired": "Last name required",
+  
+  "nameTooShort": "{field} too short (minimum 2 characters)",
+  "@nameTooShort": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "nameTooLong": "{field} too long (maximum 50 characters)",
+  "@nameTooLong": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "invalidCharacters": "Invalid characters",
+  "noChangesDetected": "No changes detected",
+  "infoForReservations": "This information will be used for your reservations and verifications",
+  
+  "changeProfilePhoto": "Change profile photo",
+  "takePhoto": "Take a photo",
+  "chooseFromGallery": "Choose from gallery",
+  "cameraAccessNeeded": "Camera access is needed to change your profile photo. Please allow access in settings.",
+  "galleryAccessNeeded": "Gallery access is needed to change your profile photo. Please allow access in settings.",
+  "errorSelectingImage": "Error selecting image",
+  "profilePhotoUpdated": "Profile photo updated successfully",
+  "profilePhotoUpdateFailed": "Failed to update profile photo",
+  "errorUpdatingPhoto": "Error updating photo",
+  
+  "editPassword": "Edit Password",
+  "passwordRequirementsMustContain": "Password must contain:",
+  
+  "editPhone": "Edit Phone",
+  "editPhoneNumber": "Edit phone number",
+  "enterNewPhoneAndPassword": "Enter your new phone number and current password",
+  "newPhoneNumber": "New phone number",
+  "phoneNumberRequired": "Phone number required",
+  "invalidPhoneFormat": "Invalid format (ex: 0612345678)",
+  "verificationCodeWillBeSent": "A verification code will be sent to this number",
+  
+  "enterCodeSentToPhone": "Enter the code sent to {phone}",
+  "@enterCodeSentToPhone": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "otpCode": "OTP Code",
+  
+  "codeExpiresIn": "Code expires in {time}",
+  "@codeExpiresIn": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "verify": "Verify",
+  "phoneNumberChanged": "Phone number changed successfully",
+  "invalidOtpCode": "Invalid OTP code",
+  "otpSent": "OTP code sent",
+  "phoneNumberSameAsCurrent": "The new number is the same as the current number",
+  
+  "standardInterfaceDescription": "Complete interface with all available drivers",
+  "ladiesInterfaceDescription": "Dedicated interface with female drivers only for more comfort",
+  "aboutLadiesInterface": "About Ladies Interface",
+  "ladiesInterfaceInfo": "This option allows you to travel only with certified female drivers. You can change the interface at any time.",
+  "interfaceUpdated": "Interface updated successfully",
+  "errorUpdatingInterface": "Error updating interface",
+  "ladiesInterfaceBadge": "Ladies Interface",
+  "driverModeBadge": "Driver Mode",
+  
+  "logout": "Logout",
+  "confirmLogout": "Confirm logout",
+  "enterPasswordToConfirm": "Please enter your password to confirm logout:",
+  "loggingOut": "Logging out...",
+  "logoutError": "Logout error",
+  
+  "editProfileInfo": "Edit profile",
+  "firstNameLastName": "First name, last name",
+  "accountSecurity": "Account security",
+  "changePhoneNumber": "Change phone number",
+  "user": "User",
+  "camera": "camera",
+  "gallery": "gallery",
+  "continue_": "Continue",
+  "secureAccountWithStrongPassword": "Secure your account with a strong password",
+  "passwordMinLength": "At least 8 characters",
+  "passwordNeedsUppercase": "At least one uppercase letter",
+  "passwordNeedsLowercase": "At least one lowercase letter",
+  "passwordNeedsNumber": "At least one number",
+  "passwordNeedsSpecialChar": "At least one special character",
+  "passwordChangedSuccess": "Password changed successfully",
+  "passwordChangeFailed": "Error changing password",
+  "confirmPasswordRequired": "Password confirmation required",
+  "passwordsDoNotMatch": "Passwords don't match",
+  "passwordReqMinChars": "At least 8 characters",
+  "passwordReqUppercase": "One uppercase letter",
+  "passwordReqLowercase": "One lowercase letter",
+  "passwordReqNumber": "One number",
+  "passwordReqSpecialChar": "One special character (!@#$%^&*)",
+  "otpCodeRequired": "OTP code required",
+  "otpCodeMustBe6Digits": "Code must be 6 digits",
+  "errorRequestingOtp": "Error requesting OTP",
+  "profileUpdateFailed": "Error updating profile",
+  
+  "locatingYourPosition": "Locating your position...",
+  "continueToOptions": "Continue",
+  "errorLocationService": "Location service error",
+  "pleaseSelectBothLocations": "Please select departure and destination",
+  "unableToCalculateDistance": "Unable to calculate trip distance",
+  "chooseRideType": "Choose a ride type",
+  
+  "minimumPriceIs": "Minimum price: {price} DH",
+  "@minimumPriceIs": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "insufficientPointsForFreeRide": "Insufficient points: {requiredPoints}pts required, you have {available}pts",
+  "@insufficientPointsForFreeRide": {
+    "placeholders": {
+      "requiredPoints": {
+        "type": "int"
+      },
+      "available": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "connectingToServer": "Connecting to server...",
+  "unableToConnectToServer": "Unable to connect to server",
+  
+  "selectingLocationFor": "Selecting location for {target}",
+  "@selectingLocationFor": {
+    "placeholders": {
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "tapOrDragMarker": "Tap the map or drag the marker",
+  "confirmLocation": "Confirm location",
+  "selectingPickup": "departure",
+  "selectingDestination": "destination",
+  
+  "vehicleType": "Vehicle Type",
+  "carLabel": "Car",
+  "carSubtitle": "Standard vehicle",
+  "motorcycleLabel": "Motorcycle",
+  "motorcycleSubtitle": "Two-wheeled vehicle",
+  "truckLabel": "Truck",
+  "truckSubtitle": "Commercial vehicle",
+    "newApplication": "New Application",
+  "driverRegistration": "Driver Registration",
+  "cinInformationTitle": "CIN Information",
+  "cinInformationSubtitle": "Please provide your identity documents",
+  "cinRectoPhoto": "CIN Front Photo",
+  "cinVersoPhoto": "CIN Back Photo",
+  "selfieWithCIN": "Selfie with CIN",
+  "cinCode": "CIN Code",
+  "cinCodeHint": "Ex: AB123456",
+  "expirationDate": "Expiration Date",
+  "selectDate": "Select a date",
+  "vehicleInformationTitle": "Vehicle Information",
+  "vehicleInformationSubtitle": "Details of your vehicle",
+  "vehiclePhoto": "Vehicle Photo",
+  "vehicleRegistrationRecto": "Vehicle Registration Front",
+  "vehicleRegistrationVerso": "Vehicle Registration Back",
+  "registrationNumber": "Registration Number",
+  "registrationNumberHint": "Ex: 12345-A-67",
+  "brand": "Brand",
+  "brandHint": "Ex: Toyota",
+  "model": "Model",
+  "modelHint": "Ex: Corolla",
+  "color": "Color",
+  "colorHint": "Ex: White",
+  "productionYear": "Production Year",
+  "productionYearHint": "Ex: 2020",
+  "reviewTitle": "Review",
+  "reviewSubtitle": "Please verify your information before submitting",
+  "cinInformationSection": "CIN Information",
+  "vehicleInformationSection": "Vehicle Information",
+  "uploaded": "✓ Uploaded",
+  "vehicleTypeLabel": "Type",
+  "registrationNumberLabel": "Registration",
+  "brandLabel": "Brand",
+  "modelLabel": "Model",
+  "colorLabel": "Color",
+  "yearLabel": "Year",
+  "vehiclePhotoLabel": "Vehicle Photo",
+  "vehicleRegistrationRectoLabel": "Registration Front",
+  "vehicleRegistrationVersoLabel": "Registration Back",
+  "verificationNotice": "Your application will be verified within 24-48 hours",
+  "photoAdded": "Photo added",
+  "tapToTakePhoto": "Tap to take a photo",
+  "cinCodeLabel": "CIN Code",
+  "expirationDateLabel": "Expiration Date",
+  "cinRectoLabel": "CIN Front",
+  "cinVersoLabel": "CIN Back",
+  "selfieLabel": "Selfie",
+  "submitApplication": "Submit Application",
+  "submittedSuccessfully": "Application submitted successfully",
+  "submissionError": "Error during submission",
+  "rideHistory": "Ride History",
+  "filters": "Filters",
+  "totalRides": "Rides",
+  "totalAmount": "Total spent",
+  "ridesLoaded": "{loaded} of {total} rides loaded",
+  "@ridesLoaded": {
+    "placeholders": {
+      "loaded": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statusAll": "All",
+  "statusCompleted": "Completed",
+  "statusCancelled": "Cancelled",
+  "statusAccepted": "Accepted",
+  "statusStarted": "Started",
+  "paymentAll": "All",
+  "paymentCash": "Cash",
+  "paymentWallet": "Wallet",
+  "paymentCreditCard": "Credit Card",
+  "paymentLoyaltyPoints": "Loyalty Points",
+  "paymentFreeRide": "Free Ride",
+  "vehicleAll": "All",
+  "vehicleCar": "Car",
+  "vehicleMotorcycle": "Motorcycle",
+  "vehicleTruck": "Truck",
+  "sortPriceHighToLow": "Price (high to low)",
+  "sortPriceLowToHigh": "Price (low to high)",
+  "sortDistance": "Distance",
+  "viewDetails": "View details",
+  "hideDetails": "Hide details",
+  "rateDriver": "Rate driver",
+  "contactSupport": "Contact support",
+  "thankYouForRating": "Thank you for your rating!",
+  "complaintSent": "Complaint sent successfully",
+  "loadingError": "Loading error",
+  "connectionError": "Connection error",
+  "tryAgain": "Try again",
+  "noRidesTitle": "No rides found",
+  "noRidesDescription": "Adjust your filters or check back later",
+  "clearAllFilters": "Clear all filters",
+  "applyFilters": "Apply filters",
+  "searchDriver": "Search for a driver...",
+  "selectDateRange": "Select date range",
+  "priceRange": "Price",
+  "minPrice": "Min",
+  "maxPrice": "Max",
+  "status": "Status",
+  "payment": "Payment",
+  "vehicle": "Vehicle",
+  "driver": "Driver",
+  "date": "Date",
+  "price": "Price",
+  "distance": "Distance",
+  "duration": "Duration",
+  "fare": "Fare",
+  "passengers": "Passengers",
+  "driverRating": "Driver rating",
+  "yourRating": "Your rating",
+  "notRated": "Not rated",
+  "rated": "Rated",
+  "completed": "Completed",
+  "cancelled": "Cancelled",
+  "accepted": "Accepted",
+  "started": "In progress",
+  "wallet": "Wallet",
+  "creditCard": "Credit card",
+  "loyaltyPoints": "Loyalty points",
+  "car": "Car",
+  "motorcycle": "Motorcycle",
+  "truck": "Truck",
+    "totalRidesLabel": "Rides",
+  "totalEarned": "Total Earned",
+  "totalSpent": "Total Spent",
+  "filtersTitle": "Filters",
+  "statusLabel": "Status",
+  "paymentLabel": "Payment",
+  "vehicleLabel": "Vehicle",
+  "sortByLabel": "Sort by",
+  "statusInProgress": "In Progress",
+  "paymentCard": "Card",
+  "vehicleStandard": "Standard",
+  "vehiclePremium": "Premium",
+  "vehicleLadiesOnly": "Ladies-only",
+  "sortDateNewestFirst": "Date (newest first)",
+  "sortDateOldestFirst": "Date (oldest first)",
+  "viewTripLocation": "Trip Location",
+  "passengerLabel": "Passenger",
+  "driverLabel": "Driver",
+  "ratingLabel": "Rating",
+  "phoneLabel": "Phone",
+  "fareDetails": "Fare Details",
+  "totalLabel": "Total",
+  "rateThisTrip": "Rate this trip",
+  "rateButton": "Rate",
+  "complaintButton": "Complaint",
+  "statusCompletedBadge": "Completed",
+  "statusCancelledBadge": "Cancelled",
+  "statusInProgressBadge": "In Progress",
+  "noTripsFound": "No trips found",
+  "tripsWillAppearHere": "Your trips will appear here",
+  "passengerDefault": "Passenger",
+  "driverDefault": "Driver",
+  "filtersAndSort": "Filters and Sort",
+  "activeFilters": "{count} active filter(s)",
+  "@activeFilters": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noActiveFilters": "No active filters",
+  "driverNameHint": "Driver name",
+  "dateRange": "Date Range",
+  "allPriceRanges": "All price ranges",
+  "addPriceFilter": "Add price filter",
+  "statusFilter": "Status",
+  "allStatus": "All",
+  "completedStatus": "Completed",
+  "cancelledStatus": "Cancelled",
+  "paymentFilter": "Payment",
+  "allPayment": "All",
+  "walletPayment": "Wallet",
+  "creditCardPayment": "Credit card",
+  "loyaltyPointsPayment": "Loyalty points",
+  "freeRidePayment": "Free ride",
+  "vehicleFilter": "Vehicle",
+  "allVehicles": "All",
+  "carVehicle": "Car",
+  "motorcycleVehicle": "Motorcycle",
+  "truckVehicle": "Truck",
+  "sortBy": "Sort by",
+  "resetAllFilters": "Reset all filters",
+  "selectPeriod": "Select period",
+  "startDate": "Start",
+  "endDate": "End",
+  "points": "points",
+  "progressToNextLevel": "Progress to {nextLevel}",
+  "@progressToNextLevel": {
+    "placeholders": {
+      "nextLevel": {
+        "type": "String"
+      }
+    }
+  },
+  "needPointsToUnlock": "Need {pointsNeeded} more points to unlock {nextLevel} benefits",
+    "@needPointsToUnlock": {
+    "placeholders": {
+      "pointsNeeded": {
+        "type": "int"
+      },
+      "nextLevel": {
+        "type": "String"
+      }
+    }
+  },
+  "earnPoints": "Earn Points",
+  "earnPointsByRide": "Points for each ride",
+  "earnPointsByReferral": "Referral points",
+  "earnPointsByRating": "Points for rating",
+  "referAFriend": "Refer a Friend",
+  "shareAndEarnPoints": "Share and earn points",
+  "noTransactions": "No transactions",
+  "allTransactionsLoaded": "All transactions loaded",
+  "rideCompleted": "Ride completed",
+  "referralBonus": "Referral bonus",
+  "ratingBonus": "Rating bonus",
+  "pointsUsed": "Points used",
+  "levelBronze": "Bronze",
+  "levelSilver": "Silver",
+  "levelGold": "Gold",
+  "levelPlatinum": "Platinum",
+  "levelDiamond": "Diamond",
+  "dataRefreshed": "Data refreshed",
+  "errorLoadingData": "Error loading data",
+  "errorRefreshingData": "Error refreshing data",
+  "pleaseSelectRating": "Please select a rating",
+  "pleaseSelectOption": "Please select an option",
+  "ratePassenger": "Rate passenger",
+  "howWasYourExperience": "How was your experience with {name}?",
+  "@howWasYourExperience": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "selectCategory": "Select a category:",
+  "noOptionsAvailable": "No options available",
+  "send": "Send",
+  "pleaseEnterPhoneNumber": "Please enter a phone number",
+  "invitationRegistered": "Invitation registered! Share the link with your friend.",
+  "phoneNotEligible": "This number is not eligible for referral",
+  "linkCopied": "Link copied to clipboard!",
+  "errorCopyingLink": "Error copying link.",
+  "linkSharedSuccess": "Link shared successfully!",
+  "errorSharing": "Error sharing.",
+  "earnPointsPerFriend": "Earn 50 points per friend",
+  "referralInfoMessage": "Enter your friend's number to register it, then share the link with them.",
+  "verifying": "Verifying...",
+  "savePhoneNumber": "Save phone number",
+  "or": "OR",
+  "referralLink": "Referral link",
+  "share": "Share",
+  "copy": "Copy",
+  "referralShareMessage": "🎉 Join me on SRRFRR!\n\nI use SRRFRR for my trips and I think you might be interested too!\n\n🎁 Download the app and get 50 welcome points!\n🚗 It's simple, fast and secure\n\nDownload now: {link}\n\nSee you soon on SRRFRR! 🚙",
+  "@referralShareMessage": {
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "referralInvitationSubject": "SRRFRR Invitation",
+  "faq": "FAQ",
+  "contact": "Contact",
+  "searchInFaq": "Search in FAQ...",
+  "contactUs": "Contact us",
+  "ourTeamIsHereToHelp": "Our team is here to help you",
+  "hours": "Hours",
+  "businessHours": "Mon-Fri: 9AM-6PM",
+  "sendComplaint": "Send a complaint",
+  "describeYourProblem": "Describe your problem and our team will respond quickly",
+  "noResultsFound": "No results found",
+  "tryOtherKeywords": "Try other keywords",
+  "pleaseDescribeProblem": "Please describe your problem",
+  "provideMoreDetails": "Please provide more details (minimum 10 characters)",
+  "category": "Category",
+  "technicalIssue": "Technical issue",
+  "accountingIssue": "Accounting issue",
+  "safetyIssue": "Safety issue",
+  "drivingIssue": "Driving issue",
+  "other": "Other",
+  "description": "Description",
+  "describeYourProblemInDetail": "Describe your problem in detail. Our team will get back to you as soon as possible.",
+  "trajectoryRef": "Trajectory reference #{ref}",
+  "@trajectoryRef": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "sendReclamation": "Send reclamation",
+  "describeProblem": "Describe your problem",
+  "minCharacters": "Minimum 10 characters required",
+  "exampleReclamation": "Example: I had an issue with my last trip where the driver took a longer route than necessary, which increased the cost of the ride. I would like this to be reviewed and for measures to be taken to prevent this from happening again.",
+  "sendComplaintButton": "Send complaint",
+  "faqAccountTitle": "Account and Registration",
+  "faqAccount1Q": "How do I create an account?",
+  "faqAccount1A": "To create an account, download the SRRFRR app, enter your phone number, verify the OTP code sent by SMS, then complete your profile with your personal information.",
+  "faqAccount2Q": "Can I use the same account as passenger and driver?",
+  "faqAccount2A": "Yes! You can switch between passenger and driver modes in the app settings. To become a driver, you must submit an application with your documents.",
+  "faqAccount3Q": "How do I change my phone number?",
+  "faqAccount3A": "Go to Settings > Profile > Edit Phone Number. You will need to verify the new number with an OTP code.",
+  
+  "faqBookingTitle": "Booking Rides",
+  "faqBooking1Q": "How do I book a ride?",
+  "faqBooking1A": "On the home screen, enter your destination, choose the vehicle type, check the estimated price, then tap 'Confirm Request'. A driver will accept your request in a few moments.",
+  "faqBooking2Q": "Can I cancel a ride?",
+  "faqBooking2A": "Yes, you can cancel a ride before a driver accepts without fees. After acceptance, cancellation fees may apply.",
+  "faqBooking3Q": "How does Ladies-only mode work?",
+  "faqBooking3A": "Ladies-only mode allows female passengers to be matched only with female drivers. Enable this option in your profile settings.",
+  
+  "faqPaymentTitle": "Payment",
+  "faqPayment1Q": "What payment methods are accepted?",
+  "faqPayment1A": "We accept cash and credit card payments. You can choose your preferred payment method when booking.",
+  "faqPayment2Q": "How do loyalty points work?",
+  "faqPayment2A": "You earn points with each completed ride, when referring friends, and by using the app regularly. These points can be redeemed for discounts on your rides.",
+  "faqPayment3Q": "Can I get a receipt for my ride?",
+  "faqPayment3A": "Yes, all your receipts are available in the ride history. You can download them or receive them by email.",
+  
+  "faqSafetyTitle": "Safety",
+  "faqSafety1Q": "How does SRRFRR ensure my safety?",
+  "faqSafety1A": "All drivers are verified with their official documents. You can share your ride in real-time with loved ones and report any issues via the app.",
+  "faqSafety2Q": "What should I do if there's a problem during a ride?",
+  "faqSafety2A": "Use the 'Emergency' button in the app to immediately contact our security team. You can also call authorities directly if necessary.",
+  "faqSafety3Q": "Is my personal data protected?",
+  "faqSafety3A": "Yes, we use bank-level encryption to protect all your personal and financial data. We never share your information with third parties.",
+  
+  "faqDriverTitle": "Becoming a Driver",
+  "faqDriver1Q": "What are the requirements to become a driver?",
+  "faqDriver1A": "You must have a valid driver's license, ID card, a vehicle in good condition with valid registration, and be at least 21 years old.",
+  "faqDriver2Q": "How long does driver account validation take?",
+  "faqDriver2A": "Document verification usually takes 24 to 48 hours. You will receive a notification once your account is validated.",
+  "faqDriver3Q": "How are my earnings calculated?",
+  "faqDriver3A": "Your earnings are calculated based on distance traveled, trip time, and current demand. SRRFRR takes a 15% commission on each ride.",
+  "faqDriver4Q": "When can I withdraw my earnings?",
+  "faqDriver4A": "You can withdraw your earnings anytime via your driver wallet. Withdrawals are processed within 1 to 3 business days.",
+  
+  "faqTechTitle": "Technical Issues",
+  "faqTech1Q": "The app can't find my location",
+  "faqTech1A": "Check that you have enabled location services for the app in your phone settings. Also ensure you have an active internet connection.",
+  "faqTech2Q": "I'm not receiving the OTP code",
+  "faqTech2A": "Verify that you entered the correct phone number and have network coverage. If the problem persists, use the 'Resend code' option after 60 seconds.",
+  "faqTech3Q": "The app closes unexpectedly",
+  "faqTech3A": "Try updating the app to the latest version, restart your phone, and ensure you have enough storage space available.",
+  "walletBalanceTransactions": "Balance and transactions",
+  "manageSubscription": "Manage my subscription",
+  "subscription": "Subscription",
+  "passengerMode": "Passenger Mode",
+  "ladiesInterfaceDriverBadge": "SRR FRR Ladies Driver",
+  "verificationStatus": "Verification Status",
+  "notRegisteredTitle": "Become a Driver",
+  "notRegisteredDescription": "Turn your trips into income and join our community of drivers",
+  "startRegistration": "Start Registration",
+  "pendingVerificationTitle": "Under Verification",
+  "pendingVerificationDescription": "Our team is reviewing your application.\nYou will receive a notification once validated",
+  "verificationTimeframe": "Verification usually takes 24 to 48 business hours",
+  "processingTime": "Processing Time",
+  "returnHome": "Return to home",
+  "validatedTitle": "Congratulations! 🎉",
+  "validatedDescription": "Your driver account\nhas been successfully validated",
+  "welcomeDrivers": "Welcome among the drivers",
+  "welcomeDriversDescription": "You are now a verified SRR FRR driver and can start accepting rides",
+  "verifiedStatus": "Verified status",
+  "verifiedBadge": "Certified driver badge",
+  "flexibleIncome": "Flexible income",
+  "flexibleIncomeDesc": "Earn according to your availability",
+  "insuredProtection": "Insured protection",
+  "insuredProtectionDesc": "Full coverage during rides",
+  "startDriving": "Start driving",
+  "rejectedTitle": "Application Not Approved",
+  "rejectedDescription": "Your application needs adjustments.\nYou can submit a new application",
+  "rejectionReason": "Reason for rejection",
+  "defaultRejectionReason": "Incomplete or invalid documents. Please verify your information and submit compliant documents.",
+  "attractiveIncome": "Attractive income",
+  "attractiveIncomeDesc": "Set your rates and maximize your earnings",
+  "totalFreedom": "Total freedom",
+  "totalFreedomDesc": "Work according to your schedule",
+  "guaranteedSafety": "Guaranteed safety",
+  "guaranteedSafetyDesc": "Complete protection for every ride",
+  "verifyingStatus": "Verifying status...",
+  "myVehicle": "My Vehicle",
+  "statistics": "Statistics",
+  "driverWallet": "Wallet",
+  "totalRidesDriver": "Total Rides",
+  "averageRating": "Average Rating",
+  "quickActions": "Quick Actions",
+  "earnings": "Earnings",
+  "historyDriver": "History",
+  "supportDriver": "Support",
+  "onlineMode": "Online",
+  "offlineMode": "Offline",
+  "readyToAccept": "Ready to accept rides",
+  "activateToReceive": "Activate to receive requests",
+  "goOnline": "Go Online",
+  "goOffline": "Go Offline",
+  "noRequests": "No Requests",
+  "searchingNearby": "Searching for nearby passengers...",
+  "notificationsActive": "Notifications active",
+  "offlineStatus": "Offline Mode",
+  "goOnlineToReceive": "Go online to receive requests",
+  "activeRequests": "Active Requests",
+  "counterOfferTitle": "Send a counter-offer",
+  "passengerOffer": "Passenger offer:",
+  "yourCounterOffer": "Your counter-offer",
+  "enterYourPrice": "Enter your price",
+  "fairPriceTip": "Tip: Propose a fair price based on distance and time",
+  "sendOffer": "Send offer",
+  "negotiateButton": "Negotiate",
+  "refuseButton": "Refuse",
+  "acceptRide": "Accept ride",
+  "waitingForResponse": "Waiting for Response",
+  "secondsRemaining": "{seconds} seconds remaining",
+  "@secondsRemaining": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "cancelOffer": "Cancel Offer",
+  "registration": "Registration",
+  "type": "Type",
+  "year": "Year",
+  "unknownAddress": "Unknown Address",
+    "walletTitle": "My Wallet",
+  "overviewTab": "Overview",
+  "codesTab": "Codes",
+  "historyTab": "History",
+  "availableBalance": "Available Balance",
+  "rechargeWallet": "Recharge Wallet",
+  "monthDetails": "Month Details",
+  "grossEarnings": "Gross earnings",
+  "commissions": "Commissions",
+  "netEarnings": "Net earnings",
+  "costPerRide": "Cost per ride",
+  "effectiveRate": "Effective rate",
+  "thisWeek": "This Week",
+  "recentTransactions": "Recent Transactions",
+  "retry": "Retry",
+  "currencySymbol": "DH",
+  "today": "Today",
+  "yesterday": "Yesterday",
+  "monday": "Mon",
+  "tuesday": "Tue",
+  "wednesday": "Wed",
+  "thursday": "Thu",
+  "friday": "Fri",
+  "saturday": "Sat",
+  "sunday": "Sun",
+  "transactionTypeCredit": "Credit",
+  "transactionTypeDebit": "Debit", 
+  "transactionTypeCommission": "Commission",
+  "transactionTypeSubscription": "Subscription",
+  "transactionTypeInit": "Initialization",
+  "justNow": "Just now",
+  "minutesAgo": "{minutes} min ago",
+  "@minutesAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "hoursAgo": "{hours}h ago",
+  "@hoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "daysAgo": "{days} days ago",
+  "@daysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "thisMonth": "This Month",
+  "perRide": "Per Ride",
+  "totalDebits": "Total Debits",
+  "totalCredits": "Total Credits",
+  "netThisMonth": "Net this month",
+  "totalTransactions": "Total transactions",
+  "generateNewCode": "Generate New Code",
+  "activeCodes": "Active Codes",
+  "expiredCodes": "Expired Codes",
+  "noRechargeCodes": "No recharge codes",
+  "generateCodeDescription": "Generate a code to recharge\nyour wallet",
+  "codeCopied": "Code copied to clipboard",
+  "deleteCodeTitle": "Delete Code",
+  "deleteCodeConfirmation": "Are you sure you want to delete this recharge code?",
+  "codeDeleted": "Code deleted",
+  "active": "Active",
+  "expired": "Expired",
+  "generateCodeOption": "Generate a Code",
+  "generateCodeSubtitle": "Pay at agency with a code",
+  "creditCardOption": "Credit Card",
+  "creditCardSubtitle": "Secure online payment",
+  "amount": "Amount (DH)",
+  "amountHint": "Ex: 500",
+  "generateCodeInfo": "Present this code at agency to make payment",
+  "generate": "Generate",
+  "codeGenerated": "Code Generated",
+  "presentCodeInfo": "Present this code at agency to\nrecharge your wallet",
+  "copyCode": "Copy Code",
+  "cardPaymentTitle": "Card Payment",
+  "securePaymentInfo": "Secure payment • Immediate recharge",
+  "redirectingPayment": "Redirecting to secure payment...",
+    "subscriptionsTitle": "Subscriptions",
+  "plansTab": "Plans",
+  "noActiveSubscription": "No active subscription",
+  "choosePlanPrompt": "Choose a plan to unlock\nall benefits",
+  "ridesUsed": "Rides used",
+  "coursesThisMonth": "Courses this month",
+  "unlimited": "UNLIMITED",
+  "subscriptionExpired": "Subscription expired",
+  "expiresInDays": "Expires in {days} days",
+  "@expiresInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "renewsInDays": "Renews in {days} days",
+  "@renewsInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "cancelSubscription": "Cancel Subscription",
+  "cancelSubscriptionDialog": "Cancel subscription?",
+  "cancelSubscriptionWarning": "Your {planName} subscription will be cancelled immediately",
+  "@cancelSubscriptionWarning": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionCancelled": "Subscription cancelled",
+  "choosePlan": "Choose a plan",
+  "popular": "POPULAR",
+  "current": "CURRENT",
+  "amountPerMonth": "DH/month",
+  "activeSubscription": "Active Subscription",
+  "changeToPlan": "Change to this plan",
+  "chooseThisPlan": "Choose this plan",
+  "takeAdvantage": "🎉 Take advantage of offer",
+  "notAvailable": "Not available",
+  "confirmSubscription": "Confirm subscription",
+  "subscribeToPlan": "You will subscribe to the {planName} plan",
+  "@subscribeToPlan": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "newPlan": "New plan",
+  "changeSubscription": "Change subscription",
+  "switchFromTo": "Switch from {fromPlan} to {toPlan}",
+  "@switchFromTo": {
+    "placeholders": {
+      "fromPlan": {
+        "type": "String"
+      },
+      "toPlan": {
+        "type": "String"
+      }
+    }
+  },
+  "changeEffectiveImmediately": "Change effective immediately",
+  "subscriptionActivated": "Subscription activated!",
+  "subscriptionChanged": "Subscription changed!",
+  "noHistory": "No history",
+  "historyPrompt": "Your past subscriptions\nwill appear here",
+  "itemsOfTotal": "{count} / {total}",
+  "@itemsOfTotal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "period": "Period",
+  "comparison": "Comparison",
+  "commission": "Commission",
+  "rideLimit": "Ride limit",
+  "support": "Support",
+  "standard": "Standard",
+  "priority": "Priority",
+  "vip247": "VIP 24/7",
+  "basic": "Basic",
+  "advanced": "Advanced",
+  "complete": "Complete",
+  "faqTitle": "Frequently asked questions",
+  "canChangeSubscription": "Can I change subscription?",
+  "changeSubscriptionAnswer": "Yes, you can change at any time. Changes take effect immediately.",
+  "exceedLimitQuestion": "What happens if I exceed my limit?",
+  "exceedLimitAnswer": "For Basic and Premium, you won't be able to accept rides until renewal.",
+  "howRenewalWorks": "How does renewal work?",
+  "renewalAnswer": "Subscription renews automatically each month. You can cancel at any time.",
+  "canGetRefund": "Can I get a refund?",
+  "refundAnswer": "Refund possible within 7 days if no rides have been taken.",
+  "commissionModel": "Commission Model",
+  "preferCommission": "Prefer commission model?",
+  "commissionExplanation": "8% per ride instead of subscription. Ideal for low ride volume.",
+  "learnMore": "Learn more",
+  "commissionModalTitle": "Commission Model",
+  "commissionPerRide": "Pay 8% commission per ride",
+  "commissionFeature1": "8% commission per ride",
+  "commissionFeature2": "No monthly fees",
+  "commissionFeature3": "Unlimited rides",
+  "commissionExample": "Ex: 100 DH ride → 8 DH commission",
+  "activate": "Activate",
+  "daysForMonth": "{days} days for 1 month",
+  "@daysForMonth": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "specialOffer": "Special offer for your\nfirst subscription!",
+  "errorLoadingPlans": "Error loading plans",
+  "errorSubscription": "Error during subscription",
+  "errorCancellation": "Error during cancellation",
+  "errorChanging": "Error changing subscription",
+  "errorLoadingHistory": "Error loading history",
+  "rideLimitBasic": "60 rides/month",
+  "rideLimitPremium": "150 rides/month",
+  "rideLimitPro": "Unlimited courses",
+  "notificationsTitle": "Notifications",
+  "notificationsMarkAllRead": "Mark all as read",
+  "notificationsMarkedAsRead": "All notifications marked as read",
+  "notificationsMarkError": "Error marking notifications",
+  "notificationsNoNotifications": "No notifications",
+  "notificationsNoNotificationsMessage": "You haven't received\nany notifications yet",
+  "notificationsLoading": "Loading notifications...",
+  "notificationsLoadingMore": "Loading...",
+  "notificationsPaginationInfo": "{current} of {total} notifications",
+  "@notificationsPaginationInfo": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "arrivedAtPickup": "I have arrived",
+  "startingRide": "Start the ride",
+  "finishRide": "Finish the ride",
+  "coming": "I'm coming!",
+  "time": "Time",
+  "etaMinutes": "{minutes} min",
+  "@etaMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "rideInitilisation": "Initializing ride...",
+  "sendEvaluation": "Send evaluation",
+  "rateUser": "Rate {user}",
+  "@rateUser": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "thankYouForYourFeedback": "Thank you for your feedback!",
+  "navigate": "Navigate",  
+  "call": "Call",
+  "message": "Message",
+  "cancelRide": "Cancel ride",
+    "confirmationSentToPassenger": "Confirmation sent to passenger",
+  "rideStarted": "Ride started - Heading to: Destination",
+  "phoneNotAvailable": "Phone number not available",
+  "cannotOpenPhoneApp": "Cannot open phone app",
+  "userInfoNotAvailable": "User information not available",
+  "userNotAuthenticated": "User not authenticated",
+  "locationNotAvailable": "Location not available yet",
+  "cannotOpenNavigation": "Cannot open navigation app",
+  "rideInfoNotAvailable": "Ride information not available",
+  "rideCancelled": "Ride cancelled",
+  "cancellationError": "Error during cancellation",
+  "ratingError": "Error submitting rating",
+  "pressAgainToExit": "Press again to exit app"
+}

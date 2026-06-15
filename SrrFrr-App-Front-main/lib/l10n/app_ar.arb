@@ -1,0 +1,1325 @@
+{
+  "@@locale": "ar",
+  
+  "appName": "سرفر",
+  "welcomeToSrrfrr": "مرحباً بك في سرفر",
+  "yourRideYourWay": "رحلتك، بطريقتك",
+  "phoneNumber": "رقم الهاتف",
+  "enterYourPhoneNumber": "أدخل رقم هاتفك",
+  "password": "كلمة المرور",
+  "enterYourPassword": "أدخل كلمة المرور",
+  "forgotPassword": "هل نسيت كلمة المرور؟",
+  "login": "تسجيل الدخول",
+  "connecting": "جاري الاتصال...",
+  "createAccount": "إنشاء حساب",
+  "termsConditionsNotice": "بالمتابعة، توافق على شروط الاستخدام وسياسة الخصوصية",
+  
+  "loginFailedMessage": "فشل تسجيل الدخول. تحقق من بيانات اعتمادك وحاول مجدداً.",
+  "errorOccurred": "حدث خطأ. يرجى المحاولة مجدداً.",
+  
+  "resetPassword": "إعادة تعيين كلمة المرور",
+  "enterPhoneToReceiveOtp": "أدخل رقم هاتفك لتلقي رمز التحقق عبر واتساب",
+  "sendCode": "إرسال الرمز",
+  "backToLogin": "العودة لتسجيل الدخول",
+  
+  "enterCodeAndNewPassword": "أدخل الرمز المرسل إلى {phoneNumber} وكلمة المرور الجديدة",
+  "@enterCodeAndNewPassword": {
+    "placeholders": {
+      "phoneNumber": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "verificationCode": "رمز التحقق",
+  "newPassword": "كلمة المرور الجديدة",
+  "confirmPassword": "تأكيد كلمة المرور",
+  "passwordRequirements": "متطلبات كلمة المرور",
+  "atLeast8Characters": "8 أحرف على الأقل",
+  "oneUppercaseLetter": "حرف كبير واحد على الأقل",
+  "oneLowercaseLetter": "حرف صغير واحد على الأقل",
+  "oneNumber": "رقم واحد على الأقل",
+  "oneSpecialCharacter": "رمز خاص واحد على الأقل (!@#$%^&*)",
+  
+  "resendCodeIn": "إعادة إرسال الرمز خلال {seconds}ث",
+  "@resendCodeIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "resendCode": "إعادة إرسال الرمز",
+  "passwordReset": "تم إعادة تعيين كلمة المرور!",
+  "passwordResetSuccess": "تم إعادة تعيين كلمة المرور بنجاح.\nيمكنك الآن تسجيل الدخول بكلمة المرور الجديدة.",
+  "dontForgetNewPassword": "لا تنسَ كلمة المرور الجديدة",
+  
+  "otpSentViaWhatsApp": "تم إرسال الرمز عبر واتساب",
+  "incorrectCode": "رمز غير صحيح",
+  
+  "createYourAccount": "إنشاء حسابك",
+  "fillYourInformation": "ملء معلوماتك للبدء",
+  "firstName": "الاسم الأول",
+  "enterYourFirstName": "أدخل اسمك الأول",
+  "lastName": "الاسم الأخير",
+  "enterYourLastName": "أدخل اسمك الأخير",
+  "gender": "الجنس",
+  "selectYourGender": "اختر جنسك",
+  "male": "ذكر",
+  "female": "أنثى",
+  "email": "البريد الإلكتروني (اختياري)",
+  "emailPlaceholder": "example@email.com",
+  "minimumPassword": "8 أحرف على الأقل",
+  "retypePassword": "أعد كتابة كلمة المرور",
+  "iAcceptThe": "أوافق على ",
+  "termsOfUse": "شروط الاستخدام",
+  "continueButton": "متابعة",
+  "touchToAddPhoto": "اضغط لإضافة صورة",
+  "touchToChangePhoto": "اضغط للتغيير",
+  "chooseYourInterface": "اختر واجهتك",
+  "srrfrrRegular": "سرفر",
+  "standardInterface": "واجهة قياسية",
+  "srrfrrLadies": "سرفر السيدات",
+  "femaleDriversOnly": "سائقات فقط",
+  
+  "stepOf": "الخطوة {current} من {total}",
+  "@stepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "pleaseAcceptTerms": "يجب أن توافق على شروط الاستخدام",
+  "pleaseChooseInterface": "يرجى اختيار واجهتك",
+  "pleaseFillAllFields": "يرجى ملء جميع الحقول بشكل صحيح",
+  
+  "verifyYourNumber": "تحقق من رقمك",
+  
+  "enterCodeSentTo": "أدخل الرمز المكون من 6 أرقام المرسل إلى {phoneNumber}",
+  "@enterCodeSentTo": {
+    "placeholders": {
+      "phoneNumber": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "verifyCode": "التحقق من الرمز",
+  "whatsapp": "واتساب",
+  "codeSentSuccessfully": "تم إرسال رمز التحقق بنجاح",
+  "aNewCodeHasBeenSent": "تم إرسال رمز جديد",
+  
+  "registrationSuccess": "تم التسجيل بنجاح!",
+  
+  "welcome": "مرحباً {name}!",
+  "@welcome": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "yourAccountIsReady": "حسابك جاهز",
+  "startTraveling": "ابدأ رحلتك",
+  "verifiedDrivers": "سائقون موثقون",
+  "secureEnvironment": "بيئة آمنة",
+  "prioritySupport": "دعم أولوي",
+  "wideChoiceOfRides": "خيارات رحلات متنوعة",
+  "securePayments": "دفع آمن",
+  "verifiedFemaleDrivers": "سائقات موثقات",
+  
+  "changePassword": "تغيير كلمة المرور",
+  "secureYourAccount": "أمّن حسابك بكلمة مرور قوية",
+  "currentPassword": "كلمة المرور الحالية",
+  "save": "حفظ",
+  
+  "currentPasswordRequired": "كلمة المرور الحالية مطلوبة",
+  "newPasswordRequired": "كلمة المرور الجديدة مطلوبة",
+  "confirmationRequired": "التأكيد مطلوب",
+  "passwordsDontMatch": "كلمات المرور غير متطابقة",
+  "newPasswordMustBeDifferent": "يجب أن تكون كلمة المرور الجديدة مختلفة",
+  "passwordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح",
+  "errorChangingPassword": "خطأ في تغيير كلمة المرور",
+  
+  "back": "رجوع",
+  "close": "إغلاق",
+  "clear": "مسح",
+  
+  "registrationProgress": "تقدم التسجيل: الخطوة {current} من {total}",
+  "@registrationProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "settings": "الإعدادات",
+  "appearanceAndInterface": "المظهر والواجهة",
+  "apply": "تطبيق",
+  "languageChangeInfo": "سيتم تحديث التطبيق فوراً لتعكس اللغة الجديدة",
+  "language": "اللغة",
+  "french": "Français",
+  "english": "English",
+  "arabic": "العربية",
+  "theme": "المظهر",
+  "light": "فاتح",
+  "dark": "داكن",
+  "system": "النظام",
+  "interfaceType": "نوع الواجهة",
+  "regularInterface": "واجهة سرفر العادية",
+  "ladiesInterface": "واجهة سرفر السيدات",
+  "notifications": "التنبيهات",
+  "enableNotifications": "تفعيل التنبيهات",
+  "receiveAllNotifications": "استقبال جميع التنبيهات",
+  "sound": "الصوت",
+  "notificationSounds": "أصوات التنبيهات",
+  "vibration": "الاهتزاز",
+  "notificationVibration": "اهتزاز التنبيهات",
+  "dataAndPrivacy": "البيانات والخصوصية",
+  "privacyPolicy": "سياسة الخصوصية",
+  "termsAndConditions": "الشروط والأحكام",
+  "deleteMyAccount": "حذف حسابي",
+  "notificationsSaved": "تم حفظ إعدادات التنبيهات",
+  "savingError": "خطأ في الحفظ",
+  "notificationsDisabled": "تم تعطيل التنبيهات",
+  "notificationsEnabled": "تم تفعيل التنبيهات",
+  "permissionRequired": "إذن مطلوب",
+  "notificationPermissionExplanation": "يحتاج سرفر إلى إذن التنبيهات لإرسال التحديثات المهمة حول رحلاتك وحالة السائق والرسائل.",
+  "mustEnableInSettings": "يجب تفعيل التنبيهات في إعدادات النظام",
+  "cancel": "إلغاء",
+  "openSettings": "فتح الإعدادات",
+  "comingSoon": "قريباً",
+  
+  "featureComingSoon": "{feature} - قريباً",
+  "@featureComingSoon": {
+    "placeholders": {
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "deleteAccount": "حذف الحساب",
+  "actionIsIrreversible": "هذا الإجراء لا يمكن التراجع عنه",
+  "accountDeletionWarning": "سيتم حذف حسابك بشكل دائم بعد 30 يوماً. سيتم إخفاء هويتك عن جميع بياناتك الشخصية.",
+  "enterPassword": "أدخل كلمة المرور",
+  "reasonOptional": "السبب (اختياري)",
+  "whyDeleteAccount": "لماذا تحذف حسابك؟",
+  "passwordRequired": "كلمة المرور مطلوبة",
+  "iUnderstandIrreversible": "أفهم أن هذا الإجراء لا يمكن التراجع عنه",
+  "delete": "حذف",
+  "deleting": "جاري الحذف...",
+  "accountDeletedSuccessfully": "تم حذف الحساب بنجاح.",
+  "accountDeletionFailed": "فشل حذف الحساب",
+  "errorOccurredPleaseTryAgain": "حدث خطأ. يرجى المحاولة مجدداً.",
+  "changeLanguage": "تغيير اللغة",
+  "selectLanguage": "اختر لغتك المفضلة",
+  
+  "languageChanged": "تم تغيير اللغة إلى {language}",
+  "@languageChanged": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "systemLanguage": "لغة النظام",
+  
+  "account": "الحساب",
+  "myProfile": "ملفي الشخصي",
+  "personalInformation": "معلومات شخصية",
+  "activity": "النشاط",
+  "yourAlertsAndMessages": "تنبيهاتك ورسائلك",
+  "history": "السجل",
+  "completedRides": "الرحلات المكتملة",
+  "loyaltyProgram": "برنامج الولاء",
+  "pointsAndRewards": "النقاط والمكافآت",
+  "appPreferences": "تفضيلات التطبيق",
+  "help": "المساعدة",
+  "supportAndFaq": "الدعم والأسئلة الشائعة",
+  "about": "حول",
+  "versionAndInformation": "الإصدار والمعلومات",
+  "driverMode": "وضع السائق",
+  "switching": "جاري التبديل...",
+  
+  "departure": "الانطلاق",
+  "yourCurrentPosition": "موقعك الحالي",
+  "arrival": "الوصول",
+  "whereAreYouGoing": "إلى أين تتجه؟",
+  "selectDepartureAndDestination": "يرجى اختيار نقطة الانطلاق والوجهة",
+  "sendingRequest": "جاري إرسال الطلب...",
+  "locating": "جاري تحديد الموقع...",
+  "locationError": "خطأ في الموقع",
+  
+  "pickupLocation": "موقع الالتقاط",
+  "destination": "الوجهة",
+  "searchPlace": "ابحث عن مكان",
+  "selectOnMap": "اختر من الخريطة",
+  "searchAddress": "ابحث عن عنوان",
+  "orSelectOnMap": "أو اختر من الخريطة",
+  "loading": "جاري التحميل...",
+  "selectPickupLocation": "اختر موقع الالتقاط",
+  "selectDestinationLocation": "اختر موقع الوجهة",
+  "tapMapOrMoveMarker": "اضغط على الخريطة أو اسحب العلامة",
+  "zoomForPrecision": "قرّب للحصول على دقة أكبر",
+  "retrievingAddress": "جاري استرجاع العنوان...",
+  "confirm": "تأكيد",
+  
+  "rideDetails": "تفاصيل الرحلة",
+  "rideType": "نوع الرحلة",
+  "autoDetected": "تم الكشف تلقائياً",
+  "cityToCity": "من مدينة إلى أخرى",
+  "inCity": "داخل المدينة",
+  
+  "intercityTripDetected": "تم الكشف عن رحلة بين المدن: {pickupCity} → {destinationCity}",
+  "@intercityTripDetected": {
+    "placeholders": {
+      "pickupCity": {
+        "type": "String"
+      },
+      "destinationCity": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "numberOfSeats": "عدد المقاعد",
+  
+  "seatsSelected": "{count} راكب{plural} محدد",
+  "@seatsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plural": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "proposePrice": "اقترح سعراً",
+  
+  "minimumPrice": "الحد الأدنى للسعر: {price} درهم",
+  "@minimumPrice": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "confirmRide": "تأكيد الرحلة",
+  
+  "paymentMethod": "طريقة الدفع",
+  "cash": "نقداً",
+  "cashPayment": "دفع نقداً للسائق",
+  "freeRide": "رحلة مجانية",
+  "freeRideWithPoints": "رحلة مجانية باستخدام نقاطك",
+  
+  "insufficientPoints": "نقاط غير كافية: {required}نقطة مطلوبة، لديك {available}نقطة",
+  "@insufficientPoints": {
+    "placeholders": {
+      "required": {
+        "type": "int"
+      },
+      "available": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "youHavePoints": "لديك {points}نقطة (1نقطة = 1درهم)",
+  "@youHavePoints": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "freeRideTitle": "رحلة مجانية",
+  "availablePoints": "النقاط المتاحة",
+  "afterThisRide": "بعد هذه الرحلة",
+  
+  "pointsWillBeDeducted": "سيتم خصم {points}نقطة (1نقطة = 1درهم)",
+  "@pointsWillBeDeducted": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "driverOffers": "عروض السائقين",
+  
+  "driversAvailable": "{count} سائق{plural} متاح",
+  "@driversAvailable": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "plural": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "adjustYourOffer": "عدّل عرضك",
+  "applyPrice": "تطبيق السعر",
+  "waitingForDriverOffers": "جاري انتظار عروض السائقين...",
+  
+  "canAdjustPriceIn": "يمكنك تعديل السعر خلال {seconds}ث إذا لم تتلقَ عروضاً",
+  "@canAdjustPriceIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "canAdjustPriceNow": "يمكنك الآن تعديل سعرك",
+  "searchingDrivers": "جاري البحث عن سائقين",
+  "nearbyDriversWillAppear": "ستظهر السائقون القريبون هنا",
+  "offersExpireAfter60s": "تنتهي الصلاحية بعد 60 ثانية",
+  "cancelRequest": "إلغاء الطلب",
+  "rides": "رحلات",
+  "counterOffer": "عرض مقابل",
+  "initialPrice": "السعر الأولي",
+  "driverCounterOffer": "عرض السائق المقابل",
+  "decline": "رفض",
+  "accept": "قبول",
+  "confirmingRide": "جاري تأكيد الرحلة...",
+  "rideConfirmationTimeout": "انتهت صلاحية تأكيد الرحلة. يرجى المحاولة مجدداً.",
+  "errorAcceptingDriver": "خطأ في قبول السائق",
+  "driverDeclined": "رفض السائق",
+  "offerExpired": "انتهت صلاحية العرض",
+  "requestCancelled": "تم إلغاء طلب الرحلة.",
+  "errorCancellingRequest": "خطأ في إلغاء الطلب",
+  
+  "newOfferSent": "تم إرسال عرض جديد: {price} درهم",
+  "@newOfferSent": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "errorSendingOffer": "خطأ في إرسال العرض",
+  "noOffersAdjustPrice": "لا توجد عروض حتى الآن. حاول تعديل سعرك!",
+  
+  "useLastOtpSent": "يرجى استخدام رمز OTP الذي تم إرساله مسبقاً",
+  
+  "waitBeforeResending": "يرجى الانتظار {seconds} ثانية قبل طلب رمز جديد",
+  "@waitBeforeResending": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "pleaseWaitBeforeResending": "يرجى الانتظار قبل طلب رمز جديد",
+  "tooManyAttempts": "محاولات كثيرة جداً. يرجى المحاولة لاحقاً",
+  "invalidPhoneNumber": "صيغة رقم الهاتف غير صحيحة",
+  "networkError": "خطأ في الشبكة. يرجى التحقق من الاتصال",
+  "failedToSendOtp": "فشل إرسال رمز التحقق",
+  "otpSendIssue": "حدثت مشكلة في إرسال الرمز. يمكنك محاولة إعادة الإرسال",
+  
+  "editProfile": "تحرير الملف الشخصي",
+  "updatePersonalInfo": "تحديث معلوماتك الشخصية",
+  "viewPersonalInfo": "معلوماتك الشخصية",
+  "firstNameHint": "مثال: محمد",
+  "lastNameHint": "مثال: العلمي",
+  "firstNameRequired": "الاسم الأول مطلوب",
+  "lastNameRequired": "الاسم الأخير مطلوب",
+  
+  "nameTooShort": "{field} قصير جداً (الحد الأدنى حرفان)",
+  "@nameTooShort": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "nameTooLong": "{field} طويل جداً (الحد الأقصى 50 حرف)",
+  "@nameTooLong": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "invalidCharacters": "أحرف غير صحيحة",
+  "noChangesDetected": "لم يتم الكشف عن أي تغييرات",
+  "infoForReservations": "ستُستخدم هذه المعلومات في حجوزاتك والتحقق من هويتك",
+  
+  "changeProfilePhoto": "تغيير الصورة الشخصية",
+  "takePhoto": "التقط صورة",
+  "chooseFromGallery": "اختر من المعرض",
+  "cameraAccessNeeded": "يتطلب الوصول إلى الكاميرا لتغيير صورتك الشخصية. يرجى السماح بالوصول في الإعدادات.",
+  "galleryAccessNeeded": "يتطلب الوصول إلى المعرض لتغيير صورتك الشخصية. يرجى السماح بالوصول في الإعدادات.",
+  "errorSelectingImage": "خطأ في اختيار الصورة",
+  "profilePhotoUpdated": "تم تحديث الصورة الشخصية بنجاح",
+  "profilePhotoUpdateFailed": "فشل تحديث الصورة الشخصية",
+  "errorUpdatingPhoto": "خطأ في تحديث الصورة",
+  
+  "editPassword": "تغيير كلمة المرور",
+  "passwordRequirementsMustContain": "يجب أن تحتوي كلمة المرور على:",
+  
+  "editPhone": "تغيير الهاتف",
+  "editPhoneNumber": "تغيير رقم الهاتف",
+  "enterNewPhoneAndPassword": "أدخل رقم هاتفك الجديد وكلمة المرور الحالية",
+  "newPhoneNumber": "رقم الهاتف الجديد",
+  "phoneNumberRequired": "رقم الهاتف مطلوب",
+  "invalidPhoneFormat": "صيغة غير صحيحة (مثال: 0612345678)",
+  "verificationCodeWillBeSent": "سيتم إرسال رمز التحقق إلى هذا الرقم",
+  
+  "enterCodeSentToPhone": "أدخل الرمز المرسل إلى {phone}",
+  "@enterCodeSentToPhone": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "otpCode": "رمز OTP",
+  
+  "codeExpiresIn": "ينتهي الرمز في {time}",
+  "@codeExpiresIn": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "verify": "تحقق",
+  "phoneNumberChanged": "تم تغيير رقم الهاتف بنجاح",
+  "invalidOtpCode": "رمز OTP غير صحيح",
+  "otpSent": "تم إرسال رمز OTP",
+  "phoneNumberSameAsCurrent": "الرقم الجديد هو نفس الرقم الحالي",
+  
+  "standardInterfaceDescription": "واجهة كاملة مع جميع السائقين المتاحين",
+  "ladiesInterfaceDescription": "واجهة مخصصة مع سائقات فقط لراحة أكثر",
+  "aboutLadiesInterface": "حول واجهة السيدات",
+  "ladiesInterfaceInfo": "يتيح لك هذا الخيار السفر فقط مع سائقات معتمدات. يمكنك تغيير الواجهة في أي وقت.",
+  "interfaceUpdated": "تم تحديث الواجهة بنجاح",
+  "errorUpdatingInterface": "خطأ في تحديث الواجهة",
+  "ladiesInterfaceBadge": "واجهة السيدات",
+  "driverModeBadge": "وضع السائق",
+  
+  "logout": "تسجيل الخروج",
+  "confirmLogout": "تأكيد تسجيل الخروج",
+  "enterPasswordToConfirm": "يرجى إدخال كلمة المرور لتأكيد تسجيل الخروج:",
+  "loggingOut": "جاري تسجيل الخروج...",
+  "logoutError": "خطأ في تسجيل الخروج",
+  
+  "editProfileInfo": "تحرير الملف الشخصي",
+  "firstNameLastName": "الاسم الأول والأخير",
+  "accountSecurity": "أمان الحساب",
+  "changePhoneNumber": "تغيير رقم الهاتف",
+  "user": "مستخدم",
+  "camera": "كاميرا",
+  "gallery": "معرض",
+  "continue_": "متابعة",
+  "secureAccountWithStrongPassword": "أمّن حسابك بكلمة مرور قوية",
+  "passwordMinLength": "8 أحرف على الأقل",
+  "passwordNeedsUppercase": "حرف كبير واحد على الأقل",
+  "passwordNeedsLowercase": "حرف صغير واحد على الأقل",
+  "passwordNeedsNumber": "رقم واحد على الأقل",
+  "passwordNeedsSpecialChar": "رمز خاص واحد على الأقل",
+  "passwordChangedSuccess": "تم تغيير كلمة المرور بنجاح",
+  "passwordChangeFailed": "خطأ في تغيير كلمة المرور",
+  "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+  "passwordsDoNotMatch": "كلمات المرور غير متطابقة",
+  "passwordReqMinChars": "8 أحرف على الأقل",
+  "passwordReqUppercase": "حرف كبير واحد",
+  "passwordReqLowercase": "حرف صغير واحد",
+  "passwordReqNumber": "رقم واحد",
+  "passwordReqSpecialChar": "رمز خاص واحد (!@#$%^&*)",
+  "otpCodeRequired": "رمز OTP مطلوب",
+  "otpCodeMustBe6Digits": "يجب أن يكون الرمز 6 أرقام",
+  "errorRequestingOtp": "خطأ في طلب OTP",
+  "profileUpdateFailed": "خطأ في تحديث الملف الشخصي",
+  
+  "locatingYourPosition": "جاري تحديد موقعك...",
+  "continueToOptions": "متابعة",
+  "errorLocationService": "خطأ في خدمة الموقع",
+  "pleaseSelectBothLocations": "يرجى اختيار الانطلاق والوجهة",
+  "unableToCalculateDistance": "تعذر حساب مسافة الرحلة",
+  "chooseRideType": "اختر نوع الرحلة",
+  
+  "minimumPriceIs": "الحد الأدنى للسعر: {price} درهم",
+  "@minimumPriceIs": {
+    "placeholders": {
+      "price": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "insufficientPointsForFreeRide": "نقاط غير كافية: {requiredPoints}نقطة مطلوبة، لديك {available}نقطة",
+  "@insufficientPointsForFreeRide": {
+    "placeholders": {
+      "requiredPoints": {
+        "type": "int"
+      },
+      "available": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "connectingToServer": "جاري الاتصال بالخادم...",
+  "unableToConnectToServer": "تعذر الاتصال بالخادم",
+  
+  "selectingLocationFor": "اختيار الموقع {target}",
+  "@selectingLocationFor": {
+    "placeholders": {
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "tapOrDragMarker": "اضغط على الخريطة أو اسحب العلامة",
+  "confirmLocation": "تأكيد الموقع",
+  "selectingPickup": "الانطلاق",
+  "selectingDestination": "الوجهة",
+  
+  "vehicleType": "نوع المركبة",
+  "carLabel": "السيارة",
+  "carSubtitle": "مركبة عادية",
+  "motorcycleLabel": "دراجة نارية",
+  "motorcycleSubtitle": "مركبة ثنائية العجلات",
+  "truckLabel": "شاحنة",
+  "truckSubtitle": "مركبة تجارية",
+  "newApplication": "طلب جديد",
+  "driverRegistration": "تسجيل السائق",
+  "cinInformationTitle": "معلومات بطاقة التعريف",
+  "cinInformationSubtitle": "يرجى تقديم وثائق هويتك",
+  "cinRectoPhoto": "صورة وجه البطاقة",
+  "cinVersoPhoto": "صورة ظهر البطاقة",
+  "selfieWithCIN": "سيلفي مع البطاقة",
+  "cinCode": "رقم البطاقة",
+  "cinCodeHint": "مثال: AB123456",
+  "expirationDate": "تاريخ الانتهاء",
+  "selectDate": "اختر تاريخاً",
+  "vehicleInformationTitle": "معلومات المركبة",
+  "vehicleInformationSubtitle": "تفاصيل مركبتك",
+  "vehiclePhoto": "صورة المركبة",
+  "vehicleRegistrationRecto": "وجه رخصة المركبة",
+  "vehicleRegistrationVerso": "ظهر رخصة المركبة",
+  "registrationNumber": "رقم التسجيل",
+  "registrationNumberHint": "مثال: 12345-A-67",
+  "brand": "الماركة",
+  "brandHint": "مثال: تويوتا",
+  "model": "الموديل",
+  "modelHint": "مثال: كورولا",
+  "color": "اللون",
+  "colorHint": "مثال: أبيض",
+  "productionYear": "سنة الإنتاج",
+  "productionYearHint": "مثال: 2020",
+  "reviewTitle": "المراجعة",
+  "reviewSubtitle": "يرجى التحقق من معلوماتك قبل الإرسال",
+  "cinInformationSection": "معلومات البطاقة",
+  "vehicleInformationSection": "معلومات المركبة",
+  "uploaded": "✓ تم الرفع",
+  "vehicleTypeLabel": "النوع",
+  "registrationNumberLabel": "التسجيل",
+  "brandLabel": "الماركة",
+  "modelLabel": "الموديل",
+  "colorLabel": "اللون",
+  "yearLabel": "السنة",
+  "vehiclePhotoLabel": "صورة المركبة",
+  "vehicleRegistrationRectoLabel": "وجه الرخصة",
+  "vehicleRegistrationVersoLabel": "ظهر الرخصة",
+  "verificationNotice": "سيتم التحقق من طلبك خلال 24-48 ساعة",
+  "photoAdded": "تم إضافة الصورة",
+  "tapToTakePhoto": "اضغط لالتقاط صورة",
+  "cinCodeLabel": "رقم البطاقة",
+  "expirationDateLabel": "تاريخ الانتهاء",
+  "cinRectoLabel": "وجه البطاقة",
+  "cinVersoLabel": "ظهر البطاقة",
+  "selfieLabel": "سيلفي",
+  "submitApplication": "إرسال الطلب",
+  "submittedSuccessfully": "تم إرسال الطلب بنجاح",
+  "submissionError": "خطأ في الإرسال",
+  "rideHistory": "سجل الرحلات",
+  "filters": "المرشحات",
+  "totalRides": "الرحلات",
+  "totalAmount": "الإنفاق الكلي",
+  "ridesLoaded": "{loaded} من {total} رحلات محملة",
+  "@ridesLoaded": {
+    "placeholders": {
+      "loaded": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statusAll": "الكل",
+  "statusCompleted": "مكتملة",
+  "statusCancelled": "ملغاة",
+  "statusAccepted": "مقبولة",
+  "statusStarted": "جارية",
+  "paymentAll": "الكل",
+  "paymentCash": "نقداً",
+  "paymentWallet": "المحفظة",
+  "paymentCreditCard": "بطاقة ائتمان",
+  "paymentLoyaltyPoints": "نقاط الولاء",
+  "paymentFreeRide": "رحلة مجانية",
+  "vehicleAll": "الكل",
+  "vehicleCar": "سيارة",
+  "vehicleMotorcycle": "دراجة نارية",
+  "vehicleTruck": "شاحنة",
+  "sortPriceHighToLow": "السعر (الأعلى أولاً)",
+  "sortPriceLowToHigh": "السعر (الأقل أولاً)",
+  "sortDistance": "المسافة",
+  "viewDetails": "عرض التفاصيل",
+  "hideDetails": "إخفاء التفاصيل",
+  "rateDriver": "تقييم السائق",
+  "contactSupport": "التواصل مع الدعم",
+  "thankYouForRating": "شكراً على تقييمك!",
+  "complaintSent": "تم إرسال الشكوى بنجاح",
+  "loadingError": "خطأ في التحميل",
+  "connectionError": "خطأ في الاتصال",
+  "tryAgain": "حاول مجدداً",
+  "noRidesTitle": "لا توجد رحلات",
+  "noRidesDescription": "عدّل المرشحات أو تفقد لاحقاً",
+  "clearAllFilters": "مسح جميع المرشحات",
+  "applyFilters": "تطبيق المرشحات",
+  "searchDriver": "ابحث عن سائق...",
+  "selectDateRange": "حدد نطاق التاريخ",
+  "priceRange": "السعر",
+  "minPrice": "الحد الأدنى",
+  "maxPrice": "الحد الأقصى",
+  "status": "الحالة",
+  "payment": "الدفع",
+  "vehicle": "المركبة",
+  "driver": "السائق",
+  "date": "التاريخ",
+  "price": "السعر",
+  "distance": "المسافة",
+  "duration": "المدة",
+  "fare": "الأجرة",
+  "passengers": "الركاب",
+  "driverRating": "تقييم السائق",
+  "yourRating": "تقييمك",
+  "notRated": "لم يتم التقييم",
+  "rated": "تم التقييم",
+  "completed": "مكتملة",
+  "cancelled": "ملغاة",
+  "accepted": "مقبولة",
+  "started": "جارية",
+  "wallet": "المحفظة",
+  "creditCard": "بطاقة ائتمان",
+  "loyaltyPoints": "نقاط الولاء",
+  "car": "سيارة",
+  "motorcycle": "دراجة نارية",
+  "truck": "شاحنة",
+  "totalRidesLabel": "الرحلات",
+  "totalEarned": "الإجمالي المكتسب",
+  "totalSpent": "الإجمالي المنفق",
+  "filtersTitle": "المرشحات",
+  "statusLabel": "الحالة",
+  "paymentLabel": "الدفع",
+  "vehicleLabel": "المركبة",
+  "sortByLabel": "الترتيب حسب",
+  "statusInProgress": "جاري التنفيذ",
+  "paymentCard": "البطاقة",
+  "vehicleStandard": "عادية",
+  "vehiclePremium": "بريميوم",
+  "vehicleLadiesOnly": "للسيدات فقط",
+  "sortDateNewestFirst": "التاريخ (الأحدث أولاً)",
+  "sortDateOldestFirst": "التاريخ (الأقدم أولاً)",
+  "viewTripLocation": "موقع الرحلة",
+  "passengerLabel": "الراكب",
+  "driverLabel": "السائق",
+  "ratingLabel": "التقييم",
+  "phoneLabel": "الهاتف",
+  "fareDetails": "تفاصيل الأجرة",
+  "totalLabel": "الإجمالي",
+  "rateThisTrip": "قيّم هذه الرحلة",
+  "rateButton": "تقييم",
+  "complaintButton": "شكوى",
+  "statusCompletedBadge": "مكتملة",
+  "statusCancelledBadge": "ملغاة",
+  "statusInProgressBadge": "جاري التنفيذ",
+  "noTripsFound": "لا توجد رحلات",
+  "tripsWillAppearHere": "ستظهر رحلاتك هنا",
+  "passengerDefault": "راكب",
+  "driverDefault": "سائق",
+  "filtersAndSort": "المرشحات والترتيب",
+  "activeFilters": "{count} مرشح نشط",
+  "@activeFilters": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noActiveFilters": "لا توجد مرشحات نشطة",
+  "driverNameHint": "اسم السائق",
+  "dateRange": "نطاق التاريخ",
+  "allPriceRanges": "جميع نطاقات الأسعار",
+  "addPriceFilter": "إضافة مرشح السعر",
+  "statusFilter": "الحالة",
+  "allStatus": "الكل",
+  "completedStatus": "مكتملة",
+  "cancelledStatus": "ملغاة",
+  "paymentFilter": "الدفع",
+  "allPayment": "الكل",
+  "walletPayment": "المحفظة",
+  "creditCardPayment": "بطاقة ائتمان",
+  "loyaltyPointsPayment": "نقاط الولاء",
+  "freeRidePayment": "رحلة مجانية",
+  "vehicleFilter": "المركبة",
+  "allVehicles": "الكل",
+  "carVehicle": "سيارة",
+  "motorcycleVehicle": "دراجة نارية",
+  "truckVehicle": "شاحنة",
+  "sortBy": "الترتيب حسب",
+  "resetAllFilters": "إعادة تعيين جميع المرشحات",
+  "selectPeriod": "حدد الفترة",
+  "startDate": "البداية",
+  "endDate": "النهاية",
+  "points": "نقاط",
+  "progressToNextLevel": "التقدم إلى {nextLevel}",
+  "@progressToNextLevel": {
+    "placeholders": {
+      "nextLevel": {
+        "type": "String"
+      }
+    }
+  },
+  "needPointsToUnlock": "احتاج {pointsNeeded} نقطة إضافية لفتح فوائد {nextLevel}",
+  "@needPointsToUnlock": {
+    "placeholders": {
+      "pointsNeeded": {
+        "type": "int"
+      },
+      "nextLevel": {
+        "type": "String"
+      }
+    }
+  },
+  "earnPoints": "اكسب النقاط",
+  "earnPointsByRide": "نقاط لكل رحلة",
+  "earnPointsByReferral": "نقاط الإحالة",
+  "earnPointsByRating": "نقاط التقييم",
+  "referAFriend": "أحيل صديقاً",
+  "shareAndEarnPoints": "شارك واكسب النقاط",
+  "noTransactions": "لا توجد معاملات",
+  "allTransactionsLoaded": "تم تحميل جميع المعاملات",
+  "rideCompleted": "تم إكمال الرحلة",
+  "referralBonus": "مكافأة الإحالة",
+  "ratingBonus": "مكافأة التقييم",
+  "pointsUsed": "النقاط المستخدمة",
+  "levelBronze": "برونزي",
+  "levelSilver": "فضي",
+  "levelGold": "ذهبي",
+  "levelPlatinum": "بلاتيني",
+  "levelDiamond": "ألماسي",
+  "dataRefreshed": "تم تحديث البيانات",
+  "errorLoadingData": "خطأ في تحميل البيانات",
+  "errorRefreshingData": "خطأ في تحديث البيانات",
+  "pleaseSelectRating": "يرجى اختيار تقييم",
+  "pleaseSelectOption": "يرجى اختيار خياراً",
+  "ratePassenger": "قيّم الراكب",
+  "howWasYourExperience": "كيف كانت تجربتك مع {name}؟",
+  "@howWasYourExperience": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "selectCategory": "اختر فئة:",
+  "noOptionsAvailable": "لا توجد خيارات متاحة",
+  "send": "إرسال",
+  "pleaseEnterPhoneNumber": "يرجى إدخال رقم الهاتف",
+  "invitationRegistered": "تم تسجيل الدعوة! شارك الرابط مع صديقك.",
+  "phoneNotEligible": "هذا الرقم غير مؤهل للإحالة",
+  "linkCopied": "تم نسخ الرابط إلى الحافظة!",
+  "errorCopyingLink": "خطأ في نسخ الرابط.",
+  "linkSharedSuccess": "تم مشاركة الرابط بنجاح!",
+  "errorSharing": "خطأ في المشاركة.",
+  "earnPointsPerFriend": "اكسب 50 نقطة لكل صديق",
+  "referralInfoMessage": "أدخل رقم صديقك لتسجيله، ثم شارك الرابط معه.",
+  "verifying": "جاري التحقق...",
+  "savePhoneNumber": "حفظ رقم الهاتف",
+  "or": "أو",
+  "referralLink": "رابط الإحالة",
+  "share": "مشاركة",
+  "copy": "نسخ",
+  "referralShareMessage": "🎉 انضم إلي في سرفر!\n\nأستخدم سرفر لرحلاتي وأعتقد أنك قد تكون مهتماً!\n\n🎁 حمّل التطبيق واحصل على 50 نقطة ترحيبية!\n🚗 إنه بسيط وسريع وآمن\n\nحمّل الآن: {link}\n\nإلى اللقاء قريباً على سرفر! 🚙",
+  "@referralShareMessage": {
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "referralInvitationSubject": "دعوة سرفر",
+  "faq": "الأسئلة الشائعة",
+  "contact": "اتصل",
+  "searchInFaq": "ابحث في الأسئلة الشائعة...",
+  "contactUs": "اتصل بنا",
+  "ourTeamIsHereToHelp": "فريقنا هنا لمساعدتك",
+  "hours": "الساعات",
+  "businessHours": "الإثنين-الجمعة: 9 صباحاً-6 مساءً",
+  "sendComplaint": "إرسال شكوى",
+  "describeYourProblem": "صف مشكلتك وسيرد عليك فريقنا بسرعة",
+  "noResultsFound": "لم يتم العثور على نتائج",
+  "tryOtherKeywords": "جرب كلمات مفتاحية أخرى",
+  "pleaseDescribeProblem": "يرجى وصف مشكلتك",
+  "provideMoreDetails": "يرجى تقديم المزيد من التفاصيل (الحد الأدنى 10 أحرف)",
+  "category": "الفئة",
+  "technicalIssue": "مشكلة فنية",
+  "accountingIssue": "مشكلة محاسبية",
+  "safetyIssue": "مشكلة أمان",
+  "drivingIssue": "مشكلة قيادة",
+  "other": "أخرى",
+  "description": "الوصف",
+  "describeYourProblemInDetail": "صف مشكلتك بالتفصيل. سيقوم فريقنا بالرد عليك في أقرب وقت ممكن.",
+  "trajectoryRef": "مرجع الرحلة #{ref}",
+  "@trajectoryRef": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "sendReclamation": "إرسال الشكوى",
+  "describeProblem": "وصف المشكلة",
+  "minCharacters": "الحد الأدنى 10 أحرف",
+  "exampleReclamation": "مثال: لم يصل السائق في الوقت المحدد، ولم يتم تحديث حالة الرحلة.",
+  "sendComplaintButton": "إرسال الشكوى",
+  "faqAccountTitle": "الحساب والتسجيل",
+  "faqAccount1Q": "كيف أنشئ حساباً؟",
+  "faqAccount1A": "لإنشاء حساب، حمّل تطبيق سرفر، أدخل رقم هاتفك، تحقق من رمز OTP المرسل عبر SMS، ثم أكمل ملفك الشخصي بمعلوماتك الشخصية.",
+  "faqAccount2Q": "هل يمكنني استخدام نفس الحساب كراكب وسائق؟",
+  "faqAccount2A": "نعم! يمكنك التبديل بين وضع الراكب والسائق في إعدادات التطبيق. لتصبح سائقاً، يجب عليك إرسال طلب مع وثائقك.",
+  "faqAccount3Q": "كيف أغيّر رقم هاتفي؟",
+  "faqAccount3A": "انتقل إلى الإعدادات > الملف الشخصي > تغيير رقم الهاتف. ستحتاج إلى التحقق من الرقم الجديد برمز OTP.",
+  
+  "faqBookingTitle": "حجز الرحلات",
+  "faqBooking1Q": "كيف أحجز رحلة؟",
+  "faqBooking1A": "على الشاشة الرئيسية، أدخل وجهتك، اختر نوع المركبة، تحقق من السعر المتوقع، ثم اضغط 'تأكيد الطلب'. سيقبل سائق طلبك في لحظات.",
+  "faqBooking2Q": "هل يمكنني إلغاء رحلة؟",
+  "faqBooking2A": "نعم، يمكنك إلغاء الرحلة قبل قبول السائق بدون رسوم. بعد القبول، قد تنطبق رسوم الإلغاء.",
+  "faqBooking3Q": "كيف يعمل وضع السيدات فقط؟",
+  "faqBooking3A": "يسمح وضع السيدات فقط للركاب الإناث بالمطابقة فقط مع سائقات. فعّل هذا الخيار في إعدادات ملفك الشخصي.",
+  
+  "faqPaymentTitle": "الدفع",
+  "faqPayment1Q": "ما طرق الدفع المقبولة؟",
+  "faqPayment1A": "نقبل دفع نقداً وبطاقة ائتمان. يمكنك اختيار طريقة الدفع المفضلة لديك عند الحجز.",
+  "faqPayment2Q": "كيف تعمل نقاط الولاء؟",
+  "faqPayment2A": "تكتسب نقاطاً مع كل رحلة مكتملة، عند إحالة الأصدقاء، وباستخدام التطبيق بانتظام. يمكن استبدال هذه النقاط بخصومات على رحلاتك.",
+  "faqPayment3Q": "هل يمكنني الحصول على إيصال لرحلتي؟",
+  "faqPayment3A": "نعم، جميع إيصالاتك متاحة في سجل الرحلات. يمكنك تحميلها أو استقبالها عبر البريد الإلكتروني.",
+  
+  "faqSafetyTitle": "الأمان",
+  "faqSafety1Q": "كيف يضمن سرفر سلامتي؟",
+  "faqSafety1A": "يتم التحقق من جميع السائقين ببيانات هويتهم الرسمية. يمكنك مشاركة رحلتك في الوقت الفعلي مع أحبائك والإبلاغ عن أي مشاكل عبر التطبيق.",
+  "faqSafety2Q": "ماذا أفعل إذا حدثت مشكلة أثناء الرحلة؟",
+  "faqSafety2A": "استخدم زر 'الطوارئ' في التطبيق للتواصل الفوري مع فريق الأمان لدينا. يمكنك أيضاً الاتصال بالسلطات مباشرة إذا لزم الأمر.",
+  "faqSafety3Q": "هل يتم حماية بياناتي الشخصية؟",
+  "faqSafety3A": "نعم، نستخدم تشفيراً بمستوى البنوك لحماية جميع بياناتك الشخصية والمالية. لا نشارك معلوماتك مع أطراف ثالثة.",
+  
+  "faqDriverTitle": "الانضمام كسائق",
+  "faqDriver1Q": "ما متطلبات الانضمام كسائق؟",
+  "faqDriver1A": "يجب أن تمتلك رخصة قيادة صالحة، بطاقة هوية، مركبة في حالة جيدة برخصة تسجيل صالحة، وأن تكون في الحد الأدنى 21 سنة من العمر.",
+  "faqDriver2Q": "كم من الوقت يستغرق التحقق من حساب السائق؟",
+  "faqDriver2A": "عادة ما يستغرق التحقق من الوثائق من 24 إلى 48 ساعة. ستتلقى إشعاراً عند التحقق من حسابك.",
+  "faqDriver3Q": "كيف يتم حساب أرباحي؟",
+  "faqDriver3A": "يتم حساب أرباحك بناءً على المسافة المقطوعة ووقت الرحلة والطلب الحالي. تأخذ سرفر عمولة 15% على كل رحلة.",
+  "faqDriver4Q": "متى يمكنني سحب أرباحي؟",
+  "faqDriver4A": "يمكنك سحب أرباحك في أي وقت عبر محفظتك كسائق. يتم معالجة السحوبات خلال 1 إلى 3 أيام عمل.",
+  
+  "faqTechTitle": "المشاكل الفنية",
+  "faqTech1Q": "التطبيق لا يجد موقعي",
+  "faqTech1A": "تحقق من تفعيل خدمات الموقع للتطبيق في إعدادات هاتفك. تأكد أيضاً من وجود اتصال إنترنت نشط.",
+  "faqTech2Q": "لا أتلقى رمز OTP",
+  "faqTech2A": "تحقق من إدخالك لرقم الهاتف الصحيح وأن لديك تغطية شبكة. إذا استمرت المشكلة، استخدم خيار 'إعادة إرسال الرمز' بعد 60 ثانية.",
+  "faqTech3Q": "التطبيق يغلق بشكل غير متوقع",
+  "faqTech3A": "حاول تحديث التطبيق إلى أحدث إصدار، أعد تشغيل هاتفك، وتأكد من توفر مساحة تخزين كافية.",
+  
+  "walletBalanceTransactions": "الرصيد والمعاملات",
+  "manageSubscription": "إدارة اشتراكي",
+  "subscription": "الاشتراك",
+  "passengerMode": "وضع الراكب",
+  "ladiesInterfaceDriverBadge": "سائق سرفر السيدات",
+  "verificationStatus": "حالة التحقق",
+  "notRegisteredTitle": "أصبح سائقاً",
+  "notRegisteredDescription": "حوّل رحلاتك إلى دخل وانضم إلى مجتمعنا من السائقين",
+  "startRegistration": "ابدأ التسجيل",
+  "pendingVerificationTitle": "قيد التحقق",
+  "pendingVerificationDescription": "فريقنا يراجع طلبك.\nستتلقى إشعاراً عند التحقق",
+  "verificationTimeframe": "عادة ما يستغرق التحقق 24 إلى 48 ساعة عمل",
+  "processingTime": "وقت المعالجة",
+  "returnHome": "العودة للصفحة الرئيسية",
+  "validatedTitle": "تهانينا! 🎉",
+  "validatedDescription": "تم التحقق بنجاح\nمن حسابك كسائق",
+  "welcomeDrivers": "مرحباً بك في مجتمع السائقين",
+  "welcomeDriversDescription": "أنت الآن سائق معتمد بسرفر ويمكنك البدء في قبول الرحلات",
+  "verifiedStatus": "حالة معتمد",
+  "verifiedBadge": "شارة سائق معتمد",
+  "flexibleIncome": "دخل مرن",
+  "flexibleIncomeDesc": "اكسب وفقاً لتوفرك",
+  "insuredProtection": "حماية مؤمنة",
+  "insuredProtectionDesc": "تغطية كاملة أثناء الرحلات",
+  "startDriving": "ابدأ القيادة",
+  "rejectedTitle": "الطلب لم يتم قبوله",
+  "rejectedDescription": "طلبك يحتاج إلى تعديلات.\nيمكنك إرسال طلب جديد",
+  "rejectionReason": "سبب الرفض",
+  "defaultRejectionReason": "وثائق غير مكتملة أو غير صحيحة. يرجى التحقق من معلوماتك وإرسال وثائق متوافقة.",
+  "attractiveIncome": "دخل جذاب",
+  "attractiveIncomeDesc": "حدد أسعارك وزيادة أرباحك",
+  "totalFreedom": "حرية كاملة",
+  "totalFreedomDesc": "اعمل وفقاً لجدولك",
+  "guaranteedSafety": "أمان مضمون",
+  "guaranteedSafetyDesc": "حماية كاملة لكل رحلة",
+  "verifyingStatus": "جاري التحقق من الحالة...",
+  "myVehicle": "مركبتي",
+  "statistics": "الإحصائيات",
+  "driverWallet": "المحفظة",
+  "totalRidesDriver": "إجمالي الرحلات",
+  "averageRating": "متوسط التقييم",
+  "quickActions": "إجراءات سريعة",
+  "earnings": "الأرباح",
+  "historyDriver": "السجل",
+  "supportDriver": "الدعم",
+  "onlineMode": "متصل",
+  "offlineMode": "غير متصل",
+  "readyToAccept": "جاهز لقبول الرحلات",
+  "activateToReceive": "فعّل لاستقبال الطلبات",
+  "goOnline": "اتصل",
+  "goOffline": "قطع الاتصال",
+  "noRequests": "لا توجد طلبات",
+  "searchingNearby": "جاري البحث عن ركاب قريبين...",
+  "notificationsActive": "التنبيهات نشطة",
+  "offlineStatus": "وضع غير متصل",
+  "goOnlineToReceive": "اتصل لاستقبال الطلبات",
+  "activeRequests": "الطلبات النشطة",
+  "counterOfferTitle": "إرسال عرض مقابل",
+  "passengerOffer": "عرض الراكب:",
+  "yourCounterOffer": "عرضك المقابل",
+  "enterYourPrice": "أدخل سعرك",
+  "fairPriceTip": "نصيحة: اقترح سعراً عادلاً بناءً على المسافة والوقت",
+  "sendOffer": "إرسال العرض",
+  "negotiateButton": "المفاوضة",
+  "refuseButton": "رفض",
+  "acceptRide": "قبول الرحلة",
+  "waitingForResponse": "في انتظار الرد",
+  "secondsRemaining": "{seconds} ثانية متبقية",
+  "@secondsRemaining": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "cancelOffer": "إلغاء العرض",
+  "registration": "التسجيل",
+  "type": "النوع",
+  "year": "السنة",
+  "unknownAddress": "عنوان غير معروف",
+  
+  "walletTitle": "محفظتي",
+  "overviewTab": "نظرة عامة",
+  "codesTab": "الرموز",
+  "historyTab": "السجل",
+  "availableBalance": "الرصيد المتاح",
+  "rechargeWallet": "إعادة شحن المحفظة",
+  "monthDetails": "تفاصيل الشهر",
+  "grossEarnings": "الأرباح الإجمالية",
+  "commissions": "العمولات",
+  "netEarnings": "الأرباح الصافية",
+  "costPerRide": "التكلفة لكل رحلة",
+  "effectiveRate": "المعدل الفعلي",
+  "thisWeek": "هذا الأسبوع",
+  "recentTransactions": "المعاملات الأخيرة",
+  "retry": "إعادة محاولة",
+  "currencySymbol": "د.م.",
+  "today": "اليوم",
+  "yesterday": "أمس",
+  "monday": "الإثنين",
+  "tuesday": "الثلاثاء",
+  "wednesday": "الأربعاء",
+  "thursday": "الخميس",
+  "friday": "الجمعة",
+  "saturday": "السبت",
+  "sunday": "الأحد",
+  "transactionTypeCredit": "إيداع",
+  "transactionTypeDebit": "سحب",
+  "transactionTypeCommission": "عمولة",
+  "transactionTypeSubscription": "اشتراك",
+  "transactionTypeInit": "تهيئة",
+  "justNow": "للتو",
+  "minutesAgo": "منذ {minutes} دقيقة",
+  "@minutesAgo": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "hoursAgo": "منذ {hours}س",
+  "@hoursAgo": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "daysAgo": "منذ {days} أيام",
+  "@daysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "thisMonth": "هذا الشهر",
+  "perRide": "لكل رحلة",
+  "totalDebits": "إجمالي السحوبات",
+  "totalCredits": "إجمالي الإيدوعات",
+  "netThisMonth": "الصافي هذا الشهر",
+  "totalTransactions": "إجمالي المعاملات",
+  "generateNewCode": "إنشاء رمز جديد",
+  "activeCodes": "الرموز النشطة",
+  "expiredCodes": "الرموز منتهية الصلاحية",
+  "noRechargeCodes": "لا توجد رموز إعادة شحن",
+  "generateCodeDescription": "أنشئ رمزاً لإعادة شحن\nمحفظتك",
+  "codeCopied": "تم نسخ الرمز إلى الحافظة",
+  "deleteCodeTitle": "حذف الرمز",
+  "deleteCodeConfirmation": "هل أنت متأكد من رغبتك في حذف رمز إعادة الشحن هذا؟",
+  "codeDeleted": "تم حذف الرمز",
+  "active": "نشط",
+  "expired": "منتهي الصلاحية",
+  "generateCodeOption": "إنشاء رمز",
+  "generateCodeSubtitle": "الدفع في الوكالة برمز",
+  "creditCardOption": "بطاقة ائتمان",
+  "creditCardSubtitle": "دفع آمن عبر الإنترنت",
+  "amount": "المبلغ (درهم)",
+  "amountHint": "مثال: 500",
+  "generateCodeInfo": "قدّم هذا الرمز في الوكالة لإتمام الدفع",
+  "generate": "إنشاء",
+  "codeGenerated": "تم إنشاء الرمز",
+  "presentCodeInfo": "قدّم هذا الرمز في الوكالة\nلإعادة شحن محفظتك",
+  "copyCode": "نسخ الرمز",
+  "cardPaymentTitle": "دفع بالبطاقة",
+  "securePaymentInfo": "دفع آمن • إعادة شحن فورية",
+  "redirectingPayment": "جاري إعادة التوجيه للدفع الآمن...",
+  
+  "subscriptionsTitle": "الاشتراكات",
+  "plansTab": "الخطط",
+  "noActiveSubscription": "لا توجد اشتراكات نشطة",
+  "choosePlanPrompt": "اختر خطة لفتح\nجميع الفوائد",
+  "ridesUsed": "الرحلات المستخدمة",
+  "coursesThisMonth": "الرحلات هذا الشهر",
+  "unlimited": "غير محدود",
+  "subscriptionExpired": "انتهت صلاحية الاشتراك",
+  "expiresInDays": "ينتهي خلال {days} أيام",
+  "@expiresInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "renewsInDays": "يتجدد خلال {days} أيام",
+  "@renewsInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "cancelSubscription": "إلغاء الاشتراك",
+  "cancelSubscriptionDialog": "إلغاء الاشتراك؟",
+  "cancelSubscriptionWarning": "سيتم إلغاء اشتراك {planName} الخاص بك فوراً",
+  "@cancelSubscriptionWarning": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionCancelled": "تم إلغاء الاشتراك",
+  "choosePlan": "اختر خطة",
+  "popular": "الأكثر رواجاً",
+  "current": "حالي",
+  "amountPerMonth": "درهم/شهر",
+  "activeSubscription": "اشتراك نشط",
+  "changeToPlan": "التبديل إلى هذه الخطة",
+  "chooseThisPlan": "اختر هذه الخطة",
+  "takeAdvantage": "🎉 استفد من العرض",
+  "notAvailable": "غير متاح",
+  "confirmSubscription": "تأكيد الاشتراك",
+  "subscribeToPlan": "ستشترك في خطة {planName}",
+  "@subscribeToPlan": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "newPlan": "خطة جديدة",
+  "changeSubscription": "تغيير الاشتراك",
+  "switchFromTo": "التبديل من {fromPlan} إلى {toPlan}",
+  "@switchFromTo": {
+    "placeholders": {
+      "fromPlan": {
+        "type": "String"
+      },
+      "toPlan": {
+        "type": "String"
+      }
+    }
+  },
+  "changeEffectiveImmediately": "يصبح التغيير نافذاً فوراً",
+  "subscriptionActivated": "تم تفعيل الاشتراك!",
+  "subscriptionChanged": "تم تغيير الاشتراك!",
+  "noHistory": "لا يوجد سجل",
+  "historyPrompt": "ستظهر اشتراكاتك السابقة\nهنا",
+  "itemsOfTotal": "{count} / {total}",
+  "@itemsOfTotal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "period": "الفترة",
+  "comparison": "المقارنة",
+  "commission": "العمولة",
+  "rideLimit": "حد الرحلات",
+  "support": "الدعم",
+  "standard": "عادي",
+  "priority": "أولوي",
+  "vip247": "VIP 24/7",
+  "basic": "أساسي",
+  "advanced": "متقدم",
+  "complete": "كامل",
+  "faqTitle": "الأسئلة الشائعة",
+  "canChangeSubscription": "هل يمكنني تغيير الاشتراك؟",
+  "changeSubscriptionAnswer": "نعم، يمكنك التغيير في أي وقت. يصبح التغيير نافذاً فوراً.",
+  "exceedLimitQuestion": "ماذا يحدث إذا تجاوزت الحد؟",
+  "exceedLimitAnswer": "بالنسبة للخطط الأساسية والمتقدمة، لن تتمكن من قبول الرحلات حتى التجديد.",
+  "howRenewalWorks": "كيف يعمل التجديد؟",
+  "renewalAnswer": "يتجدد الاشتراك تلقائياً كل شهر. يمكنك الإلغاء في أي وقت.",
+  "canGetRefund": "هل يمكنني الحصول على استرجاع؟",
+  "refundAnswer": "الاسترجاع ممكن خلال 7 أيام إذا لم تكن قد أنجزت أي رحلات.",
+  "commissionModel": "نموذج العمولة",
+  "preferCommission": "تفضل نموذج العمولة؟",
+  "commissionExplanation": "عمولة 8% لكل رحلة بدلاً من الاشتراك. مثالي لحجم رحلات منخفض.",
+  "learnMore": "معرفة المزيد",
+  "commissionModalTitle": "نموذج العمولة",
+  "commissionPerRide": "ادفع عمولة 8% لكل رحلة",
+  "commissionFeature1": "عمولة 8% لكل رحلة",
+  "commissionFeature2": "بدون رسوم شهرية",
+  "commissionFeature3": "رحلات غير محدودة",
+  "commissionExample": "مثال: رحلة 100 درهم → عمولة 8 درهم",
+  "activate": "تفعيل",
+  "daysForMonth": "{days} يوم بـ شهر واحد",
+  "@daysForMonth": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "specialOffer": "عرض خاص لاشتراكك\nالأول!",
+  "errorLoadingPlans": "خطأ في تحميل الخطط",
+  "errorSubscription": "خطأ أثناء الاشتراك",
+  "errorCancellation": "خطأ أثناء الإلغاء",
+  "errorChanging": "خطأ في تغيير الاشتراك",
+  "errorLoadingHistory": "خطأ في تحميل السجل",
+  "rideLimitBasic": "60 رحلة/شهر",
+  "rideLimitPremium": "150 رحلة/شهر",
+  "rideLimitPro": "رحلات غير محدودة",
+  "notificationsTitle": "التنبيهات",
+  "notificationsMarkAllRead": "وضع علامة الكل كمقروء",
+  "notificationsMarkedAsRead": "تم وضع علامة على جميع التنبيهات كمقروء",
+  "notificationsMarkError": "خطأ في وضع العلامات",
+  "notificationsNoNotifications": "لا توجد تنبيهات",
+  "notificationsNoNotificationsMessage": "لم تتلقَ أي\nتنبيهات حتى الآن",
+  "notificationsLoading": "جاري تحميل التنبيهات...",
+  "notificationsLoadingMore": "جاري التحميل...",
+  "notificationsPaginationInfo": "{current} من {total} تنبيهات",
+  "@notificationsPaginationInfo": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "arrivedAtPickup": "لقد وصلت",
+  "startingRide": "بدء الرحلة",
+  "finishRide": "إنهاء الرحلة",
+  "coming": "قادم",
+  "time": "الوقت",
+  "etaMinutes": "{minutes} دقيقة",
+  "@etaMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "rideInitilisation": "تهيئة الرحلة...",
+  "sendEvaluation": "إرسال التقييم",
+  "rateUser": "تقييم {user}",
+  "@rateUser": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "thankYouForYourFeedback": "شكراً لتقديم تقييمك!",
+  "cancelRide": "إلغاء الرحلة",
+  "navigate": "توجيه",  
+  "call": "اتصال",
+  "message": "مراسلة",
+  "confirmationSentToPassenger": "تم إرسال التأكيد إلى الراكب",
+  "rideStarted": "بدأت الرحلة - الاتجاه: الوجهة",
+  "phoneNotAvailable": "رقم الهاتف غير متاح",
+  "cannotOpenPhoneApp": "لا يمكن فتح تطبيق الهاتف",
+  "userInfoNotAvailable": "معلومات المستخدم غير متاحة",
+  "userNotAuthenticated": "المستخدم غير موثق",
+  "locationNotAvailable": "الموقع غير متاح بعد",
+  "cannotOpenNavigation": "لا يمكن فتح تطبيق الملاحة",
+  "rideInfoNotAvailable": "معلومات الرحلة غير متاحة",
+  "rideCancelled": "تم إلغاء الرحلة",
+  "cancellationError": "خطأ أثناء الإلغاء",
+  "ratingError": "خطأ في التقديم",
+  "pressAgainToExit": "اضغط مرة أخرى للخروج من التطبيق"
+}
