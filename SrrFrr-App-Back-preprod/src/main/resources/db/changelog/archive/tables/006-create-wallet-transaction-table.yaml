@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: 006-create-wallet-transaction-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: wallet_transactions
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: wallet_transactions
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: wallet_id
+                  type: uuid
+              - column:
+                  name: transaction_type
+                  type: varchar(50)
+              - column:
+                  name: amount
+                  type: double precision
+              - column:
+                  name: status
+                  type: varchar(50)
+              - column:
+                  name: created_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: wallet_transactions

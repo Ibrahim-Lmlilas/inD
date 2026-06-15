@@ -1,0 +1,192 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-create-passenger-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: passenger
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: passenger
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: last_name
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: phone_number
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: password
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: profile_picture
+                  type: varchar(500)
+              - column:
+                  name: loyalty_points
+                  type: integer
+                  defaultValueNumeric: 0
+                  constraints:
+                    nullable: false
+              - column:
+                  name: interface_type
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: terms_accepted
+                  type: boolean
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: gender
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: language
+                  type: varchar(10)
+                  defaultValue: AR
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(20)
+                  defaultValue: ACTIVE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: total_rides
+                  type: integer
+                  defaultValueNumeric: 0
+                  constraints:
+                    nullable: false
+              - column:
+                  name: rating
+                  type: double precision
+                  defaultValueNumeric: 0.0
+                  constraints:
+                    nullable: false
+
+        # Add unique constraint on phone number
+        - addUniqueConstraint:
+            schemaName: app_mobile
+            tableName: passenger
+            columnNames: phone_number
+            constraintName: uk_passenger_phone_number
+
+        # Add check constraints
+        - sql:
+            sql: >
+              ALTER TABLE app_mobile.passenger 
+              ADD CONSTRAINT chk_passenger_interface_type 
+              CHECK (interface_type IN ('REGULAR', 'LADIES'))
+
+        - sql:
+            sql: >
+              ALTER TABLE app_mobile.passenger 
+              ADD CONSTRAINT chk_passenger_gender 
+              CHECK (gender IN ('MALE', 'FEMALE'))
+
+        - sql:
+            sql: >
+              ALTER TABLE app_mobile.passenger 
+              ADD CONSTRAINT chk_passenger_language 
+              CHECK (language IN ('EN', 'AR', 'FR'))
+
+        - sql:
+            sql: >
+              ALTER TABLE app_mobile.passenger 
+              ADD CONSTRAINT chk_passenger_status 
+              CHECK (status IN ('ACTIVE', 'DELETED', 'BLOCKED', 'SUSPENDED'))
+
+        - sql:
+            sql: >
+              ALTER TABLE app_mobile.passenger 
+              ADD CONSTRAINT chk_passenger_loyalty_points 
+              CHECK (loyalty_points >= 0)
+
+        - sql:
+            sql: >
+              ALTER TABLE app_mobile.passenger 
+              ADD CONSTRAINT chk_passenger_rating 
+              CHECK (rating >= 0.0 AND rating <= 5.0)
+
+        - sql:
+            sql: >
+              ALTER TABLE app_mobile.passenger 
+              ADD CONSTRAINT chk_passenger_total_rides 
+              CHECK (total_rides >= 0)
+
+        # Add indexes for performance
+        - createIndex:
+            indexName: idx_passenger_phone_number
+            schemaName: app_mobile
+            tableName: passenger
+            columns:
+              - column:
+                  name: phone_number
+
+        - createIndex:
+            indexName: idx_passenger_status
+            schemaName: app_mobile
+            tableName: passenger
+            columns:
+              - column:
+                  name: status
+
+        - createIndex:
+            indexName: idx_passenger_language
+            schemaName: app_mobile
+            tableName: passenger
+            columns:
+              - column:
+                  name: language
+
+        - createIndex:
+            indexName: idx_passenger_created_at
+            schemaName: app_mobile
+            tableName: passenger
+            columns:
+              - column:
+                  name: created_at
+                  descending: true
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: passenger

@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: 022-create-subscription-plan-description-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: subscription_plan_description
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: subscription_plan_description
+            columns:
+              - column:
+                  name: plan_id
+                  type: uuid
+              - column:
+                  name: description
+                  type: varchar(500)
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: subscription_plan_description

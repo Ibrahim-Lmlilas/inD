@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 011-create-loyalty-reward-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: loyalty_rewards
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: loyalty_rewards
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: label_ar
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: label_fr
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: label_en
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: loyalty_rewards

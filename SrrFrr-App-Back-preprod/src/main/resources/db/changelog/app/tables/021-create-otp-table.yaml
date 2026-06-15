@@ -1,0 +1,57 @@
+databaseChangeLog:
+  - changeSet:
+      id: 021-create-otp-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: otp
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: otp
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: phone_number
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: otp
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: expiration_time
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: failed_attempts
+                  type: integer
+                  defaultValue: 0
+                  constraints:
+                    nullable: false
+              - column:
+                  name: resend_count
+                  type: integer
+                  defaultValue: 0
+                  constraints:
+                    nullable: false
+              - column:
+                  name: locked_until
+                  type: bigint
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: otp

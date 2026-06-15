@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: 016-create-rating-values-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: rating_values
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: rating_level
+                  type: integer
+              - column:
+                  name: label_ar
+                  type: varchar(255)
+              - column:
+                  name: label_fr
+                  type: varchar(255)
+              - column:
+                  name: label_en
+                  type: varchar(255)
+              - column:
+                  name: order_value
+                  type: varchar(10)
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: rating_values

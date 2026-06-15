@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: 020-create-invite-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: invite
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: invite
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: passenger_id
+                  type: uuid
+              - column:
+                  name: invite_phone_number
+                  type: varchar(20)
+              - column:
+                  name: invited_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: invite

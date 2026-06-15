@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 012-create-loyalty-transaction-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: loyalty_transactions
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: loyalty_transactions
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: passenger_id
+                  type: uuid
+              - column:
+                  name: transaction_type
+                  type: varchar(50)
+              - column:
+                  name: points
+                  type: integer
+              - column:
+                  name: created_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: loyalty_transactions

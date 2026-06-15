@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: 026-seed-loyalty-rewards
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - sqlCheck:
+            expectedResult: 0
+            sql: SELECT COUNT(*) FROM app_mobile.loyalty_rewards
+      changes:
+        - insert:
+            schemaName: app_mobile
+            tableName: loyalty_rewards
+            columns:
+              - column:
+                  { name: id, value: b383ddbd-8699-4dc3-975b-582442d2c9e2 }
+              - column:
+                  { name: label_ar, value: .اربح 5 نقاط إضافية عند تقييم رحلتك }
+              - column:
+                  {
+                    name: label_fr,
+                    value: Gagnez 5 points bonus en évaluant votre trajet.,
+                  }
+              - column:
+                  {
+                    name: label_en,
+                    value: Earn 5 bonus points when you rate a ride.,
+                  }
+
+        - insert:
+            schemaName: app_mobile
+            tableName: loyalty_rewards
+            columns:
+              - column:
+                  name: id
+                  value:
+              - column:
+                  { name: id, value: a41e428f-b422-49ca-98ac-1d07da6d5b6d }
+              - column:
+                  {
+                    name: label_ar,
+                    value: .اكسب نقاط ولاء مقابل كل إحالة ناجحة,
+                  }
+              - column:
+                  {
+                    name: label_fr,
+                    value: Obtenez des points de fidélité pour chaque parrainage réussi.,
+                  }
+              - column:
+                  {
+                    name: label_en,
+                    value: Gain loyalty points for each successful referral.,
+                  }
+
+        - insert:
+            schemaName: app_mobile
+            tableName: loyalty_rewards
+            columns:
+              - column:
+                  { name: id, value: 93682c12-cb6a-4ace-9ba9-f144e45b3c0e }
+              - column:
+                  {
+                    name: label_ar,
+                    value: \! احصل على 5٪ كنقاط ولاء عند إتمام كل رحلة,
+                  }
+              - column:
+                  {
+                    name: label_fr,
+                    value: Récupérez 5 % en points de fidélité sur chaque trajet effectué !,
+                  }
+              - column:
+                  {
+                    name: label_en,
+                    value: Get 5% back in loyalty points on every completed trip !,
+                  }
+
+      rollback:
+        - delete:
+            schemaName: app_mobile
+            tableName: loyalty_rewards
+            where: id IN ('b383ddbd-8699-4dc3-975b-582442d2c9e2', 'a41e428f-b422-49ca-98ac-1d07da6d5b6d', '93682c12-cb6a-4ace-9ba9-f144e45b3c0e')

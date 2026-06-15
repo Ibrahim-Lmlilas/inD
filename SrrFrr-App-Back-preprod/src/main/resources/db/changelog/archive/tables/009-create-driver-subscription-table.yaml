@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: 009-create-driver-subscription-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: driver_subscription
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: driver_subscription
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: driver_id
+                  type: uuid
+              - column:
+                  name: subscription_plan_id
+                  type: uuid
+              - column:
+                  name: start_date
+                  type: timestamp
+              - column:
+                  name: end_date
+                  type: timestamp
+              - column:
+                  name: rides_used
+                  type: integer
+              - column:
+                  name: status
+                  type: varchar(50)
+              - column:
+                  name: created_at
+                  type: timestamp
+              - column:
+                  name: updated_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: driver_subscription

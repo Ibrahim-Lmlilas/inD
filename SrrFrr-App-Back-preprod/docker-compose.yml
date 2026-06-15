@@ -1,0 +1,62 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres-srrfrr-container
+    environment:
+      POSTGRES_USER: db_admin
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: srrfrrdb
+      # Performance tuning
+      POSTGRES_SHARED_BUFFERS: 256MB
+      POSTGRES_MAX_CONNECTIONS: 100
+    ports:
+      - "5430:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U db_admin -d srrfrrdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - srrfrr-network
+
+  adminer:
+    image: adminer:latest
+    container_name: adminer-srrfrr
+    restart: always
+    ports:
+      - "9091:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - srrfrr-network
+
+  redis:
+    image: redis:latest
+    container_name: redis-srrfrr
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-srrfrr-data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - srrfrr-network
+
+volumes:
+  postgres_data:
+    driver: local
+  redis-srrfrr-data:
+    driver: local
+
+networks:
+  srrfrr-network:
+    driver: bridge

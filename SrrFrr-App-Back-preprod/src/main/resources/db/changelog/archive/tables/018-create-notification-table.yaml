@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: 018-create-notification-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: notification
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: notification
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: receiver_id
+                  type: uuid
+              - column:
+                  name: title
+                  type: varchar(255)
+              - column:
+                  name: content
+                  type: text
+              - column:
+                  name: type
+                  type: varchar(100)
+              - column:
+                  name: status
+                  type: varchar(50)
+              - column:
+                  name: created_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: notification

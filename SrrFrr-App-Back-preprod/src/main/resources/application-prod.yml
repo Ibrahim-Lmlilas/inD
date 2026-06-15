@@ -1,0 +1,20 @@
+# ========================================
+# PROD PROFILE
+# ========================================
+
+aws:
+  secrets:
+    enabled: true
+    secret-ids: ${AWS_SECRETS_SECRET_IDS}
+    fail-fast: true
+
+security:
+  https: true
+
+logging:
+  level:
+    root: WARN
+    com.srrfrr.api: WARN
+    org.hibernate.SQL: WARN
+    org.springframework.web: WARN
+    liquibase: WARN

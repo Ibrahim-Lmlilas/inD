@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: 006-create-wallet-transaction-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: wallet_transactions
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: wallet_transactions
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: wallet_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: transaction_type
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: amount
+                  type: double precision
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(50)
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: wallet_transactions

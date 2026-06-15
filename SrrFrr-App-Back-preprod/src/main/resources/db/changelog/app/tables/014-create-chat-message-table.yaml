@@ -1,0 +1,61 @@
+databaseChangeLog:
+  - changeSet:
+      id: 014-create-chat-message-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: chat_messages
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: chat_messages
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: channel_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: sender_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: message_type
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: content
+                  type: text
+              - column:
+                  name: status
+                  type: varchar(50)
+                  defaultValue: SENT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: sent_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: delivered_at
+                  type: timestamp
+              - column:
+                  name: read_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: chat_messages

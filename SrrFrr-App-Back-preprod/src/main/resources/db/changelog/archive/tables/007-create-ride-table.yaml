@@ -1,0 +1,85 @@
+databaseChangeLog:
+  - changeSet:
+      id: 007-create-ride-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: rides
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: rides
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: passenger_id
+                  type: uuid
+              - column:
+                  name: driver_id
+                  type: uuid
+              - column:
+                  name: departure_address
+                  type: varchar(500)
+              - column:
+                  name: departure_lat
+                  type: double precision
+              - column:
+                  name: departure_lng
+                  type: double precision
+              - column:
+                  name: departure_city
+                  type: varchar(255)
+              - column:
+                  name: destination_address
+                  type: varchar(500)
+              - column:
+                  name: destination_lat
+                  type: double precision
+              - column:
+                  name: destination_lng
+                  type: double precision
+              - column:
+                  name: destination_city
+                  type: varchar(255)
+              - column:
+                  name: price
+                  type: double precision
+              - column:
+                  name: vehicle_type
+                  type: varchar(50)
+              - column:
+                  name: status
+                  type: varchar(50)
+              - column:
+                  name: payment_type
+                  type: varchar(50)
+              - column:
+                  name: ride_type
+                  type: varchar(50)
+              - column:
+                  name: seats
+                  type: integer
+              - column:
+                  name: distance_km
+                  type: double precision
+              - column:
+                  name: estimated_time
+                  type: varchar(50)
+              - column:
+                  name: created_at
+                  type: timestamp
+              - column:
+                  name: updated_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: rides

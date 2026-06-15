@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: 019-create-reclamation-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: reclamation
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: reclamation
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: passenger_id
+                  type: uuid
+              - column:
+                  name: ride_id
+                  type: uuid
+              - column:
+                  name: content
+                  type: varchar(500)
+              - column:
+                  name: category
+                  type: varchar(100)
+              - column:
+                  name: created_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: reclamation

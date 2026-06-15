@@ -1,0 +1,112 @@
+databaseChangeLog:
+  - changeSet:
+      id: 007-create-ride-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: rides
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: rides
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: passenger_id
+                  type: uuid
+              - column:
+                  name: driver_id
+                  type: uuid
+              - column:
+                  name: departure_address
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: departure_lat
+                  type: double precision
+                  constraints:
+                    nullable: false
+              - column:
+                  name: departure_lng
+                  type: double precision
+                  constraints:
+                    nullable: false
+              - column:
+                  name: departure_city
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: destination_address
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: destination_lat
+                  type: double precision
+                  constraints:
+                    nullable: false
+              - column:
+                  name: destination_lng
+                  type: double precision
+                  constraints:
+                    nullable: false
+              - column:
+                  name: destination_city
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price
+                  type: double precision
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vehicle_type
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: payment_type
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: ride_type
+                  type: varchar(50)
+              - column:
+                  name: seats
+                  type: integer
+              - column:
+                  name: distance_km
+                  type: double precision
+              - column:
+                  name: estimated_time
+                  type: varchar(50)
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: rides

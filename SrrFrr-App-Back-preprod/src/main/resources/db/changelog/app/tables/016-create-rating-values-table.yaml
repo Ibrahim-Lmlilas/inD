@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 016-create-rating-values-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: rating_values
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: rating_values
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: rating_level
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: label_ar
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: label_fr
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: label_en
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: order_value
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: rating_values

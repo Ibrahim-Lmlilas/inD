@@ -1,0 +1,70 @@
+databaseChangeLog:
+  - changeSet:
+      id: archive-005-create-wallet-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: wallet
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: wallet
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: driver_id
+                  type: uuid
+                  constraints:
+                    nullable: true
+              - column:
+                  name: balance
+                  type: double precision
+                  constraints:
+                    nullable: true
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: true
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  constraints:
+                    nullable: true
+              - column:
+                  name: archived_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+        
+        # Add index for queries by driver
+        - createIndex:
+            indexName: idx_archive_wallet_driver_id
+            schemaName: archive
+            tableName: wallet
+            columns:
+              - column:
+                  name: driver_id
+        
+        # Add index for archived_at
+        - createIndex:
+            indexName: idx_archive_wallet_archived_at
+            schemaName: archive
+            tableName: wallet
+            columns:
+              - column:
+                  name: archived_at
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: wallet

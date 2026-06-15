@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 022-create-subscription-plan-description-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: subscription_plan_description
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: subscription_plan_description
+            columns:
+              - column:
+                  name: plan_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: varchar(500)
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: subscription_plan_description

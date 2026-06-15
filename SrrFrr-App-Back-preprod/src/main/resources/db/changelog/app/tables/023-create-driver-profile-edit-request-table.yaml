@@ -1,0 +1,97 @@
+databaseChangeLog:
+  - changeSet:
+      id: 023-create-driver-profile-edit-request-table
+      author: BadrEddine
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: driver_profile_edit_request
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: driver_profile_edit_request
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: driver_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: requested_first_name
+                  type: varchar(100)
+              - column:
+                  name: requested_last_name
+                  type: varchar(100)
+              - column:
+                  name: requested_vehicle_brand
+                  type: varchar(100)
+              - column:
+                  name: requested_vehicle_model
+                  type: varchar(100)
+              - column:
+                  name: requested_vehicle_color
+                  type: varchar(50)
+              - column:
+                  name: requested_vehicle_registration_code
+                  type: varchar(50)
+              - column:
+                  name: requested_production_year
+                  type: varchar(4)
+              - column:
+                  name: requested_vehicle_type
+                  type: varchar(20)
+              - column:
+                  name: requested_cin_recto
+                  type: varchar(500)
+              - column:
+                  name: requested_cin_verso
+                  type: varchar(500)
+              - column:
+                  name: requested_selfie
+                  type: varchar(500)
+              - column:
+                  name: requested_vehicle_picture
+                  type: varchar(500)
+              - column:
+                  name: requested_vehicle_registration_recto
+                  type: varchar(500)
+              - column:
+                  name: requested_vehicle_registration_verso
+                  type: varchar(500)
+              - column:
+                  name: status
+                  type: varchar(20)
+                  defaultValue: PENDING
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - sql:
+            sql: >
+              ALTER TABLE app_mobile.driver_profile_edit_request
+              ADD CONSTRAINT chk_driver_profile_edit_request_status
+              CHECK (status IN ('PENDING', 'VALIDATED', 'REJECTED'))
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: driver_profile_edit_request

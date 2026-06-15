@@ -1,0 +1,269 @@
+databaseChangeLog:
+  - changeSet:
+      id: 028-add-all-foreign-keys
+      author: zineb
+      changes:
+        # Authentication FK
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: authentication
+            baseColumnNames: passenger_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_authentication_passenger
+            onDelete: CASCADE
+
+        # Driver FKs
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: driver
+            baseColumnNames: id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_driver_passenger
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: driver
+            baseColumnNames: active_subscription_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: driver_subscription
+            referencedColumnNames: id
+            constraintName: fk_driver_active_subscription
+            onDelete: SET NULL
+
+        # Wallet FK
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: wallet
+            baseColumnNames: passenger_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_wallet_passenger
+            onDelete: CASCADE
+
+        # Wallet Transactions FK
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: wallet_transactions
+            baseColumnNames: wallet_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: wallet
+            referencedColumnNames: id
+            constraintName: fk_wallet_transaction_wallet
+            onDelete: CASCADE
+
+        # Rides FKs
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: rides
+            baseColumnNames: passenger_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_rides_passenger
+            onDelete: SET NULL
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: rides
+            baseColumnNames: driver_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: driver
+            referencedColumnNames: id
+            constraintName: fk_rides_driver
+            onDelete: SET NULL
+
+        # Driver Subscription FKs
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: driver_subscription
+            baseColumnNames: driver_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: driver
+            referencedColumnNames: id
+            constraintName: fk_driver_subscription_driver
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: driver_subscription
+            baseColumnNames: subscription_plan_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: subscription_plan
+            referencedColumnNames: id
+            constraintName: fk_driver_subscription_plan
+            onDelete: RESTRICT
+
+        # Loyalty Transactions FK
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: loyalty_transactions
+            baseColumnNames: passenger_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_loyalty_transaction_passenger
+            onDelete: CASCADE
+
+        # Chat Channels FKs
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: chat_channels
+            baseColumnNames: ride_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: rides
+            referencedColumnNames: id
+            constraintName: fk_chat_channel_ride
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: chat_channels
+            baseColumnNames: driver_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: driver
+            referencedColumnNames: id
+            constraintName: fk_chat_channel_driver
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: chat_channels
+            baseColumnNames: passenger_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_chat_channel_passenger
+            onDelete: CASCADE
+
+        # Chat Messages FKs
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: chat_messages
+            baseColumnNames: channel_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: chat_channels
+            referencedColumnNames: id
+            constraintName: fk_chat_message_channel
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: chat_messages
+            baseColumnNames: sender_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_chat_message_sender
+            onDelete: CASCADE
+
+        # Chat Message Files FK
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: chat_message_files
+            baseColumnNames: message_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: chat_messages
+            referencedColumnNames: id
+            constraintName: fk_message_file_message
+            onDelete: CASCADE
+
+        # Rating FKs
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: rating
+            baseColumnNames: ride_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: rides
+            referencedColumnNames: id
+            constraintName: fk_rating_ride
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: rating
+            baseColumnNames: sender_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_rating_sender
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: rating
+            baseColumnNames: receiver_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_rating_receiver
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: rating
+            baseColumnNames: rating_values_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: rating_values
+            referencedColumnNames: id
+            constraintName: fk_rating_values
+            onDelete: RESTRICT
+
+        # Notification FK
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: notification
+            baseColumnNames: receiver_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_notification_receiver
+            onDelete: CASCADE
+
+        # Reclamation FKs
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: reclamation
+            baseColumnNames: passenger_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_reclamation_passenger
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: reclamation
+            baseColumnNames: ride_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: rides
+            referencedColumnNames: id
+            constraintName: fk_reclamation_ride
+            onDelete: SET NULL
+
+        # Invite FK
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: invite
+            baseColumnNames: passenger_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: passenger
+            referencedColumnNames: id
+            constraintName: fk_invite_passenger
+            onDelete: CASCADE
+
+        # Subscription Plan Description FK
+        - addForeignKeyConstraint:
+            baseTableSchemaName: app_mobile
+            baseTableName: subscription_plan_description
+            baseColumnNames: plan_id
+            referencedTableSchemaName: app_mobile
+            referencedTableName: subscription_plan
+            referencedColumnNames: id
+            constraintName: fk_plan_description_plan
+            onDelete: CASCADE

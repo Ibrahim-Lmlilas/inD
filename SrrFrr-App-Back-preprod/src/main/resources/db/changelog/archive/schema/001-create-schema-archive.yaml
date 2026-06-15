@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-schema-archive
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - sqlCheck:
+            expectedResult: 0
+            sql: >
+              SELECT COUNT(*)
+              FROM information_schema.schemata
+              WHERE schema_name = 'archive'
+      changes:
+        - sql:
+            sql: CREATE SCHEMA archive;
+            comment: Creates archive application schema
+
+        # Grant USAGE permission to public (or specific users)
+        - sql:
+            sql: GRANT USAGE ON SCHEMA archive TO PUBLIC;
+            comment: Grant schema usage to all users
+        
+        # Grant CREATE permission if needed
+        - sql:
+            sql: GRANT CREATE ON SCHEMA archive TO PUBLIC;
+            comment: Allow users to create objects in schema
+
+      rollback:
+        - sql:
+            sql: DROP SCHEMA IF EXISTS archive CASCADE;
+            comment: Drops schema with all contained objects

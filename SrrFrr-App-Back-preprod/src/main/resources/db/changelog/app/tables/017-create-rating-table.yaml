@@ -1,0 +1,63 @@
+databaseChangeLog:
+  - changeSet:
+      id: 017-create-rating-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: rating
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: rating
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: ride_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: sender_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: receiver_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: rating_values_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: rating_type
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - sql:
+            sql: >
+              ALTER TABLE app_mobile.rating 
+              ADD CONSTRAINT chk_rating_type 
+              CHECK (rating_type IN ('PASSENGER_TO_DRIVER', 'DRIVER_TO_PASSENGER'))
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: rating

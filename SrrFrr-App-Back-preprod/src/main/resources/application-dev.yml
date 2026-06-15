@@ -1,0 +1,16 @@
+# ========================================
+# DEV PROFILE - LOCAL DEVELOPMENT ONLY
+# ========================================
+
+aws:
+  secrets:
+    enabled: false
+    fail-fast: false
+
+logging:
+  level:
+    root: INFO
+    com.srrfrr.api: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.springframework.web: INFO
+    liquibase: INFO

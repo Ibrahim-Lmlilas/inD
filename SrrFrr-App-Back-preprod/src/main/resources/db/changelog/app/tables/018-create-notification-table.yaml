@@ -1,0 +1,77 @@
+databaseChangeLog:
+  - changeSet:
+      id: 018-create-notification-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: notification
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: notification
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: receiver_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: title_ar
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: title_fr
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: title_en
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: content_ar
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: content_fr
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: content_en
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: type
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: notification

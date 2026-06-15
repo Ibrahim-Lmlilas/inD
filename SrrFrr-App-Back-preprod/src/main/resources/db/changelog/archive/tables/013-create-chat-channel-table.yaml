@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: 013-create-chat-channel-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: chat_channels
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: chat_channels
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: ride_id
+                  type: uuid
+              - column:
+                  name: driver_id
+                  type: uuid
+              - column:
+                  name: passenger_id
+                  type: uuid
+              - column:
+                  name: is_active
+                  type: boolean
+              - column:
+                  name: created_at
+                  type: timestamp
+              - column:
+                  name: updated_at
+                  type: timestamp
+              - column:
+                  name: last_message_at
+                  type: timestamp
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: chat_channels

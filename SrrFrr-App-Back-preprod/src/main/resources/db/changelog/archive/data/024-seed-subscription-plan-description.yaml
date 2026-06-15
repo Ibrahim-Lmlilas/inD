@@ -1,0 +1,48 @@
+databaseChangeLog:
+  - changeSet:
+      id: 024-seed-subscription-plan-description
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - sqlCheck:
+            expectedResult: 0
+            sql: SELECT COUNT(*) FROM archive.subscription_plan_description
+      changes:
+        - insert:
+            schemaName: archive
+            tableName: subscription_plan_description
+            columns:
+              - column:
+                  name: plan_id
+                  value: 12b5fcfb-08dd-42b6-bb8d-0ce1aa489700
+              - column:
+                  name: description
+                  value: 0% commission illimité
+        
+        - insert:
+            schemaName: archive
+            tableName: subscription_plan_description
+            columns:
+              - column:
+                  name: plan_id
+                  value: ca220900-949d-44a4-9e10-105549fa74b9
+              - column:
+                  name: description
+                  value: 0% commission jusqu'à 150 courses
+        
+        - insert:
+            schemaName: archive
+            tableName: subscription_plan_description
+            columns:
+              - column:
+                  name: plan_id
+                  value: 7fa0430a-ea72-411a-a687-157504f66eed
+              - column:
+                  name: description
+                  value: 0% commission jusqu'à 60 courses
+
+      rollback:
+        - delete:
+            schemaName: archive
+            tableName: subscription_plan_description
+            where: plan_id IN ('12b5fcfb-08dd-42b6-bb8d-0ce1aa489700', 'ca220900-949d-44a4-9e10-105549fa74b9', '7fa0430a-ea72-411a-a687-157504f66eed')

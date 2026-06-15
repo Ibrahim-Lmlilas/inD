@@ -1,0 +1,294 @@
+databaseChangeLog:
+  - changeSet:
+      id: 027-seed-rating-values
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - sqlCheck:
+            expectedResult: 0
+            sql: SELECT COUNT(*) FROM archive.rating_values
+      changes:
+        # Rating Level 1
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: a1111111-79ab-4b69-9168-a64e7ddb3101 }
+              - column: { name: rating_level, value: 1 }
+              - column: { name: label_ar, value: سلوك غير محترم }
+              - column: { name: label_en, value: Disrespectful behavior }
+              - column: { name: label_fr, value: Comportement irrespectueux }
+              - column: { name: order_value, value: "1" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: a1111112-79ab-4b69-9168-a64e7ddb3102 }
+              - column: { name: rating_level, value: 1 }
+              - column: { name: label_ar, value: تأخر كبير عن الموعد }
+              - column: { name: label_en, value: Major delay }
+              - column: { name: label_fr, value: Gros retard }
+              - column: { name: order_value, value: "2" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: a1111113-79ab-4b69-9168-a64e7ddb3103 }
+              - column: { name: rating_level, value: 1 }
+              - column: { name: label_ar, value: ألغى الرحلة بدون سبب }
+              - column: { name: label_en, value: Canceled without reason }
+              - column: { name: label_fr, value: Annulation sans raison }
+              - column: { name: order_value, value: "3" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: a1111114-79ab-4b69-9168-a64e7ddb3104 }
+              - column: { name: rating_level, value: 1 }
+              - column: { name: label_ar, value: قيادة خطيرة }
+              - column: { name: label_en, value: Reckless driving }
+              - column: { name: label_fr, value: Conduite dangereuse }
+              - column: { name: order_value, value: "4" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: a1111115-79ab-4b69-9168-a64e7ddb3105 }
+              - column: { name: rating_level, value: 1 }
+              - column: { name: label_ar, value: تجربة سيئة جدًا }
+              - column: { name: label_en, value: Extremely bad experience }
+              - column: { name: label_fr, value: Très mauvaise expérience }
+              - column: { name: order_value, value: "5" }
+        
+        # Rating Level 2
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: b2222221-79ab-4b69-9168-a64e7ddb3201 }
+              - column: { name: rating_level, value: 2 }
+              - column: { name: label_ar, value: غير ودود }
+              - column: { name: label_en, value: Unfriendly attitude }
+              - column: { name: label_fr, value: Pas aimable }
+              - column: { name: order_value, value: "1" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: b2222222-79ab-4b69-9168-a64e7ddb3202 }
+              - column: { name: rating_level, value: 2 }
+              - column: { name: label_ar, value: تأخر بسيط }
+              - column: { name: label_en, value: Slight delay }
+              - column: { name: label_fr, value: Petit retard }
+              - column: { name: order_value, value: "2" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: b2222223-79ab-4b69-9168-a64e7ddb3203 }
+              - column: { name: rating_level, value: 2 }
+              - column: { name: label_ar, value: سيارة غير نظيفة }
+              - column: { name: label_en, value: Dirty car }
+              - column: { name: label_fr, value: Voiture sale }
+              - column: { name: order_value, value: "3" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: b2222224-79ab-4b69-9168-a64e7ddb3204 }
+              - column: { name: rating_level, value: 2 }
+              - column: { name: label_ar, value: سلوك غير مهذب }
+              - column: { name: label_en, value: Rude behavior }
+              - column: { name: label_fr, value: Comportement impoli }
+              - column: { name: order_value, value: "4" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: b2222225-79ab-4b69-9168-a64e7ddb3205 }
+              - column: { name: rating_level, value: 2 }
+              - column: { name: label_ar, value: تجربة غير مريحة }
+              - column: { name: label_en, value: Uncomfortable ride }
+              - column: { name: label_fr, value: Expérience inconfortable }
+              - column: { name: order_value, value: "5" }
+        
+        # Rating Level 3
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: c3333331-79ab-4b69-9168-a64e7ddb3301 }
+              - column: { name: rating_level, value: 3 }
+              - column: { name: label_ar, value: رحلة عادية }
+              - column: { name: label_en, value: Ordinary ride }
+              - column: { name: label_fr, value: Trajet ordinaire }
+              - column: { name: order_value, value: "1" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: c3333332-79ab-4b69-9168-a64e7ddb3302 }
+              - column: { name: rating_level, value: 3 }
+              - column: { name: label_ar, value: كان يمكن أن تكون أفضل }
+              - column: { name: label_en, value: Could be better }
+              - column: { name: label_fr, value: Aurait pu être mieux }
+              - column: { name: order_value, value: "2" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: c3333333-79ab-4b69-9168-a64e7ddb3303 }
+              - column: { name: rating_level, value: 3 }
+              - column: { name: label_ar, value: تأخر بسيط في الوصول }
+              - column: { name: label_en, value: Minor delay }
+              - column: { name: label_fr, value: Léger retard }
+              - column: { name: order_value, value: "3" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: c3333334-79ab-4b69-9168-a64e7ddb3304 }
+              - column: { name: rating_level, value: 3 }
+              - column: { name: label_ar, value: تجربة مقبولة }
+              - column: { name: label_en, value: Acceptable experience }
+              - column: { name: label_fr, value: Expérience acceptable }
+              - column: { name: order_value, value: "4" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: c3333335-79ab-4b69-9168-a64e7ddb3305 }
+              - column: { name: rating_level, value: 3 }
+              - column: { name: label_ar, value: سلوك محايد }
+              - column: { name: label_en, value: Neutral attitude }
+              - column: { name: label_fr, value: Comportement neutre }
+              - column: { name: order_value, value: "5" }
+        
+        # Rating Level 4
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: d4444441-79ab-4b69-9168-a64e7ddb3401 }
+              - column: { name: rating_level, value: 4 }
+              - column: { name: label_ar, value: سائق محترم }
+              - column: { name: label_en, value: Respectful driver }
+              - column: { name: label_fr, value: Chauffeur respectueux }
+              - column: { name: order_value, value: "1" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: d4444442-79ab-4b69-9168-a64e7ddb3402 }
+              - column: { name: rating_level, value: 4 }
+              - column: { name: label_ar, value: الرحلة كانت مريحة }
+              - column: { name: label_en, value: Comfortable ride }
+              - column: { name: label_fr, value: Trajet confortable }
+              - column: { name: order_value, value: "2" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: d4444443-79ab-4b69-9168-a64e7ddb3403 }
+              - column: { name: rating_level, value: 4 }
+              - column: { name: label_ar, value: وصل في الوقت المحدد }
+              - column: { name: label_en, value: Arrived on time }
+              - column: { name: label_fr, value: Arrivé à l'heure }
+              - column: { name: order_value, value: "3" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: d4444444-79ab-4b69-9168-a64e7ddb3404 }
+              - column: { name: rating_level, value: 4 }
+              - column: { name: label_ar, value: سيارة نظيفة ومرتبة }
+              - column: { name: label_en, value: Clean and tidy car }
+              - column: { name: label_fr, value: Voiture propre et bien tenue }
+              - column: { name: order_value, value: "4" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: d4444445-79ab-4b69-9168-a64e7ddb3405 }
+              - column: { name: rating_level, value: 4 }
+              - column: { name: label_ar, value: سلوك جيد ومهذب }
+              - column: { name: label_en, value: Polite and kind }
+              - column: { name: label_fr, value: Bon comportement }
+              - column: { name: order_value, value: "5" }
+        
+        # Rating Level 5
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: e5555551-79ab-4b69-9168-a64e7ddb3501 }
+              - column: { name: rating_level, value: 5 }
+              - column: { name: label_ar, value: سائق ممتاز }
+              - column: { name: label_en, value: Excellent driver }
+              - column: { name: label_fr, value: Excellent chauffeur }
+              - column: { name: order_value, value: "1" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: e5555552-79ab-4b69-9168-a64e7ddb3502 }
+              - column: { name: rating_level, value: 5 }
+              - column: { name: label_ar, value: رحلة مثالية }
+              - column: { name: label_en, value: Perfect ride }
+              - column: { name: label_fr, value: Trajet parfait }
+              - column: { name: order_value, value: "2" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: e5555553-79ab-4b69-9168-a64e7ddb3503 }
+              - column: { name: rating_level, value: 5 }
+              - column: { name: label_ar, value: سلوك محترم جدًا }
+              - column: { name: label_en, value: Very respectful }
+              - column: { name: label_fr, value: Très respectueux }
+              - column: { name: order_value, value: "3" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: e5555554-79ab-4b69-9168-a64e7ddb3504 }
+              - column: { name: rating_level, value: 5 }
+              - column: { name: label_ar, value: تجربة رائعة }
+              - column: { name: label_en, value: Great experience }
+              - column: { name: label_fr, value: Expérience superbe }
+              - column: { name: order_value, value: "4" }
+        
+        - insert:
+            schemaName: archive
+            tableName: rating_values
+            columns:
+              - column: { name: id, value: e5555555-79ab-4b69-9168-a64e7ddb3505 }
+              - column: { name: rating_level, value: 5 }
+              - column: { name: label_ar, value: سائق يستحق التقدير }
+              - column: { name: label_en, value: Outstanding driver }
+              - column: { name: label_fr, value: Chauffeur exemplaire }
+              - column: { name: order_value, value: "5" }
+
+      rollback:
+        - delete:
+            schemaName: archive
+            tableName: rating_values

@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: 008-create-subscription-plan-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: subscription_plan
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: subscription_plan
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: type
+                  type: varchar(50)
+              - column:
+                  name: price
+                  type: double precision
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: subscription_plan

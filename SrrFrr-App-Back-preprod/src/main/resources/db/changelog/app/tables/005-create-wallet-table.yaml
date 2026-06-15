@@ -1,0 +1,78 @@
+databaseChangeLog:
+  - changeSet:
+      id: 005-create-wallet-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: wallet
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: wallet
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: driver_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: balance
+                  type: double precision
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        # Add foreign key constraint to driver table
+        - addForeignKeyConstraint:
+            baseTableName: wallet
+            baseTableSchemaName: app_mobile
+            baseColumnNames: driver_id
+            constraintName: fk_wallet_driver
+            referencedTableName: driver
+            referencedTableSchemaName: app_mobile
+            referencedColumnNames: id
+            onDelete: CASCADE
+
+        # Add index for faster lookups
+        - createIndex:
+            indexName: idx_wallet_driver_id
+            schemaName: app_mobile
+            tableName: wallet
+            columns:
+              - column:
+                  name: driver_id
+
+        # Add index for low balance queries
+        - createIndex:
+            indexName: idx_wallet_balance
+            schemaName: app_mobile
+            tableName: wallet
+            columns:
+              - column:
+                  name: balance
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: wallet

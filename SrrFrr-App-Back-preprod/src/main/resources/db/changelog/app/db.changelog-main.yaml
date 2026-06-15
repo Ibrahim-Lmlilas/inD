@@ -1,0 +1,87 @@
+databaseChangeLog:
+    # Schema creation
+    - include:
+        file: schema/001-create-schema-main.yaml
+        relativeToChangelogFile: true
+
+    # Table creation in dependency order
+    - include:
+        file: tables/002-create-passenger-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/003-create-driver-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/004-create-authentication-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/005-create-wallet-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/006-create-wallet-transaction-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/007-create-ride-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/008-create-subscription-plan-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/009-create-driver-subscription-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/011-create-loyalty-reward-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/012-create-loyalty-transaction-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/013-create-chat-channel-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/014-create-chat-message-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/015-create-message-file-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/016-create-rating-values-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/017-create-rating-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/018-create-notification-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/019-create-reclamation-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/020-create-invite-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/021-create-otp-table.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/022-create-subscription-plan-description.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: tables/023-create-driver-profile-edit-request-table.yaml
+        relativeToChangelogFile: true
+    # FK Creation
+    # - include:
+    #     file: fk/028-add-all-foreign-keys.yaml
+    #     relativeToChangelogFile: true
+    # Initial data seeding
+    - include:
+        file: data/023-seed-subscription-plans.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: data/024-seed-subscription-plan-description.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: data/026-seed-loyalty-rewards.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: data/027-seed-rating-values.yaml
+        relativeToChangelogFile: true

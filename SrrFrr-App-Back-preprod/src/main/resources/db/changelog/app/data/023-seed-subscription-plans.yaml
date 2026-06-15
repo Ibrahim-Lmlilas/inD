@@ -1,0 +1,57 @@
+databaseChangeLog:
+  - changeSet:
+      id: 023-seed-subscription-plans
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - sqlCheck:
+            expectedResult: 0
+            sql: SELECT COUNT(*) FROM app_mobile.subscription_plan
+      changes:
+        - insert:
+            schemaName: app_mobile
+            tableName: subscription_plan
+            columns:
+              - column:
+                  name: id
+                  value: 12b5fcfb-08dd-42b6-bb8d-0ce1aa489700
+              - column:
+                  name: type
+                  value: PRO
+              - column:
+                  name: price
+                  value: 299
+
+        - insert:
+            schemaName: app_mobile
+            tableName: subscription_plan
+            columns:
+              - column:
+                  name: id
+                  value: ca220900-949d-44a4-9e10-105549fa74b9
+              - column:
+                  name: type
+                  value: PREMIUM
+              - column:
+                  name: price
+                  value: 179
+
+        - insert:
+            schemaName: app_mobile
+            tableName: subscription_plan
+            columns:
+              - column:
+                  name: id
+                  value: 7fa0430a-ea72-411a-a687-157504f66eed
+              - column:
+                  name: type
+                  value: BASIC
+              - column:
+                  name: price
+                  value: 99
+
+      rollback:
+        - delete:
+            schemaName: app_mobile
+            tableName: subscription_plan
+            where: id IN ('12b5fcfb-08dd-42b6-bb8d-0ce1aa489700', 'ca220900-949d-44a4-9e10-105549fa74b9', '7fa0430a-ea72-411a-a687-157504f66eed')

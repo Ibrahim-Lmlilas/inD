@@ -1,0 +1,239 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003-create-driver-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: driver
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: driver
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: cin_recto
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cin_verso
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cin_code
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: selfie
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: expiration_date
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: validated_at
+                  type: timestamp
+              - column:
+                  name: rejected_at
+                  type: timestamp
+              - column:
+                  name: vehicle_type
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vehicle_picture
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vehicle_registration_recto
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vehicle_registration_verso
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vehicle_registration_code
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vehicle_brand
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vehicle_model
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vehicle_color
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: production_year
+                  type: varchar(4)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: approval
+                  type: varchar(20)
+                  defaultValue: PENDING
+                  constraints:
+                    nullable: false
+              - column:
+                  name: online
+                  type: boolean
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: total_rides
+                  type: integer
+                  defaultValueNumeric: 0
+                  constraints:
+                    nullable: false
+              - column:
+                  name: rating
+                  type: double precision
+                  defaultValueNumeric: 0.0
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_verified
+                  type: boolean
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: active_subscription_id
+                  type: uuid
+        
+        # Add foreign key to passenger
+        - addForeignKeyConstraint:
+            baseTableName: driver
+            baseTableSchemaName: archive
+            baseColumnNames: id
+            constraintName: fk_driver_passenger
+            referencedTableName: passenger
+            referencedTableSchemaName: archive
+            referencedColumnNames: id
+            onDelete: CASCADE
+        
+        # Add check constraints
+        - sql:
+            sql: >
+              ALTER TABLE archive.driver 
+              ADD CONSTRAINT chk_driver_vehicle_type 
+              CHECK (vehicle_type IN ('CAR', 'MOTORCYCLE', 'TRUCK'))
+        
+        - sql:
+            sql: >
+              ALTER TABLE archive.driver 
+              ADD CONSTRAINT chk_driver_approval 
+              CHECK (approval IN ('PENDING', 'VALIDATED', 'REJECTED'))
+        
+        - sql:
+            sql: >
+              ALTER TABLE archive.driver 
+              ADD CONSTRAINT chk_driver_rating 
+              CHECK (rating >= 0.0 AND rating <= 5.0)
+        
+        - sql:
+            sql: >
+              ALTER TABLE archive.driver 
+              ADD CONSTRAINT chk_driver_total_rides 
+              CHECK (total_rides >= 0)
+        
+        - sql:
+            sql: >
+              ALTER TABLE archive.driver 
+              ADD CONSTRAINT chk_driver_expiration_date 
+              CHECK (expiration_date > CURRENT_DATE)
+        
+        # Add indexes for performance
+        - createIndex:
+            indexName: idx_driver_approval
+            schemaName: archive
+            tableName: driver
+            columns:
+              - column:
+                  name: approval
+        
+        - createIndex:
+            indexName: idx_driver_online
+            schemaName: archive
+            tableName: driver
+            columns:
+              - column:
+                  name: online
+        
+        - createIndex:
+            indexName: idx_driver_is_verified
+            schemaName: archive
+            tableName: driver
+            columns:
+              - column:
+                  name: is_verified
+        
+        - createIndex:
+            indexName: idx_driver_vehicle_type
+            schemaName: archive
+            tableName: driver
+            columns:
+              - column:
+                  name: vehicle_type
+        
+        - createIndex:
+            indexName: idx_driver_created_at
+            schemaName: archive
+            tableName: driver
+            columns:
+              - column:
+                  name: created_at
+                  descending: true
+        
+        - createIndex:
+            indexName: idx_driver_active_subscription
+            schemaName: archive
+            tableName: driver
+            columns:
+              - column:
+                  name: active_subscription_id
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: driver

@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 008-create-subscription-plan-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: subscription_plan
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: subscription_plan
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: type
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: price
+                  type: double precision
+                  constraints:
+                    nullable: false
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: subscription_plan

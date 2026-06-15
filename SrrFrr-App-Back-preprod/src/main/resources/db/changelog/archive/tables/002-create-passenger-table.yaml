@@ -1,0 +1,67 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-create-passenger-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: archive
+                tableName: passenger
+      changes:
+        - createTable:
+            schemaName: archive
+            tableName: passenger
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: first_name
+                  type: varchar(100)
+              - column:
+                  name: last_name
+                  type: varchar(100)
+              - column:
+                  name: phone_number
+                  type: varchar(20)
+              - column:
+                  name: password
+                  type: varchar(255)
+              - column:
+                  name: profile_picture
+                  type: varchar(500)
+              - column:
+                  name: loyalty_points
+                  type: integer
+              - column:
+                  name: interface_type
+                  type: varchar(20)
+              - column:
+                  name: terms_accepted
+                  type: boolean
+              - column:
+                  name: gender
+                  type: varchar(10)
+              - column:
+                  name: status
+                  type: varchar(20)
+              - column:
+                  name: created_at
+                  type: timestamp
+              - column:
+                  name: updated_at
+                  type: timestamp
+              - column:
+                  name: total_rides
+                  type: integer
+              - column:
+                  name: rating
+                  type: double precision
+
+      rollback:
+        - dropTable:
+            schemaName: archive
+            tableName: passenger

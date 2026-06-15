@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: 015-create-message-file-table
+      author: zineb
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            - tableExists:
+                schemaName: app_mobile
+                tableName: chat_message_files
+      changes:
+        - createTable:
+            schemaName: app_mobile
+            tableName: chat_message_files
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: message_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: file_url
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: file_size
+                  type: bigint
+
+      rollback:
+        - dropTable:
+            schemaName: app_mobile
+            tableName: chat_message_files
